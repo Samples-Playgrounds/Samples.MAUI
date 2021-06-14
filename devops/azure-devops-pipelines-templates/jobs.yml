@@ -1,0 +1,76 @@
+  - job: build_windows_vs4w_2019
+    displayName: Build on Windows with VS2019
+    pool:
+      vmImage: windows-2019
+    steps:
+        - template: ./devops/azure-devops-pipelines-templates/steps-common.yml  # Template reference
+          parameters:
+            runExtendedTests: 'true'
+            vmImage: windows-2019
+
+  - job: build_windows_vs4w_2017
+    displayName: Build on Windows with VS2017
+    pool:
+      vmImage: vs2017-win2016
+    steps:
+        - template: ./devops/azure-devops-pipelines-templates/steps-common.yml  # Template reference
+          parameters:
+            runExtendedTests: 'true'
+            vmImage: vs2017-win2016
+        # - task: PublishTestResults@2
+        #     displayName: Publish test results
+        #     condition: always()
+        #     inputs:
+        #     testResultsFormat: xUnit
+        #     testResultsFiles: tests/**/TestResults/TestResults.xml
+        #     testRunTitle: macOS Tests
+
+  - job: build_macos
+    displayName: Build on macOS
+    pool:
+      vmImage: macos-10.13
+    steps:
+        - bash: sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh $(MONO_VERSION)
+          displayName: Switch to the latest Xamarin SDK
+          workingDirectory: '$(Build.SourcesDirectory)' #
+        - bash: echo '##vso[task.setvariable variable=MD_APPLE_SDK_ROOT;]'/Applications/Xcode_$(XCODE_VERSION).app;sudo xcode-select --switch /Applications/Xcode_$(XCODE_VERSION).app/Contents/Developer
+          displayName: Switch to the latest Xcode
+          workingDirectory: '$(Build.SourcesDirectory)' #
+        - template: ./devops/azure-devops-pipelines-templates/steps-common.yml  # Template reference
+          parameters:
+            runExtendedTests: 'true'
+            vmImage: macos-10.13
+        - bash: |
+                pwd
+                sh ./build.sh
+          displayName: Run build
+          workingDirectory: '$(Build.SourcesDirectory)' #
+        # - task: PublishTestResults@2
+        #     displayName: Publish test results
+        #     condition: always()
+        #     inputs:
+        #     testResultsFormat: xUnit
+        #     testResultsFiles: tests/**/TestResults/TestResults.xml
+        #     testRunTitle: macOS Tests
+
+  - job: build_linux
+    displayName: Build on Linux ubuntu 16.04
+    pool:
+      vmImage: ubuntu-16.04
+    steps:
+        - template: ./devops/azure-devops-pipelines-templates/steps-common.yml  # Template reference
+          parameters:
+            runExtendedTests: 'true'
+            vmImage: ubuntu-16.04
+        - bash: |
+                pwd
+                sh ./build.sh
+          displayName: Run build
+          workingDirectory: '$(Build.SourcesDirectory)' #
+    #   - task: PublishTestResults@2
+    #     displayName: Publish test results
+    #     condition: always()
+    #     inputs:
+    #       testResultsFormat: xUnit
+    #       testResultsFiles: tests/**/TestResults/TestResults.xml
+    #       testRunTitle: macOS Tests

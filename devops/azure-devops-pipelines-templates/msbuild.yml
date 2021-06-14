@@ -1,0 +1,12 @@
+# File: ./msbuild.yml
+
+parameters:
+  solution: '**/*.sln'
+
+steps:
+- task: msbuild@1
+  inputs:
+    solution: ${{ parameters['solution'] }}  # index syntax
+- task: vstest@2
+  inputs:
+    solution: ${{ parameters.solution }}  # property dereference syntax

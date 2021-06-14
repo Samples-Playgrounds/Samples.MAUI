@@ -1,0 +1,23 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>Latest</LangVersion>
+		<LangVersion>9.0</LangVersion>
+    <!--
+
+      
+    The MSAL.snk has both private and public keys 
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)/build/MSAL.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+
+    <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)/build/SolutionWideAnalyzerConfig.ruleset</CodeAnalysisRuleSet>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    -->
+  </PropertyGroup>
+  <PropertyGroup>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+		<NoWarn>CA1014</NoWarn>
+  </PropertyGroup>
+
+</Project>
