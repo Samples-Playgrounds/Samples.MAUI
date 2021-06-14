@@ -1,0 +1,22 @@
+# .NET Desktop
+# Build and run tests for .NET Desktop or Windows classic desktop solutions.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
+
+
+variables:
+  MONO_VERSION: 5_16_0
+  XCODE_VERSION: 10.3
+
+# specific branch build
+trigger:
+  branches:
+    include:
+    - master
+    - releases/*
+    exclude:
+    - releases/old*
+
+jobs:
+  - template: ./devops/azure-devops-pipelines-templates/steps-common.yml  # Template reference
+
