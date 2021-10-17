@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WeatherTwentyOne.WinUI": {
+      "commandName": "MsixPackage",
+      "nativeDebugging": false
+    }
+  }
+}
