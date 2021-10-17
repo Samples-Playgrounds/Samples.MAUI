@@ -59,3 +59,4 @@ dotnet build \
     BlazorWeather.Maui \
     -t:Run \
     -f net6.0-ios
+
