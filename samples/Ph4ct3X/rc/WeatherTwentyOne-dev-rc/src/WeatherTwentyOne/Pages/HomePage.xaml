@@ -1,0 +1,51 @@
+﻿<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:m="clr-namespace:WeatherTwentyOne.Models"
+    xmlns:v="clr-namespace:WeatherTwentyOne.Views"
+    Title="Redmond, WA"
+    x:Class="WeatherTwentyOne.Pages.HomePage">
+
+    <Grid
+        ColumnDefinitions="{OnIdiom Phone='*', Desktop='*,480', Default='*,500'}"
+        RowDefinitions="*"
+        >
+
+        <!-- Main content -->
+        <ScrollView
+            Grid.Column="0">
+            <VerticalStackLayout
+                Padding="{OnIdiom Phone='0,50',Default='0,50'}"
+                Spacing="{OnIdiom Phone=25,Default=50}">
+
+                <!-- Top widgets -->
+                <FlexLayout
+                    IsVisible="{OnIdiom Phone=False, Default=True}"
+                    AlignItems="Center"
+                    AlignContent="Center"
+                    JustifyContent="SpaceEvenly">
+                    <v:CurrentWidget
+                        WidthRequest="200" />
+                    <v:WindLiveWidget
+                        x:Name="WindWidget"
+                        WidthRequest="200" />
+                </FlexLayout>
+                <v:CurrentWidget
+                    IsVisible="{OnIdiom Phone=True, Default=False}"/>
+
+                <BoxView HeightRequest="1" />
+
+                <v:Next24HrWidget />
+                <v:Next7DWidget />
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Widget panel -->
+        <v:WidgetsPanel
+            IsVisible="{OnIdiom Phone=False, Default=True}"
+            Grid.Column="{OnIdiom Phone=0, Default=1}" />
+
+    </Grid>
+
+</ContentPage>
