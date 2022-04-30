@@ -2,7 +2,10 @@
 
 # start Android emulator to gain some time
 emulator -list-avds
-$HOME/Library/Developer/Xamarin/android-sdk-macosx/emulator/emulator -avd "pixel_2_r_11_0_-_api_30"
+$HOME/Library/Developer/Xamarin/android-sdk-macosx/emulator/emulator \
+    -avd \
+        "pixel_2_r_11_0_-_api_30" \
+        &
 
 
 
@@ -21,15 +24,85 @@ dotnet new nugetconfig
 
 dotnet nuget add source -n maui-preview https://aka.ms/maui-preview/index.json
 
-dotnet new --uninstall Microsoft.Maui.Templates
-dotnet new --install Microsoft.Maui.Templates
+dotnet new --uninstall  Microsoft.Maui.Templates
+dotnet new --install    Microsoft.Maui.Templates
 
 
-rm -fr App1/
-dotnet new maui --output App1
+rm -fr ./Demos/macosx/dotnet/App.MAUI/
+rm -fr ./Demos/macosx/dotnet/App.MAUI.Blazor/
+rm -fr ./Demos/macosx/dotnet/Library.MAUI/
+rm -fr ./Demos/macosx/dotnet/
+rm -fr ./Demos/macosx/
+rm -fr ./Demos/
 
 
-dotnet build ./App1/App1/App1.csproj
-dotnet build ./App1/App1/App1.csproj -t:Run -f:net6.0-ios
+dotnet \
+    new \
+        mauilib \
+            --output ./Demos/macosx/dotnet/Library.MAUI
 
-dotnet build ./App1/App1/App1.csproj -t:Run -f:net6.0-android
+dotnet \
+    new \
+        maui \
+            --output ./Demos/macosx/dotnet/App.MAUI
+
+dotnet \
+    new \
+        maui-blazor \
+            --output ./Demos/macosx/dotnet/App.MAUI.Blazor
+
+
+#	<PropertyGroup>
+#		<LangVersion>latest</LangVersion>
+#	</PropertyGroup>
+
+
+dotnet \
+    build \
+        ./Demos/macosx/dotnet/Library.MAUI/Library.MAUI.csproj
+
+dotnet \
+    build \
+        ./Demos/macosx/dotnet/App.MAUI/App.MAUI.csproj
+
+dotnet \
+    build \
+        ./Demos/macosx/dotnet/App.MAUI/App.MAUI.csproj \
+            -t:Run \
+            -f:net6.0-android
+
+dotnet \
+    build \
+        ./Demos/macosx/dotnet/App.MAUI/App.MAUI.csproj \
+            -t:Run \
+            -f:net6.0-ios
+
+
+dotnet \    
+    build \
+        ./Demos/macosx/dotnet/App.MAUI.Blazor/App.MAUI.Blazor.csproj
+
+dotnet \
+    build \
+        ./Demos/macosx/dotnet/App.MAUI.Blazor/App.MAUI.Blazor.csproj \
+            -t:Run \
+            -f:net6.0-android
+
+dotnet \
+    build \
+        ./Demos/macosx/dotnet/App.MAUI.Blazor/App.MAUI.Blazor.csproj \
+            -t:Run \
+            -f:net6.0-ios
+
+
+dotnet \
+    build \
+        ./Demos/macosx/dotnet/ApLibraryp.MAUI/Library.MAUI.csproj \
+            -t:Run \
+            -f:net6.0-android
+
+dotnet \
+    build \
+        ./Demos/macosx/dotnet/Library.MAUI/Library.MAUI.csproj \
+            -t:Run \
+            -f:net6.0-ios
