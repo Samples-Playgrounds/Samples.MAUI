@@ -1,11 +1,15 @@
 #!/usr/bin/env pwsh
 
-
+# https://github.com/Redth/dotnet-maui-check
 dotnet tool uninstall -g `
     redth.net.maui.check
 dotnet tool install -g `
     redth.net.maui.check
-maui-check
+maui-check `
+    --preview `
+    --fix `
+    --non-interactive
+
 
 rm -fr maui/
 git clone `
