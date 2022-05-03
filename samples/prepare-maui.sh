@@ -27,82 +27,77 @@ dotnet nuget add source -n maui-preview https://aka.ms/maui-preview/index.json
 dotnet new --uninstall  Microsoft.Maui.Templates
 dotnet new --install    Microsoft.Maui.Templates
 
-
-rm -fr ./Demos/macosx/dotnet/App.MAUI/
-rm -fr ./Demos/macosx/dotnet/App.MAUI.Blazor/
-rm -fr ./Demos/macosx/dotnet/Library.MAUI/
-rm -fr ./Demos/macosx/dotnet/
-rm -fr ./Demos/macosx/
-rm -fr ./Demos/
-
+TIMESTAMP=$( date "+%Y%m%d%H%M%S" )
+echo    $TIMESTAMP
 
 dotnet \
     new \
         mauilib \
-            --output ./Demos/macosx/dotnet/Library.MAUI
+            --output ./Demos/macosx/dotnet/$TIMESTAMP/Library.MAUI
 
 dotnet \
     new \
         maui \
-            --output ./Demos/macosx/dotnet/App.MAUI
+            --output ./Demos/macosx/dotnet/$TIMESTAMP/App.MAUI
 
 dotnet \
     new \
         maui-blazor \
-            --output ./Demos/macosx/dotnet/App.MAUI.Blazor
+            --output ./Demos/macosx/dotnet/$TIMESTAMP/App.MAUI.Blazor
 
 
 #	<PropertyGroup>
 #		<LangVersion>latest</LangVersion>
 #	</PropertyGroup>
 
+TIMESTAMP=20220503161705
 
 dotnet \
     build \
-        ./Demos/macosx/dotnet/Library.MAUI/Library.MAUI.csproj
+        ./Demos/macosx/dotnet//$TIMESTAMP/Library.MAUI/Library.MAUI.csproj
 
 dotnet \
     build \
-        ./Demos/macosx/dotnet/App.MAUI/App.MAUI.csproj
+        ./Demos/macosx/dotnet//$TIMESTAMP/App.MAUI/App.MAUI.csproj
 
 dotnet \
     build \
-        ./Demos/macosx/dotnet/App.MAUI/App.MAUI.csproj \
+        ./Demos/macosx/dotnet//$TIMESTAMP/App.MAUI/App.MAUI.csproj \
             -t:Run \
             -f:net6.0-android
 
 dotnet \
     build \
-        ./Demos/macosx/dotnet/App.MAUI/App.MAUI.csproj \
+        ./Demos/macosx/dotnet//$TIMESTAMP/App.MAUI/App.MAUI.csproj \
             -t:Run \
             -f:net6.0-ios
 
 
 dotnet \    
     build \
-        ./Demos/macosx/dotnet/App.MAUI.Blazor/App.MAUI.Blazor.csproj
+        ./Demos/macosx/dotnet//$TIMESTAMP/App.MAUI.Blazor/App.MAUI.Blazor.csproj
 
 dotnet \
     build \
-        ./Demos/macosx/dotnet/App.MAUI.Blazor/App.MAUI.Blazor.csproj \
+        ./Demos/macosx/dotnet//$TIMESTAMP/App.MAUI.Blazor/App.MAUI.Blazor.csproj \
             -t:Run \
             -f:net6.0-android
 
 dotnet \
     build \
-        ./Demos/macosx/dotnet/App.MAUI.Blazor/App.MAUI.Blazor.csproj \
+        ./Demos/macosx/dotnet//$TIMESTAMP/App.MAUI.Blazor/App.MAUI.Blazor.csproj \
             -t:Run \
             -f:net6.0-ios
 
 
 dotnet \
     build \
-        ./Demos/macosx/dotnet/ApLibraryp.MAUI/Library.MAUI.csproj \
+        ./Demos/macosx/dotnet/$TIMESTAMP/ApLibraryp.MAUI/Library.MAUI.csproj \
             -t:Run \
             -f:net6.0-android
 
 dotnet \
     build \
-        ./Demos/macosx/dotnet/Library.MAUI/Library.MAUI.csproj \
+        ./Demos/macosx/dotnet//$TIMESTAMP/Library.MAUI/Library.MAUI.csproj \
             -t:Run \
             -f:net6.0-ios
