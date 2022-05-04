@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31611.283
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiApp.Ph4ct3x", "MauiApp.Ph4ct3x\MauiApp.Ph4ct3x.csproj", "{0045D851-4FFF-474E-8C5D-BAD7FED54A1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiLib.Ph4ct3x", "MauiLib.Ph4ct3x\MauiLib.Ph4ct3x.csproj", "{74917F5E-67CF-425C-BE9D-8AA579CB3A9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiAppBlazor.Ph4ct3x", "MauiAppBlazor.Ph4ct3x\MauiAppBlazor.Ph4ct3x.csproj", "{FF0328E5-9A48-4FB2-9D6B-9DE14636C953}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0045D851-4FFF-474E-8C5D-BAD7FED54A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0045D851-4FFF-474E-8C5D-BAD7FED54A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0045D851-4FFF-474E-8C5D-BAD7FED54A1C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0045D851-4FFF-474E-8C5D-BAD7FED54A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0045D851-4FFF-474E-8C5D-BAD7FED54A1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0045D851-4FFF-474E-8C5D-BAD7FED54A1C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{74917F5E-67CF-425C-BE9D-8AA579CB3A9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74917F5E-67CF-425C-BE9D-8AA579CB3A9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74917F5E-67CF-425C-BE9D-8AA579CB3A9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74917F5E-67CF-425C-BE9D-8AA579CB3A9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF0328E5-9A48-4FB2-9D6B-9DE14636C953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF0328E5-9A48-4FB2-9D6B-9DE14636C953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF0328E5-9A48-4FB2-9D6B-9DE14636C953}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FF0328E5-9A48-4FB2-9D6B-9DE14636C953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF0328E5-9A48-4FB2-9D6B-9DE14636C953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF0328E5-9A48-4FB2-9D6B-9DE14636C953}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {545390B6-8834-456D-BEB0-8ADF7DCDAF40}
+	EndGlobalSection
+EndGlobal
