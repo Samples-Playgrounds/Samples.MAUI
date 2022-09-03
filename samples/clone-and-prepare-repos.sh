@@ -79,8 +79,9 @@ git clone \
 rm -fr ./external-samples/beto-rodriguez--LiveCharts2-dev/.git/
 
 
-
-
+https://github.com/jsuarezruiz/netmaui-chat-app-challenge
+https://github.com/jsuarezruiz/netmaui-chat-app-challenge.git
+https://github.com/jsuarezruiz/netmaui-chat-app-challenge/archive/refs/heads/main.zip
 
 dotnet new classlib \
     --framework netstandard2.0 \
