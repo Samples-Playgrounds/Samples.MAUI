@@ -20,4 +20,34 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
+	<ItemGroup>
+	  <None Remove="Platforms\Android\Compatibility\" />
+	  <None Remove="Platforms\iOS\" />
+	  <None Remove="Platforms\iOS\Compatibility\" />
+	  <None Remove="Platforms\MacCatalyst\" />
+	  <None Remove="Platforms\MacCatalyst\Compatibility\" />
+	  <None Remove="Platforms\Tizen\" />
+	  <None Remove="Platforms\Tizen\Compatibility\" />
+	  <None Remove="Platforms\Windows\" />
+	  <None Remove="Platforms\Windows\Compatibility\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Platforms\Android\Compatibility\" />
+	  <Folder Include="Platforms\iOS\" />
+	  <Folder Include="Platforms\iOS\Compatibility\" />
+	  <Folder Include="Platforms\MacCatalyst\" />
+	  <Folder Include="Platforms\MacCatalyst\Compatibility\" />
+	  <Folder Include="Platforms\Tizen\" />
+	  <Folder Include="Platforms\Tizen\Compatibility\" />
+	  <Folder Include="Platforms\Windows\" />
+	  <Folder Include="Platforms\Windows\Compatibility\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Remove="Platforms\Android\Compatibility\WebViewPDFRenderer.cs" />
+	  <Compile Remove="Platforms\iOS\Compatibility\WebViewPDFRenderer.cs" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="Platforms\Android\Compatibility\WebViewPDFRenderer.cs" />
+	  <None Include="Platforms\iOS\Compatibility\WebViewPDFRenderer.cs" />
+	</ItemGroup>
 </Project>
