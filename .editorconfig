@@ -1,0 +1,59 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# https://docs.microsoft.com/en-us/visualstudio/mac/editorconfig
+# https://editorconfig.org/#supported-properties
+# https://www.jetbrains.com/help/resharper/EditorConfig_Index.html
+
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+charset = utf-8
+indent_size=4
+trim_trailing_whitespace = true
+
+# https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019
+[*.cs]
+# New line preferences
+csharp_new_line_before_catch = true
+csharp_new_line_before_else = true
+csharp_new_line_before_finally = true
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_open_brace = all
+csharp_new_line_between_query_expression_clauses = true
+# Preprocessor Directives - Indent #if, #else, #elif, #endif (C#)
+csharp_indent_preprocessor_if = true
+# Preprocessor Directives - Indent other preprocessor directives (C#)
+csharp_indent_preprocessor_other  = true	
+# Preprocessor Directives - Indent #region, #endregion (C#)
+csharp_indent_preprocessor_region = true
+
+
+
+# Matches multiple files with brace expansion notation
+# Set default charset
+[*.{js,py}]
+
+# 4 space indentation
+[*.py]
+indent_size = 4
+
+# Tab indentation (no size specified)
+[Makefile]
+indent_style = tab
+
+# Indentation override for all Cake under ./ (root) directory
+[./**.cake]
+indent_style = space
+indent_size = 4
+
+# Matches the exact files either package.json or .travis.yml
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2
