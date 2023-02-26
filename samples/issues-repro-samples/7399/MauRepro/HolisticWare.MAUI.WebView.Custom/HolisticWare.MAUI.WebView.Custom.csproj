@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0;net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Platforms\Android\Compatibility\" />
+	  <None Remove="Platforms\iOS\" />
+	  <None Remove="Platforms\iOS\Compatibility\" />
+	  <None Remove="Platforms\MacCatalyst\" />
+	  <None Remove="Platforms\MacCatalyst\Compatibility\" />
+	  <None Remove="Platforms\Tizen\" />
+	  <None Remove="Platforms\Tizen\Compatibility\" />
+	  <None Remove="Platforms\Windows\" />
+	  <None Remove="Platforms\Windows\Compatibility\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Platforms\Android\Compatibility\" />
+	  <Folder Include="Platforms\iOS\" />
+	  <Folder Include="Platforms\iOS\Compatibility\" />
+	  <Folder Include="Platforms\MacCatalyst\" />
+	  <Folder Include="Platforms\MacCatalyst\Compatibility\" />
+	  <Folder Include="Platforms\Tizen\" />
+	  <Folder Include="Platforms\Tizen\Compatibility\" />
+	  <Folder Include="Platforms\Windows\" />
+	  <Folder Include="Platforms\Windows\Compatibility\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Remove="Platforms\Android\Compatibility\WebViewPDFRenderer.cs" />
+	  <Compile Remove="Platforms\iOS\Compatibility\WebViewPDFRenderer.cs" />
+	  <Compile Remove="WebViewPDF.cs" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="Platforms\Android\Compatibility\WebViewPDFRenderer.cs" />
+	  <None Include="Platforms\iOS\Compatibility\WebViewPDFRenderer.cs" />
+	  <None Include="WebViewPDF.cs" />
+	</ItemGroup>
+
+</Project>
