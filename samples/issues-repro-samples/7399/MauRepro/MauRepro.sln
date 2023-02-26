@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.XamarinFormsAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.XamarinFormsApp.WebViewPDF", "HolisticWare.XamarinFormsApp.WebViewPDF\HolisticWare.XamarinFormsApp.WebViewPDF\HolisticWare.XamarinFormsApp.WebViewPDF.csproj", "{D197D072-83A8-48A0-B624-932EF84D9DE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.MAUI.WebView.Custom", "HolisticWare.MAUI.WebView.Custom\HolisticWare.MAUI.WebView.Custom.csproj", "{45266A05-2A53-4242-A2E4-7D06F5564E42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,18 @@ Global
 		{D197D072-83A8-48A0-B624-932EF84D9DE5}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{D197D072-83A8-48A0-B624-932EF84D9DE5}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{D197D072-83A8-48A0-B624-932EF84D9DE5}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{45266A05-2A53-4242-A2E4-7D06F5564E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45266A05-2A53-4242-A2E4-7D06F5564E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45266A05-2A53-4242-A2E4-7D06F5564E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45266A05-2A53-4242-A2E4-7D06F5564E42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45266A05-2A53-4242-A2E4-7D06F5564E42}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{45266A05-2A53-4242-A2E4-7D06F5564E42}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{45266A05-2A53-4242-A2E4-7D06F5564E42}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{45266A05-2A53-4242-A2E4-7D06F5564E42}.Release|iPhone.Build.0 = Release|Any CPU
+		{45266A05-2A53-4242-A2E4-7D06F5564E42}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{45266A05-2A53-4242-A2E4-7D06F5564E42}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{45266A05-2A53-4242-A2E4-7D06F5564E42}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{45266A05-2A53-4242-A2E4-7D06F5564E42}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
