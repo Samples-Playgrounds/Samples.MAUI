@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Net;
 
-using Xamarin.Forms;
-using Xamarin.Forms.Platform.Android;
+// migration to MAUI not needed using Xamarin.Forms;
+// migration to MAUI not needed using Xamarin.Forms.Platform.Android;
 
 using HolisticWare.XamarinForms.WebView.PDF;
 using HolisticWare.XamarinForms.WebView.PDF.Platforms.Android;
 
 
-[assembly: ExportRenderer(typeof(WebViewPDF), typeof(WebViewPDFRenderer))]
+// migration to MAUI not needed [assembly: ExportRenderer(typeof(WebViewPDF), typeof(WebViewPDFRenderer))]
 namespace HolisticWare.XamarinForms.WebView.PDF.Platforms.Android
 {
     public class WebViewPDFRenderer : WebViewRenderer

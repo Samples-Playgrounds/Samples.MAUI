@@ -4,14 +4,14 @@ using System.Net;
 using Foundation;
 using UIKit;
 
-using Xamarin.Forms;
-using Xamarin.Forms.Platform.iOS;
+// migration to MAUI not needed using Xamarin.Forms;
+// migration to MAUI not needed using Xamarin.Forms.Platform.Windows;
 
 using HolisticWare.XamarinForms.WebView.PDF;
-using HolisticWare.XamarinForms.WebView.PDF.Platforms.iOS;
+using HolisticWare.XamarinForms.WebView.PDF.Platforms.Windows;
 
-[assembly: ExportRenderer(typeof(WebViewPDF), typeof(WebViewPDFRenderer))]
-namespace HolisticWare.XamarinForms.WebView.PDF.Platforms.iOS
+// migration to MAUI not needed [assembly: ExportRenderer(typeof(WebViewPDF), typeof(WebViewPDFRenderer))]
+namespace HolisticWare.XamarinForms.WebView.PDF.Platforms.Windows
 {
     public class WebViewPDFRenderer : ViewRenderer<WebViewPDF, UIWebView>
     {
