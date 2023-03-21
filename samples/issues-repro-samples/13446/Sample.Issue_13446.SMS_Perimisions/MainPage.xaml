@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sample.Issue_13446.SMS_Perimisions.MainPage">
+
+   <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            Text="Phone"
+            />
+        <Entry
+            x:Name="entry_phone"
+            Grid.Row="0"
+            Grid.Column="1"
+            Text=""
+            />
+        <Label
+            Grid.Row="1"
+            Grid.Column="0"
+            Text="Message"
+            />
+        <Editor
+            x:Name="editor_message"
+            Grid.Row="1"
+            Grid.Column="1"            
+            Text=""
+            />
+        <Button
+            Grid.Row="2"
+            Grid.Column="1"            
+            x:Name="button_sms_send"
+            Text="Send SMS"
+            SemanticProperties.Hint="Sends SMS"
+            Clicked="OnSMSSendButtonClicked"
+            HorizontalOptions="Center"
+            />
+    </Grid>
+
+
+</ContentPage>
