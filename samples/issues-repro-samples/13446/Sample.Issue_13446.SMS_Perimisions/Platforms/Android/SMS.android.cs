@@ -24,6 +24,8 @@ namespace Sample.Issue_13446.SMS_Perimisions.Platforms.Android
                     string msg = exc.Message;
                 }
             }
+
+            return;
         }
     }
 }

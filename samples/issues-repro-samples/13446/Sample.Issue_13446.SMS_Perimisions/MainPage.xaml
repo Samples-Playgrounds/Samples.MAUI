@@ -42,7 +42,7 @@
             Text="Send SMS"
             SemanticProperties.Hint="Sends SMS"
             Clicked="OnSMSSendButtonClicked"
-            HorizontalOptions="Center"
+            HorizontalOptions="End"
             />
     </Grid>
 
