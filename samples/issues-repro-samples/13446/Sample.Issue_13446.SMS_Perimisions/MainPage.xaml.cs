@@ -1,10 +1,18 @@
-﻿namespace Sample.Issue_13446.SMS_Perimisions;
+﻿using System.Collections.ObjectModel;
+using System.Collections.Specialized;
+using Sample.Issue_13446.SMS_Perimisions.Platforms.Android;
+
+namespace Sample.Issue_13446.SMS_Perimisions;
 
 public partial class MainPage : ContentPage
 {
-	public MainPage()
+    public MainPage()
 	{
 		InitializeComponent();
+
+		this.BindingContext = this.SMS;
+
+		return;
 	}
 
 	private void OnSMSSendButtonClicked(object sender, EventArgs e)
@@ -18,6 +26,12 @@ public partial class MainPage : ContentPage
 		#endif
 
 		return;
+	}
+
+	public SMS SMS
+	{
+		get;
+		set;
 	}
 }
 

@@ -1,10 +1,16 @@
 ﻿using System;
+using System.Collections.ObjectModel;
+using Sample.Issue_13446.SMS_Perimisions;
+
 namespace Sample.Issue_13446.SMS_Perimisions.Platforms.Android
 {
 	public class SMS
 	{
 		public SMS()
 		{
+            Log = new ObservableCollection<ErrorLogItem>();
+
+            return;
 		}
 
         public void Send(String phoneNumber, String message)
@@ -22,12 +28,42 @@ namespace Sample.Issue_13446.SMS_Perimisions.Platforms.Android
                 catch(Exception exc)
                 {
                     string msg = exc.Message;
+
+                    ErrorLogItem eli = new ErrorLogItem()
+                    {
+                        DateTimeStamp = DateTime.Now,
+                        Message = msg,
+                    };
+
+                    this.Log.Add(eli);
+
+                    global::Android.Util.Log.WriteLine
+                                                (
+                                                    global::Android.Util.LogPriority.Info,
+                                                    "SMS log size",
+                                                    Log.Count.ToString()
+                                                );
+                    global::Android.Util.Log.WriteLine
+                                                (
+                                                    global::Android.Util.LogPriority.Error,
+                                                    "SMS",
+                                                    msg
+                                                );
+
+                    //throw;
                 }
             }
 
             return;
         }
+
+        public ObservableCollection<ErrorLogItem> Log
+        {
+            get;
+            set;
+        }
     }
+
 }
 
 /*
