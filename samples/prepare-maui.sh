@@ -33,17 +33,17 @@ echo    $TIMESTAMP
 dotnet \
     new \
         mauilib \
-            --output ./Demos/macosx/dotnet/$TIMESTAMP/Library.MAUI
+            --output ./Demos/macosx/dotnet/$TIMESTAMP/LibraryMAUI
 
 dotnet \
     new \
         maui \
-            --output ./Demos/macosx/dotnet/$TIMESTAMP/App.MAUI
+            --output ./Demos/macosx/dotnet/$TIMESTAMP/AppMAUI
 
 dotnet \
     new \
         maui-blazor \
-            --output ./Demos/macosx/dotnet/$TIMESTAMP/App.MAUI.Blazor
+            --output ./Demos/macosx/dotnet/$TIMESTAMP/AppMAUI.HybridBlazor
 
 
 #	<PropertyGroup>
