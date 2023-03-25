@@ -2,6 +2,7 @@
 <ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
     x:Class="Sample.Issue_10385.MediaPickerCrash.Views.MediaPickerDemos"
     Title="MediaPickerDemos"
     xmlns:view_models="clr-namespace:Sample.Issue_10385.MediaPickerCrash.ViewModels"
@@ -10,86 +11,57 @@
         <view_models:MediaPickerDemos />
     </ContentPage.BindingContext>
 
-   <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
+    <Grid RowDefinitions="Auto,*">
+        <Label Text="Pick or capture a photo or video." FontAttributes="Bold" Margin="12" />
 
-        <Label
-            Grid.Row="0"
-            Grid.Column="0"
-            Text="Pick Photo"
-            />
-        <Button
-            Grid.Row="0"
-            Grid.Column="1"            
-            x:Name="button_pick_photo"
-            Text="Pick Photo"
-            SemanticProperties.Hint="Pick Photo"
-            HorizontalOptions="End"
-            Command="{Binding CommandPhotoPick}"
-            />
-       <!--
-            Clicked="button_pick_photo_Clicked"
-       -->
-        <Label
-            Grid.Row="1"
-            Grid.Column="0"
-            Text="Capture Photo"
-            />
-        <Button
-            Grid.Row="1"
-            Grid.Column="1"            
-            x:Name="button_capture_photo"
-            Text="Capture Photo"
-            SemanticProperties.Hint="Capture Photo"
-            HorizontalOptions="End"
-            />
+        <ScrollView Grid.Row="1">
+            <StackLayout Padding="12,0,12,12" Spacing="6">
+                <Button
+                    x:Name="button_pick_photo"
+                    Text="Pick Photo"
+                    SemanticProperties.Hint="Pick Photo"
+                    Command="{Binding CommandPhotoPick}"
+                    />
+                <Button
+                    x:Name="button_capture_photo"
+                    Text="Capture Photo"
+                    SemanticProperties.Hint="Capture Photo"
+                    Command="{Binding CapturePhotoCommand}"
+                    />
+                <Button
+                    x:Name="button_pick_video"
+                    Text="Pick video"
+                    Command="{Binding PickVideoCommand}"
+                    SemanticProperties.Hint="Pick Video"
+                    />
+                <Button
+                    x:Name="button_capture_video"
+                    Text="Capture Video"
+                    Command="{Binding CaptureVideoCommand}"
+                    SemanticProperties.Hint="Capture Video"
+                    />
 
-
-        <Label
-            Grid.Row="2"
-            Grid.Column="0"
-            Text="Pick Photo"
-            />
-        <Button
-            Grid.Row="2"
-            Grid.Column="1"            
-            x:Name="button_pick_video"
-            Text="Pick Photo"
-            SemanticProperties.Hint="Pick Video"
-            HorizontalOptions="End"
-            />
-        <Label
-            Grid.Row="3"
-            Grid.Column="0"
-            Text="Capture Video"
-            />
-        <Button
-            Grid.Row="3"
-            Grid.Column="1"            
-            x:Name="button_capture_video"
-            Text="Capture Video"
-            SemanticProperties.Hint="Capture Video"
-            HorizontalOptions="End"
-            />
-
-        <Image
-            Grid.Row="4"
-            Grid.ColumnSpan="2"
-            x:Name="ImagePickedOrCaptured"
-            Source="{Binding ImageSourcePickedOrCaptured}"
-            />
-
+                <Image
+                    x:Name="ImagePickedOrCaptured"
+                    Source="{Binding ImageSourcePickedOrCaptured}"
+                    IsVisible="{Binding ShowPhoto}"
+                    />
+                <!--
+                https://learn.microsoft.com/en-us/dotnet/communitytoolkit/maui/views/mediaelement
+                    Source="{Binding VideoPath}"
+                -->
+                <!--
+                <toolkit:MediaElement
+                    VerticalOptions="FillAndExpand"
+                    Source="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                    ShouldShowPlaybackControls="True"
+                    IsVisible="{Binding ShowVideo}"
+                    />
+                -->
+            </StackLayout>
+        </ScrollView>
     </Grid>
+
 
 </ContentPage>
 

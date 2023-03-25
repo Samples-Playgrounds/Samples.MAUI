@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 
+using CommunityToolkit.Maui;
+
 namespace Sample.Issue_10385.MediaPickerCrash;
 
 public static class MauiProgram
@@ -13,7 +15,12 @@ public static class MauiProgram
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			});
+			})
+			// used for
+			//		Model View ViewModel MVVM
+			//		MediaElement
+            .UseMauiCommunityToolkit()
+            ;
 
 		#if DEBUG
 		builder.Logging.AddDebug();

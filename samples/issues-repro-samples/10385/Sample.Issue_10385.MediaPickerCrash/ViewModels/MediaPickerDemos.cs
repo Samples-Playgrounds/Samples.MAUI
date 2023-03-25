@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sample.Issue_10385.MediaPickerCrash.ViewModels;
 
-public class MediaPickerDemos : ObservableObject//, IQueryAttributable
+public class MediaPickerDemos : ObservableObject, IQueryAttributable
 {
     public MediaPickerDemos()
     {
@@ -68,21 +68,22 @@ public class MediaPickerDemos : ObservableObject//, IQueryAttributable
             }
         }
     }
+
     /// <summary>
     /// 
     /// </summary>
     /// <param name="query"></param>
     /// When a page, or the binding context of a page, implements this interface,
     /// the query string parameters used in navigation are passed to the ApplyQueryAttributes method
-    //void IQueryAttributable.ApplyQueryAttributes(IDictionary<string, object> query)
-    //{
-    //    if (query.ContainsKey("load"))
-    //    {
-    //        _note = Models.Note.Load(query["load"].ToString());
-    //        RefreshProperties();
-    //    }
+    void IQueryAttributable.ApplyQueryAttributes(IDictionary<string, object> query)
+    {
+        if (query.ContainsKey("load"))
+        {
+            //_note = Models.Note.Load(query["load"].ToString());
+            //RefreshProperties();
+        }
 
-    //    return;
-    //}
+        return;
+    }
 }
 
