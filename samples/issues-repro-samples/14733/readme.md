@@ -14,7 +14,7 @@
 running:
 
 ```
- dotnet restore 14733/net7.0/NugetRestoreProblem/NugetRestoreProblem/
+dotnet restore /bl /v:diagnostic 14733/net7.0/NugetRestoreProblem/NugetRestoreProblem/
 ```
 
 No errors.
@@ -39,7 +39,7 @@ result:
 running:
 
 ```
- dotnet restore 14733/net6.0/NugetRestoreProblem/NugetRestoreProblem/
+ dotnet restore /bl /v:diagnostic 14733/net6.0/NugetRestoreProblem/NugetRestoreProblem/
 ```
 
 No errors.
