@@ -31,19 +31,19 @@ rm -fr maui-samples-main.zip
 
 maui-samples/
 
-# FSC : error FS0246: 
-# Unrecognized value '9.0' for --langversion use --langversion:? for complete list 
+# FSC : error FS0246:
+# Unrecognized value '9.0' for --langversion use --langversion:? for complete list
 # [./fsharp/HelloiOSFSharp/HelloiOSFSharp.fsproj]
 dotnet sln \
     remove \
     ./fsharp/HelloiOSFSharp/HelloiOSFSharp.fsproj
 
 dotnet build \
-    net6-samples.sln 
+    net6-samples.sln
 
 # Works, but
-# /usr/local/share/dotnet/packs/Microsoft.iOS.Sdk/14.5.100-preview.5.894/tools/msbuild/iOS/Xamarin.Shared.targets(759,3): 
-# error : Info.plist not found. 
+# /usr/local/share/dotnet/packs/Microsoft.iOS.Sdk/14.5.100-preview.5.894/tools/msbuild/iOS/Xamarin.Shared.targets(759,3):
+# error : Info.plist not found.
 # [./maui-samples/HelloAndroid/HelloAndroid.csproj]
 dotnet build \
     net6-samples.sln \
@@ -56,12 +56,12 @@ dotnet build \
     -f:net6.0-ios
 
 # Works, but
-# /usr/local/share/dotnet/sdk/6.0.100-preview.5.21302.13/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets(246,5): 
-# error NETSDK1005: 
-#   Assets file 
-#           './maui-samples/HelloiOS/obj/project.assets.json' 
-#   doesn't have a target for 'net6.0-android'. 
-# Ensure that restore has run and that you have included 'net6.0-android' in the TargetFrameworks for your project. 
+# /usr/local/share/dotnet/sdk/6.0.100-preview.5.21302.13/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets(246,5):
+# error NETSDK1005:
+#   Assets file
+#           './maui-samples/HelloiOS/obj/project.assets.json'
+#   doesn't have a target for 'net6.0-android'.
+# Ensure that restore has run and that you have included 'net6.0-android' in the TargetFrameworks for your project.
 # [./maui-samples/HelloiOS/HelloiOS.csproj]
 dotnet build \
     net6-samples.sln \
@@ -158,7 +158,7 @@ dotnet build \
 #------------------------------------------------------------------------------------------------------
 
 #------------------------------------------------------------------------------------------------------
-mkdir source 
+mkdir source
 cd sorce
 mkdir business-domain-logic
 mkdir user-interface
@@ -193,7 +193,7 @@ dotnet sln \
 rm -fr HackerNews-alexkblount/
 curl -O -J -L \
     https://github.com/alexkblount/HackerNews/archive/refs/heads/maui-migration.zip
-    
+
 unzip HackerNews-maui-migration.zip
 mv HackerNews-maui-migration/ HackerNews-alexkblount/
 rm -fr HackerNews-maui-migration.zip
@@ -201,7 +201,7 @@ rm -fr HackerNews-maui-migration.zip
 cd HackerNews-alexkblount/
 
 dotnet build \
-    HackerNews-alexkblount/HackerNews.sln 
+    HackerNews-alexkblount/HackerNews.sln
 
 dotnet build \
     HackerNews-alexkblount/HackerNews.sln \
@@ -215,7 +215,7 @@ dotnet build \
 rm -fr HackerNews-Cheesebaron/
 curl -O -J -L \
     https://github.com/Cheesebaron/HackerNews-Maui/archive/refs/heads/main.zip
-    
+
 unzip HackerNews-Maui-main.zip
 mv HackerNews-Maui-main/ HackerNews-Cheesebaron/
 rm -fr HackerNews-main.zip
@@ -244,7 +244,22 @@ mv main/ HackerNews-brminnick/
 
 #------------------------------------------------------------------------------------------------------
 
+export FILE=main.zip
+export FILE_REMOTE_NAME=MauiSamples-main.zip
+export FILENAME="${FILE%.*}"
+export URL=https://github.com/VladislavAntonyuk/MauiSamples/archive/refs/heads/$FILE
+export FOLDER=VladislavAntonyuk-MauiSamples/
+echo "FILE      = " $FILE
+echo "FILENAME  = " $FILENAME
+echo "URL       = " $URL
+echo "FOLDER    = " $FOLDER
 
+rm -fr                          $FOLDER
+curl \
+    -O -J -L \
+                                $URL
+unzip                           $FILE_REMOTE_NAME
+mv "${FILE_REMOTE_NAME%.*}"     $FOLDER
 
 
 
