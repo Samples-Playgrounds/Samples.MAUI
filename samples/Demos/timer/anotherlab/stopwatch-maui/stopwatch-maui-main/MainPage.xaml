@@ -1,0 +1,121 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:StopwatchMaui.ViewModels"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Converters;assembly=CommunityToolkit.Maui"
+             x:Class="StopwatchMaui.MainPage"
+             BackgroundColor="{DynamicResource SecondaryColor}">
+
+    <ContentPage.BindingContext>
+        <vm:StopWatchViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <mct:IsNotEqualConverter x:Key="IsNotEqualConverter" />
+            <x:Boolean x:Key="IsTrue">True</x:Boolean>
+            <Style x:Key="numericStyle" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="End"/>
+                <Setter Property="FontFamily" Value="DigitalMono" />
+                <Setter Property="FontSize" Value="72" />
+                <Setter Property="Padding" Value="10,6,10,6" />
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+            <Style x:Key="numericStyle2" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="EndAndExpand"/>
+                <Setter Property="FontFamily" Value="DigitalMono" />
+                <Setter Property="FontSize" Value="72" />
+                <Setter Property="Padding" Value="10,6,10,6" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="BackgroundColor" Value="#d6d6d6" />
+            </Style>
+            <Style x:Key="startStopStyle" TargetType="Button">
+                <Setter Property="Margin" Value="0,10" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+            </Style>
+            <Style x:Key="LapTimeStyle" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="End"/>
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontSize" Value="Large" />
+            </Style>
+            <Style x:Key="LapTimeHeaderStyle" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="End"/>
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="TextDecorations" Value="Underline" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="0" CornerRadius="0">
+                <Label Text="MAUI Stopwatch" HorizontalTextAlignment="Center" FontSize="Title" TextColor="White"/>
+            </Frame>
+            <Grid Margin="0" Padding="0" BackgroundColor="White">
+                <Image Source="stopwatch" HeightRequest="150" Margin="20" HorizontalOptions="Center"/>
+            </Grid>
+            <Frame Padding="0" BackgroundColor="#5c5c5c" Margin="4,0,4,10" HasShadow="True">
+                <Frame Padding="0" BackgroundColor="#d6d6d6" Margin="4,4,4,4" >
+                    <Label Text="{Binding ElapsedTime}" Style="{StaticResource numericStyle}" />
+                </Frame>
+            </Frame>
+
+            <Grid ColumnDefinitions="50*, 50*" RowDefinitions="80" HorizontalOptions="FillAndExpand" Padding="0">
+                <Button
+                    Grid.Column="0"
+                    Command="{Binding StartCommand}"
+                    IsVisible="{Binding IsRunning,
+                                Converter={StaticResource IsNotEqualConverter},
+                                ConverterParameter={StaticResource IsTrue}}"
+                    Text="Start"
+                    BackgroundColor="Green"
+                    Style="{StaticResource startStopStyle}"/>
+
+                <Button
+                    Grid.Column="0"
+                    Command="{Binding LapCommand}"
+                    IsVisible="{Binding IsRunning}"
+                    Text="Lap"
+                    BackgroundColor="Green"
+                    Style="{StaticResource startStopStyle}"/>
+
+                <Button
+                    Grid.Column="1"
+                    Command="{Binding StopCommand}"
+                    IsVisible="{Binding IsRunning}"
+                    Text="Stop"
+                    BackgroundColor="Red"
+                    Style="{StaticResource startStopStyle}"/>
+
+                <Button
+                    Grid.Column="1"
+                    Command="{Binding ClearCommand}"
+                    IsVisible="{Binding IsRunning,
+                                Converter={StaticResource IsNotEqualConverter},
+                                ConverterParameter={StaticResource IsTrue}}"
+                    Text="Clear"
+                    BackgroundColor="Red"
+                    Style="{StaticResource startStopStyle}"/>
+            </Grid>
+
+            <CollectionView ItemsSource="{Binding LapTimes}" Header="{Binding .}">
+                <CollectionView.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="25*,50*,25*" IsVisible="{Binding HasLaps}" Padding="0">
+                            <Label Grid.Column="0" Text="Lap" Style="{StaticResource LapTimeHeaderStyle}"/>
+                            <Label Grid.Column="1" Text="Elapsed time" Style="{StaticResource LapTimeHeaderStyle}"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.HeaderTemplate>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="25*,50*,25*" Padding="0">
+                            <Label Grid.Column="0" Text="{Binding LapNumber}" Style="{StaticResource LapTimeStyle}"/>
+                            <Label Grid.Column="1" Text="{Binding ElapsedTime}" Style="{StaticResource LapTimeStyle}"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
