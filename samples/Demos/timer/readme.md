@@ -4,11 +4,18 @@ readme.md
 
 *   https://mallibone.com/post/dotnetmaui-countdown-button
 
+    *   https://github.com/mallibone/MauiUI2022ProgressButton
+
+        *   https://github.com/mallibone/MauiUI2022ProgressButton/archive/refs/heads/main.zip
+
 *   https://github.com/anotherlab/stopwatch-maui
+
+    *   https://github.com/anotherlab/stopwatch-maui/archive/refs/heads/main.zip
+
+    *   https://github.com/anotherlab/stopwatch-xf
 
 *   https://github.com/dotnet/maui/issues/5335
 
-*   https://github.com/anotherlab/stopwatch-xf
 
 *   https://support.syncfusion.com/kb/article/11950/how-to-design-a-circular-timer-using-net-maui-radial-gauge-sfradialgauge
 
