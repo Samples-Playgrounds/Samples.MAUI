@@ -33,7 +33,7 @@
 	<PropertyGroup>
 		<LangVersion>latest</LangVersion>
 	</PropertyGroup>
-	
+
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\appicon.svg" ForegroundFile="Resources\appiconfg.svg" Color="#512BD4" />
