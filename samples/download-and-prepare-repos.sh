@@ -266,7 +266,7 @@ echo "--------------------------------------------------------------------------
 
 echo "------------------------------------------------------------------------------------------------------"
 export FILE=master.zip
-export FILE_REMOTE_NAME=MauiSamples-main.zip
+export FILE_REMOTE_NAME=shiny-master.zip
 export FILENAME="${FILE%.*}"
 export URL=https://github.com/shinyorg/shiny/archive/refs/heads/$FILE
 export FOLDER=shinyorg-shiny-master/
@@ -305,3 +305,6 @@ echo "--------------------------------------------------------------------------
 
 
 
+https://github.com/dotnet-bluetooth-le/dotnet-bluetooth-le/archive/refs/heads/master.zip
+
+https://github.com/inthehand/32feet/archive/refs/heads/main.zip
