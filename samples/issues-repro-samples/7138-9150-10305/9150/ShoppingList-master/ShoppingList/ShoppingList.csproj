@@ -1,0 +1,174 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		 <TargetFrameworks>net6.0-ios;net6.0-android;</TargetFrameworks>
+    <!-- <TargetFrameworks>net6.0;net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>-->
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
+		
+    <OutputType>Exe</OutputType>
+		
+    <RootNamespace>ShoppingList</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+       
+		<!-- Display name -->
+		<ApplicationTitle>ShoppingList</ApplicationTitle>
+
+		<!-- App Identifier -->
+    <ApplicationId>dev.programmingwithchris.ShoppingList</ApplicationId>
+		<ApplicationIdGuid>C035DD89-2C0B-4F47-AF16-ACCD775A25F9</ApplicationIdGuid>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramlework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+    <ProvisioningType>automatic</ProvisioningType>
+    <CodesignProvision />
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+
+  <!--<PropertyGroup Condition="'$(TargetFramework)'=='net6.0-ios'">
+    <CodesignKey>Apple Development: Chris Cullins (4YGTGDMJ2A)</CodesignKey>
+    <CodesignProvision>VS: dev.programmingwithchris.ShoppingList Development</CodesignProvision>
+  </PropertyGroup>-->
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-ios|AnyCPU'">
+    <CodesignEntitlements />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-ios|AnyCPU'">
+    <CodesignEntitlements />
+  </PropertyGroup>
+
+
+  <!--<PropertyGroup Condition="$(TargetFramework) == 'net6.0'">
+    <DefineConstants>$(DefineConstants);NET6_TARGET</DefineConstants>
+  </PropertyGroup>-->
+
+  	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+
+		<!-- Splash Screen -->
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+		<MauiAsset Include="Resources\APIs\krogerapiconfig.json">
+		  <LogicalName>krogerapiconfig.json</LogicalName>
+		</MauiAsset>
+	</ItemGroup>
+
+  	<ItemGroup>
+  	  <Compile Remove="Tests\**" />
+  	  <EmbeddedResource Remove="Tests\**" />
+  	  <MauiCss Remove="Tests\**" />
+  	  <MauiXaml Remove="Tests\**" />
+  	  <None Remove="Tests\**" />
+  	  <MauiImage Remove="Resources\Images\check.png" />
+  	  <MauiImage Remove="Resources\Images\x.png" />
+  	  <None Remove="SQLiteNetExtensions" />
+  	  <None Remove="Microsoft.Data.Sqlite.Core" />
+      <None Remove="sqlite-net-pcl" />
+  	  <None Remove="Drawable\" />
+  	  <None Remove="Resources\APIs\krogerapiconfig.json" />
+  	  <None Remove="Controls\" />
+  	</ItemGroup>
+
+  	<ItemGroup>
+  	  <None Remove="Resources\Images\ellipsis_vertical_outline.svg" />
+  	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Diagnostics" Version="8.0.0" />
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.0-preview.7.22376.2" />
+	  <PackageReference Include="Microsoft.Maui.Graphics" Version="6.0.501" />
+	  <PackageReference Include="SkiaSharp.Extended.UI.Maui" Version="2.0.0-preview.59" />
+	  <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+	  <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="View\StoreFinder.xaml.cs">
+	    <DependentUpon>StoreFinder.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\SettingsView.xaml.cs">
+	    <DependentUpon>SettingsView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\UserListDataInput.xaml.cs">
+	    <DependentUpon>UserListDataInput.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="View\UserListDetails.xaml.cs">
+	    <DependentUpon>UserListDetails.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="View\StoreFinder.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\SettingsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\UserListDataInput.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\UserListDetails.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="View\MainPage %28copy%29.xaml">
+	    <SubType>Designer</SubType>
+	  </MauiXaml>
+	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="View\ArchivedListView.xaml">
+	    <SubType>Designer</SubType>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Resources\APIs\" />
+	  <Folder Include="Controls\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Resources\Images\check.png" />
+	  <EmbeddedResource Include="Resources\Images\plus_sign.png" />
+	  <EmbeddedResource Include="Resources\Images\undo.png" />
+	  <EmbeddedResource Include="Resources\Images\x.png" />
+	</ItemGroup>
+
+	<!--<ItemGroup Condition="'$(TargetFramework)' == 'net6.0-android'">
+	  <PackageReference Include="SQLitePCLRaw.lib.e_sqlite3.android">
+	    <Version>2.1.0</Version>
+	  </PackageReference>
+	  <PackageReference Include="SQLitePCLRaw.provider.e_sqlite3.android">
+	    <Version>1.1.14</Version>
+	  </PackageReference>
+	</ItemGroup>-->
+
+	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionShoppingListHideInfoBar="True" /></VisualStudio></ProjectExtensions>
+	
+   <!-- <PropertyGroup Condition="$(TargetFramework.Contains('-ios'))">
+		<RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
+		<CodesignKey>Apple Development: Created via API (T65FC7WCJW)</CodesignKey>
+		<CodesignProvision>ShoppingListDev</CodesignProvision>
+		<ArchiveOnBuild>true</ArchiveOnBuild>
+		<TcpPort>58181</TcpPort>
+	</PropertyGroup>-->
+</Project>

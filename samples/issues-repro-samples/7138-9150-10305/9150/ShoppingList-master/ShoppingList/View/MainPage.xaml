@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:ShoppingList.Model"
+             xmlns:viewmodel="clr-namespace:ShoppingList.ViewModels"
+             xmlns:skiasharp="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             xmlns:controls="clr-namespace:ShoppingList.Controls"
+             x:DataType="viewmodel:UserListViewModel"
+             Title="{Binding Title}"
+             x:Name="CurrentPage"
+             BackgroundColor="{DynamicResource Secondary}"
+             x:Class="ShoppingList.View.MainPage">
+
+    <Grid ColumnDefinitions="*,*"
+          ColumnSpacing="5"
+          RowDefinitions="*,Auto">
+
+        <CollectionView Grid.ColumnSpan="2"
+                        ItemsSource="{Binding UserLists}"
+                        SelectionMode="None">
+            <CollectionView.ItemTemplate >
+                <DataTemplate x:DataType="model:UserList">
+                    <Grid Padding="10">
+                        <SwipeView Grid.ColumnSpan="3">
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem  Text="Delete"
+                                            IconImageSource="delete"
+                                            BackgroundColor="{DynamicResource DarkAccent}"
+                                             Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserListViewModel}}, Path=DeleteItemCommand}"
+                                            CommandParameter="{Binding .}">
+                                    </SwipeItem>
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+                            <Frame  BackgroundColor="{DynamicResource Tertiary}">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer   CommandParameter="{Binding .}"
+                                                            Tapped="FrameTapped"/>
+
+                                    <!--Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserListViewModel}}, Path=GoToListItemsCommand}"/>-->
+
+
+                                    <!--<SwipeGestureRecognizer CommandParameter="{Binding .}"
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserListViewModel}}, Path=DeleteItemCommand}"
+                                                    Direction="Right"/>-->
+                                </Frame.GestureRecognizers>
+                                <VerticalStackLayout>
+                                    <Label Text="{Binding Name}"
+                                       FontSize="Medium"
+                                       TextColor="{DynamicResource Accent}"/>
+                                    <Label Text="{Binding Type}"
+                                       FontSize="Micro"
+                                       TextColor="{DynamicResource Accent}"
+                                       Margin="25,0,0,0"/>
+                                </VerticalStackLayout>
+                            </Frame>
+                        </SwipeView>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+
+        <skiasharp:SKLottieView x:Name="CartLottie"
+	                            WidthRequest="300"
+				                HeightRequest="300"
+                                Grid.Row="0"
+                                RepeatCount="0"
+                                RepeatMode="Restart"
+                                Opacity=".5"
+                                ZIndex="-1"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                VerticalOptions="End"
+                                HorizontalOptions="Center"
+				                Source="69114-shopping-cart.json"
+				                BackgroundColor="Transparent">
+        </skiasharp:SKLottieView>
+       
+
+
+            <controls:CircularButton  
+			            Grid.Row="1"
+			            Grid.Column="3"
+                        x:Name="NewItemButton"
+                        WidthRequest="75"
+                        HeightRequest="75"
+                        Margin="25,25,25,25"
+                        ButtonColor="{DynamicResource Tertiary}"
+                        BackgroundColor="Transparent"
+                        Image="plus_sign.png"
+                        VerticalOptions="End"
+                        HorizontalOptions="End"
+                        IsVisible="True"
+			            >
+                <GraphicsView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NewListButtonPressed"/>
+
+                </GraphicsView.GestureRecognizers>
+            </controls:CircularButton>
+        
+
+        <!--<Button Text="Create New List"
+                Command="{Binding CreateUserListCommand}"
+                IsEnabled="{Binding IsNotBusy}"
+                BackgroundColor="{DynamicResource Primary}"
+                Grid.Row="1"
+                Grid.Column="3"
+                Margin="8"/>-->
+        
+        <ActivityIndicator IsVisible="{Binding IsBusy}"
+                           IsRunning="{Binding IsBusy}"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2"/>
+
+    </Grid>
+
+</ContentPage>
