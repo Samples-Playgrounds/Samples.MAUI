@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppMAUI.FromTemplate.ContentViewWebView"
+    VerticalOptions="FillAndExpand"
+    HorizontalOptions="FillAndExpand" 
+    >
+    <ScrollView
+        VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand"
+        >
+        <VerticalStackLayout
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand" 
+            >
+            <WebView
+                x:Name="web_view"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand" 
+                Source="https://docs.google.com/gview?embedded=true&amp;url=https://www.guycribb.com/userfiles/documents/INsight.pdf"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentView>
+

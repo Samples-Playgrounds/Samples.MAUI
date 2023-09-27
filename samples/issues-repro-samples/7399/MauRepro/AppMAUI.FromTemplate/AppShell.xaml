@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AppMAUI.FromTemplate.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AppMAUI.FromTemplate"
+    Shell.FlyoutBehavior="Disabled"
+    xmlns:controls="clr-namespace:AppMAUI.FromTemplate"
+    >
+
+    <TabBar>
+        <Tab
+            Title="Url"
+            >
+            <ContentPage
+                Title="Url"
+                >
+                <StackLayout>
+                    <Label Text="{Binding Source={x:Reference picker}, Path=SelectedItem}" />
+                    <Picker
+                        x:Name="picker"
+                        Title="Select a URL"
+                        SelectedIndexChanged="picker_SelectedIndexChanged"
+                        >
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>
+                                    https://docs.microsoft.com/dotnet/maui
+                                </x:String>
+                                <x:String>
+                                    https://orimi.com/pdf-test.pdf
+                                </x:String>
+                                <x:String>
+                                    https://w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf
+                                </x:String>
+                                <x:String>
+                                    https://www.guycribb.com//userfiles/documents/INsight.pdf
+                                </x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </StackLayout>
+            </ContentPage>
+        </Tab>
+        <Tab
+            Title="WebView"
+            >
+            <ContentPage
+                Title="WebView"
+                >
+                <controls:ContentViewWebView
+                    x:Name="content_view_web_view"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand" 
+                    />
+            </ContentPage>
+        </Tab>
+        <Tab
+            Title="WebView PDF"
+            >
+            <ContentPage
+                Title="WebView PDF"
+                >
+                <controls:ContentViewWebView
+                    x:Name="content_view_web_view_pdf"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand" 
+                    />
+            </ContentPage>
+        </Tab>
+        <Tab
+            Title="WebView Hybrid"
+            >
+            <ContentPage
+                Title="WebView Hybrid"
+                >
+                <controls:ContentViewWebView
+                    x:Name="content_view_web_view_pdf_hybrid"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    />
+            </ContentPage>
+        </Tab>
+    </TabBar>
+
+    <!--
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:PageWebViews}"
+        Route="PageWebView"
+        />
+    -->
+    <!--
+        Route="MainPage"
+    -->
+</Shell>
+
