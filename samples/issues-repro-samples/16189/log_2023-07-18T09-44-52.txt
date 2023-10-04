@@ -1,0 +1,480 @@
+--------- beginning of main
+07-18 09:44:20.268   337   393 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.15ms>
+07-18 09:44:20.269   337   393 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 10) <0.05ms>
+07-18 09:44:20.269   337   393 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.15ms>
+07-18 09:44:20.270   337   393 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.06ms>
+07-18 09:44:21.694  9797  9797 D monodroid: typemap: Java type 'android/view/MotionEvent' corresponds to managed type 'Android.Views.MotionEvent, Mono.Android'
+07-18 09:44:21.697  9797  9797 D Mono    : Running class .cctor for Android.Views.MotionEvent from '/data/data/com.companyname.mauiapp1/files/.__override__/Mono.Android.dll'
+07-18 09:44:21.698  9797  9797 D Mono    : Running class .cctor for Android.Views.InputEvent from '/data/data/com.companyname.mauiapp1/files/.__override__/Mono.Android.dll'
+07-18 09:44:21.843  9797  9816 D EGL_emulation: app_time_stats: avg=4378.82ms min=15.31ms max=74176.85ms count=17
+07-18 09:44:21.892  9797  9797 D Mono    : Running class .cctor for AndroidX.AppCompat.App.AlertDialog/Builder from '/data/data/com.companyname.mauiapp1/files/.__override__/Xamarin.AndroidX.AppCompat.dll'
+07-18 09:44:21.906  9797  9797 D monodroid: typemap: Java type 'androidx/appcompat/app/AlertDialog' corresponds to managed type 'AndroidX.AppCompat.App.AlertDialog, Xamarin.AndroidX.AppCompat'
+07-18 09:44:21.907  9797  9797 D Mono    : Running class .cctor for AndroidX.AppCompat.App.AlertDialog from '/data/data/com.companyname.mauiapp1/files/.__override__/Xamarin.AndroidX.AppCompat.dll'
+07-18 09:44:21.907  9797  9797 D Mono    : Running class .cctor for AndroidX.AppCompat.App.AppCompatDialog from '/data/data/com.companyname.mauiapp1/files/.__override__/Xamarin.AndroidX.AppCompat.dll'
+07-18 09:44:21.907  9797  9797 D Mono    : Running class .cctor for AndroidX.Activity.ComponentDialog from '/data/data/com.companyname.mauiapp1/files/.__override__/Xamarin.AndroidX.Activity.dll'
+07-18 09:44:21.908  9797  9797 D Mono    : Running class .cctor for Android.App.Dialog from '/data/data/com.companyname.mauiapp1/files/.__override__/Mono.Android.dll'
+07-18 09:44:21.909  9797  9797 I monodroid-assembly: typemap: unable to find mapping to a managed type from Java type 'com/android/internal/policy/PhoneWindow'
+07-18 09:44:21.913  9797  9797 W monodroid-assembly: typemap: called from
+07-18 09:44:21.913  9797  9797 W monodroid-assembly: at Java.Interop.TypeManager.GetJavaToManagedType(String class_name)
+07-18 09:44:21.914  9797  9797 W monodroid-assembly:    at Java.Interop.TypeManager.CreateInstance(IntPtr handle, JniHandleOwnership transfer, Type targetType)
+07-18 09:44:21.914  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject(IntPtr handle, JniHandleOwnership transfer, Type type)
+07-18 09:44:21.914  9797  9797 W monodroid-assembly:    at Java.Lang.Object._GetObject[Window](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:21.914  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject[Window](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:21.914  9797  9797 W monodroid-assembly:    at Android.App.Dialog.get_Window()
+07-18 09:44:21.915  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.FlexibleAlertDialog.get_Window()
+07-18 09:44:21.915  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.OnAlertRequested(IView sender, AlertArguments arguments)
+07-18 09:44:21.915  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.InternalInvoke(RuntimeMethodInfo , Object , IntPtr* , Exception& )
+07-18 09:44:21.915  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.InterpretedInvoke(Object obj, IntPtr* args)
+07-18 09:44:21.915  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+07-18 09:44:21.915  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+07-18 09:44:21.915  9797  9797 W monodroid-assembly:    at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+07-18 09:44:21.916  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Subscription.InvokeCallback(Object sender, Object args)
+07-18 09:44:21.916  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.InnerSend(String message, Type senderType, Type argType, Object sender, Object args)
+07-18 09:44:21.916  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Microsoft.Maui.Controls.IMessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:21.916  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:21.916  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String accept, String cancel, FlowDirection flowDirection)
+07-18 09:44:21.917  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String cancel)
+07-18 09:44:21.917  9797  9797 W monodroid-assembly:    at MauiApp1.MainPage.ListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
+07-18 09:44:21.917  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.OnSelectedItemChanged(BindableObject bindable, Object oldValue, Object newValue)
+07-18 09:44:21.917  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueActual(BindableProperty property, BindablePropertyContext context, Object value, Boolean currentlyApplying, SetValueFlags attributes, Boolean silent)
+07-18 09:44:21.917  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes, SetValuePrivateFlags privateAttributes)
+07-18 09:44:21.918  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes)
+07-18 09:44:21.918  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 groupIndex, Int32 inGroupIndex, Cell cell)
+07-18 09:44:21.918  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 index, Cell cell)
+07-18 09:44:21.918  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.ListViewAdapter.HandleItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:21.918  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.CellAdapter.OnItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:21.919  9797  9797 W monodroid-assembly:    at Android.Widget.AdapterView.IOnItemClickListenerInvoker.n_OnItemClick_Landroid_widget_AdapterView_Landroid_view_View_IJ(IntPtr jnienv, IntPtr native__this, IntPtr native_parent, IntPtr native_view, Int32 position, Int64 id)
+07-18 09:44:21.919  9797  9797 W monodroid-assembly:    at Android.Runtime.DynamicMethodNameCounter.5(IntPtr , IntPtr , IntPtr , IntPtr , Int32 , Int64 )
+07-18 09:44:21.927  9797  9797 I monodroid-assembly: typemap: unable to find mapping to a managed type from Java type 'com/android/internal/policy/DecorView'
+07-18 09:44:21.929  9797  9797 W monodroid-assembly: typemap: called from
+07-18 09:44:21.930  9797  9797 W monodroid-assembly: at Java.Interop.TypeManager.GetJavaToManagedType(String class_name)
+07-18 09:44:21.930  9797  9797 W monodroid-assembly:    at Java.Interop.TypeManager.CreateInstance(IntPtr handle, JniHandleOwnership transfer, Type targetType)
+07-18 09:44:21.930  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject(IntPtr handle, JniHandleOwnership transfer, Type type)
+07-18 09:44:21.931  9797  9797 W monodroid-assembly:    at Java.Lang.Object._GetObject[View](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:21.931  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject[View](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:21.931  9797  9797 W monodroid-assembly:    at Android.Views.WindowInvoker.get_DecorView()
+07-18 09:44:21.932  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.OnAlertRequested(IView sender, AlertArguments arguments)
+07-18 09:44:21.932  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.InternalInvoke(RuntimeMethodInfo , Object , IntPtr* , Exception& )
+07-18 09:44:21.932  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.InterpretedInvoke(Object obj, IntPtr* args)
+07-18 09:44:21.933  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+07-18 09:44:21.933  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+07-18 09:44:21.933  9797  9797 W monodroid-assembly:    at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+07-18 09:44:21.933  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Subscription.InvokeCallback(Object sender, Object args)
+07-18 09:44:21.934  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.InnerSend(String message, Type senderType, Type argType, Object sender, Object args)
+07-18 09:44:21.934  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Microsoft.Maui.Controls.IMessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:21.934  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:21.934  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String accept, String cancel, FlowDirection flowDirection)
+07-18 09:44:21.935  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String cancel)
+07-18 09:44:21.935  9797  9797 W monodroid-assembly:    at MauiApp1.MainPage.ListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
+07-18 09:44:21.935  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.OnSelectedItemChanged(BindableObject bindable, Object oldValue, Object newValue)
+07-18 09:44:21.936  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueActual(BindableProperty property, BindablePropertyContext context, Object value, Boolean currentlyApplying, SetValueFlags attributes, Boolean silent)
+07-18 09:44:21.936  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes, SetValuePrivateFlags privateAttributes)
+07-18 09:44:21.936  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes)
+07-18 09:44:21.936  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 groupIndex, Int32 inGroupIndex, Cell cell)
+07-18 09:44:21.937  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 index, Cell cell)
+07-18 09:44:21.937  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.ListViewAdapter.HandleItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:21.937  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.CellAdapter.OnItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:21.937  9797  9797 W monodroid-assembly:    at Android.Widget.AdapterView.IOnItemClickListenerInvoker.n_OnItemClick_Landroid_widget_AdapterView_Landroid_view_View_IJ(IntPtr jnienv, IntPtr native__this, IntPtr native_parent, IntPtr native_view, Int32 position, Int64 id)
+07-18 09:44:21.938  9797  9797 W monodroid-assembly:    at Android.Runtime.DynamicMethodNameCounter.5(IntPtr , IntPtr , IntPtr , IntPtr , Int32 , Int64 )
+07-18 09:44:21.940  9797  9797 D Mono    : Request to load Xamarin.AndroidX.AppCompat in alc 0x71fd3d65c510
+07-18 09:44:21.941  9797  9797 D Mono    : Assembly already loaded in the active ALC: 'Xamarin.AndroidX.AppCompat'.
+07-18 09:44:21.942  9797  9797 D Mono    : Request to load Mono.Android in alc 0x71fd3d65c510
+07-18 09:44:21.942  9797  9797 D Mono    : Assembly already loaded in the active ALC: 'Mono.Android'.
+07-18 09:44:21.943  9797  9797 D Mono    : Running class .cctor for Android.Content.IDialogInterfaceOnClickListenerInvoker from '/data/data/com.companyname.mauiapp1/files/.__override__/Mono.Android.dll'
+07-18 09:44:21.946  9797  9797 D Mono    : Request to load Mono.Android in alc 0x71fd3d65c510
+07-18 09:44:21.946  9797  9797 D Mono    : Assembly already loaded in the active ALC: 'Mono.Android'.
+07-18 09:44:21.946  9797  9797 D Mono    : Request to load Mono.Android in alc 0x71fd3d65c510
+07-18 09:44:21.947  9797  9797 D Mono    : Assembly already loaded in the active ALC: 'Mono.Android'.
+07-18 09:44:21.947  9797  9797 D Mono    : Running class .cctor for Android.Content.IDialogInterfaceOnCancelListenerInvoker from '/data/data/com.companyname.mauiapp1/files/.__override__/Mono.Android.dll'
+--------- beginning of system
+07-18 09:44:22.009   546  2794 D CompatibilityChangeReporter: Compat change id reported: 168419799; UID 10151; state: DISABLED
+07-18 09:44:22.019  9797  9797 D monodroid: typemap: Java type 'com/google/android/material/textview/MaterialTextView' corresponds to managed type 'Google.Android.Material.TextView.MaterialTextView, Xamarin.Google.Android.Material'
+07-18 09:44:22.020  9797  9797 D Mono    : Running class .cctor for Google.Android.Material.TextView.MaterialTextView from '/data/data/com.companyname.mauiapp1/files/.__override__/Xamarin.Google.Android.Material.dll'
+07-18 09:44:22.021  9797  9797 D monodroid: typemap: Java type 'com/google/android/material/button/MaterialButton' corresponds to managed type 'Google.Android.Material.Button.MaterialButton, Xamarin.Google.Android.Material'
+07-18 09:44:22.023  9797  9797 D monodroid: typemap: Java type 'androidx/appcompat/widget/ButtonBarLayout' corresponds to managed type 'AndroidX.AppCompat.Widget.ButtonBarLayout, Xamarin.AndroidX.AppCompat'
+07-18 09:44:22.024  9797  9797 D Mono    : Running class .cctor for AndroidX.AppCompat.Widget.ButtonBarLayout from '/data/data/com.companyname.mauiapp1/files/.__override__/Xamarin.AndroidX.AppCompat.dll'
+07-18 09:44:22.096   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3300000 0x3f3630000]
+07-18 09:44:22.102   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3630000 0x3f3960000]
+07-18 09:44:22.104   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3960000 0x3f3c90000]
+07-18 09:44:22.551   546  2794 W InputManager-JNI: Input channel object '28a1751 Info (client)' was disposed without first being removed with the input manager!
+07-18 09:44:22.557  9797  9797 W InputEventReceiver: Attempted to finish an input event but the input event receiver has already been disposed.
+07-18 09:44:22.584  1295  1295 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+07-18 09:44:22.585  1295  1295 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+07-18 09:44:22.585  1295  1295 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+07-18 09:44:23.631  9797  9816 D EGL_emulation: app_time_stats: avg=27.81ms min=1.80ms max=914.78ms count=51
+07-18 09:44:24.056  9797  9797 I monodroid-assembly: typemap: unable to find mapping to a managed type from Java type 'com/android/internal/policy/PhoneWindow'
+07-18 09:44:24.057  9797  9797 W monodroid-assembly: typemap: called from
+07-18 09:44:24.057  9797  9797 W monodroid-assembly: at Java.Interop.TypeManager.GetJavaToManagedType(String class_name)
+07-18 09:44:24.058  9797  9797 W monodroid-assembly:    at Java.Interop.TypeManager.CreateInstance(IntPtr handle, JniHandleOwnership transfer, Type targetType)
+07-18 09:44:24.058  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject(IntPtr handle, JniHandleOwnership transfer, Type type)
+07-18 09:44:24.058  9797  9797 W monodroid-assembly:    at Java.Lang.Object._GetObject[Window](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:24.059  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject[Window](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:24.059  9797  9797 W monodroid-assembly:    at Android.App.Dialog.get_Window()
+07-18 09:44:24.059  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.FlexibleAlertDialog.get_Window()
+07-18 09:44:24.059  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.OnAlertRequested(IView sender, AlertArguments arguments)
+07-18 09:44:24.059  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.InternalInvoke(RuntimeMethodInfo , Object , IntPtr* , Exception& )
+07-18 09:44:24.060  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.InterpretedInvoke(Object obj, IntPtr* args)
+07-18 09:44:24.060  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+07-18 09:44:24.060  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+07-18 09:44:24.060  9797  9797 W monodroid-assembly:    at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+07-18 09:44:24.060  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Subscription.InvokeCallback(Object sender, Object args)
+07-18 09:44:24.061  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.InnerSend(String message, Type senderType, Type argType, Object sender, Object args)
+07-18 09:44:24.061  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Microsoft.Maui.Controls.IMessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:24.061  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:24.062  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String accept, String cancel, FlowDirection flowDirection)
+07-18 09:44:24.063  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String cancel)
+07-18 09:44:24.063  9797  9797 W monodroid-assembly:    at MauiApp1.MainPage.ListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
+07-18 09:44:24.064  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.OnSelectedItemChanged(BindableObject bindable, Object oldValue, Object newValue)
+07-18 09:44:24.064  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueActual(BindableProperty property, BindablePropertyContext context, Object value, Boolean currentlyApplying, SetValueFlags attributes, Boolean silent)
+07-18 09:44:24.066  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes, SetValuePrivateFlags privateAttributes)
+07-18 09:44:24.066  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes)
+07-18 09:44:24.066  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 groupIndex, Int32 inGroupIndex, Cell cell)
+07-18 09:44:24.066  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 index, Cell cell)
+07-18 09:44:24.066  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.ListViewAdapter.HandleItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:24.066  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.CellAdapter.OnItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:24.067  9797  9797 W monodroid-assembly:    at Android.Widget.AdapterView.IOnItemClickListenerInvoker.n_OnItemClick_Landroid_widget_AdapterView_Landroid_view_View_IJ(IntPtr jnienv, IntPtr native__this, IntPtr native_parent, IntPtr native_view, Int32 position, Int64 id)
+07-18 09:44:24.067  9797  9797 W monodroid-assembly:    at Android.Runtime.DynamicMethodNameCounter.5(IntPtr , IntPtr , IntPtr , IntPtr , Int32 , Int64 )
+07-18 09:44:24.073  9797  9797 I monodroid-assembly: typemap: unable to find mapping to a managed type from Java type 'com/android/internal/policy/DecorView'
+07-18 09:44:24.075  9797  9797 W monodroid-assembly: typemap: called from
+07-18 09:44:24.075  9797  9797 W monodroid-assembly: at Java.Interop.TypeManager.GetJavaToManagedType(String class_name)
+07-18 09:44:24.075  9797  9797 W monodroid-assembly:    at Java.Interop.TypeManager.CreateInstance(IntPtr handle, JniHandleOwnership transfer, Type targetType)
+07-18 09:44:24.076  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject(IntPtr handle, JniHandleOwnership transfer, Type type)
+07-18 09:44:24.076  9797  9797 W monodroid-assembly:    at Java.Lang.Object._GetObject[View](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:24.076  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject[View](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:24.077  9797  9797 W monodroid-assembly:    at Android.Views.WindowInvoker.get_DecorView()
+07-18 09:44:24.077  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.OnAlertRequested(IView sender, AlertArguments arguments)
+07-18 09:44:24.078  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.InternalInvoke(RuntimeMethodInfo , Object , IntPtr* , Exception& )
+07-18 09:44:24.078  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.InterpretedInvoke(Object obj, IntPtr* args)
+07-18 09:44:24.079  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+07-18 09:44:24.079  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+07-18 09:44:24.079  9797  9797 W monodroid-assembly:    at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+07-18 09:44:24.079  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Subscription.InvokeCallback(Object sender, Object args)
+07-18 09:44:24.079  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.InnerSend(String message, Type senderType, Type argType, Object sender, Object args)
+07-18 09:44:24.080  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Microsoft.Maui.Controls.IMessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:24.080  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:24.080  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String accept, String cancel, FlowDirection flowDirection)
+07-18 09:44:24.080  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String cancel)
+07-18 09:44:24.080  9797  9797 W monodroid-assembly:    at MauiApp1.MainPage.ListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
+07-18 09:44:24.081  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.OnSelectedItemChanged(BindableObject bindable, Object oldValue, Object newValue)
+07-18 09:44:24.082   387   518 D AudioFlinger: mixer(0x7b3a07301a70) throttle end: throttle time(44)
+07-18 09:44:24.081  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueActual(BindableProperty property, BindablePropertyContext context, Object value, Boolean currentlyApplying, SetValueFlags attributes, Boolean silent)
+07-18 09:44:24.082  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes, SetValuePrivateFlags privateAttributes)
+07-18 09:44:24.082  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes)
+07-18 09:44:24.082  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 groupIndex, Int32 inGroupIndex, Cell cell)
+07-18 09:44:24.083  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 index, Cell cell)
+07-18 09:44:24.083  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.ListViewAdapter.HandleItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:24.083  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.CellAdapter.OnItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:24.083  9797  9797 W monodroid-assembly:    at Android.Widget.AdapterView.IOnItemClickListenerInvoker.n_OnItemClick_Landroid_widget_AdapterView_Landroid_view_View_IJ(IntPtr jnienv, IntPtr native__this, IntPtr native_parent, IntPtr native_view, Int32 position, Int64 id)
+07-18 09:44:24.083  9797  9797 W monodroid-assembly:    at Android.Runtime.DynamicMethodNameCounter.5(IntPtr , IntPtr , IntPtr , IntPtr , Int32 , Int64 )
+07-18 09:44:24.169   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3300000 0x3f3630000]
+07-18 09:44:24.172   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3630000 0x3f3960000]
+07-18 09:44:24.174   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3960000 0x3f3c90000]
+07-18 09:44:24.634  9797  9816 D EGL_emulation: app_time_stats: avg=18.16ms min=7.17ms max=99.03ms count=55
+07-18 09:44:25.420  9797  9816 D EGL_emulation: app_time_stats: avg=136.64ms min=11.30ms max=1104.15ms count=9
+07-18 09:44:25.449  9797  9816 D OpenGLRenderer: endAllActiveAnimators on 0x71fdad6d9200 (RippleDrawable) with handle 0x71fcbde90ec0
+07-18 09:44:25.451   546  2794 W InputManager-JNI: Input channel object '46909bb Info (client)' was disposed without first being removed with the input manager!
+07-18 09:44:25.484  1295  1295 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+07-18 09:44:25.485  1295  1295 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+07-18 09:44:25.485  1295  1295 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+07-18 09:44:25.748  9797  9816 D EGL_emulation: app_time_stats: avg=65.44ms min=15.33ms max=616.85ms count=17
+07-18 09:44:26.751  9797  9816 D EGL_emulation: app_time_stats: avg=19.18ms min=14.02ms max=149.38ms count=52
+07-18 09:44:26.853  9797  9797 I monodroid-assembly: typemap: unable to find mapping to a managed type from Java type 'com/android/internal/policy/PhoneWindow'
+07-18 09:44:26.855  9797  9797 W monodroid-assembly: typemap: called from
+07-18 09:44:26.855  9797  9797 W monodroid-assembly: at Java.Interop.TypeManager.GetJavaToManagedType(String class_name)
+07-18 09:44:26.855  9797  9797 W monodroid-assembly:    at Java.Interop.TypeManager.CreateInstance(IntPtr handle, JniHandleOwnership transfer, Type targetType)
+07-18 09:44:26.855  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject(IntPtr handle, JniHandleOwnership transfer, Type type)
+07-18 09:44:26.856  9797  9797 W monodroid-assembly:    at Java.Lang.Object._GetObject[Window](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:26.856  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject[Window](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:26.856  9797  9797 W monodroid-assembly:    at Android.App.Dialog.get_Window()
+07-18 09:44:26.857  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.FlexibleAlertDialog.get_Window()
+07-18 09:44:26.857  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.OnAlertRequested(IView sender, AlertArguments arguments)
+07-18 09:44:26.857  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.InternalInvoke(RuntimeMethodInfo , Object , IntPtr* , Exception& )
+07-18 09:44:26.857  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.InterpretedInvoke(Object obj, IntPtr* args)
+07-18 09:44:26.857  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+07-18 09:44:26.858  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+07-18 09:44:26.858  9797  9797 W monodroid-assembly:    at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+07-18 09:44:26.858  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Subscription.InvokeCallback(Object sender, Object args)
+07-18 09:44:26.859  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.InnerSend(String message, Type senderType, Type argType, Object sender, Object args)
+07-18 09:44:26.859  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Microsoft.Maui.Controls.IMessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:26.859  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:26.859  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String accept, String cancel, FlowDirection flowDirection)
+07-18 09:44:26.859  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String cancel)
+07-18 09:44:26.860  9797  9797 W monodroid-assembly:    at MauiApp1.MainPage.ListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
+07-18 09:44:26.860  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.OnSelectedItemChanged(BindableObject bindable, Object oldValue, Object newValue)
+07-18 09:44:26.860  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueActual(BindableProperty property, BindablePropertyContext context, Object value, Boolean currentlyApplying, SetValueFlags attributes, Boolean silent)
+07-18 09:44:26.860  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes, SetValuePrivateFlags privateAttributes)
+07-18 09:44:26.860  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes)
+07-18 09:44:26.861  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 groupIndex, Int32 inGroupIndex, Cell cell)
+07-18 09:44:26.861  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 index, Cell cell)
+07-18 09:44:26.861  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.ListViewAdapter.HandleItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:26.861  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.CellAdapter.OnItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:26.861  9797  9797 W monodroid-assembly:    at Android.Widget.AdapterView.IOnItemClickListenerInvoker.n_OnItemClick_Landroid_widget_AdapterView_Landroid_view_View_IJ(IntPtr jnienv, IntPtr native__this, IntPtr native_parent, IntPtr native_view, Int32 position, Int64 id)
+07-18 09:44:26.862  9797  9797 W monodroid-assembly:    at Android.Runtime.DynamicMethodNameCounter.5(IntPtr , IntPtr , IntPtr , IntPtr , Int32 , Int64 )
+07-18 09:44:26.869  9797  9797 I monodroid-assembly: typemap: unable to find mapping to a managed type from Java type 'com/android/internal/policy/DecorView'
+07-18 09:44:26.870  9797  9797 W monodroid-assembly: typemap: called from
+07-18 09:44:26.871  9797  9797 W monodroid-assembly: at Java.Interop.TypeManager.GetJavaToManagedType(String class_name)
+07-18 09:44:26.871  9797  9797 W monodroid-assembly:    at Java.Interop.TypeManager.CreateInstance(IntPtr handle, JniHandleOwnership transfer, Type targetType)
+07-18 09:44:26.871  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject(IntPtr handle, JniHandleOwnership transfer, Type type)
+07-18 09:44:26.871  9797  9797 W monodroid-assembly:    at Java.Lang.Object._GetObject[View](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:26.872  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject[View](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:26.872  9797  9797 W monodroid-assembly:    at Android.Views.WindowInvoker.get_DecorView()
+07-18 09:44:26.872  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.OnAlertRequested(IView sender, AlertArguments arguments)
+07-18 09:44:26.872  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.InternalInvoke(RuntimeMethodInfo , Object , IntPtr* , Exception& )
+07-18 09:44:26.873  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.InterpretedInvoke(Object obj, IntPtr* args)
+07-18 09:44:26.873  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+07-18 09:44:26.873  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+07-18 09:44:26.874  9797  9797 W monodroid-assembly:    at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+07-18 09:44:26.874  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Subscription.InvokeCallback(Object sender, Object args)
+07-18 09:44:26.874  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.InnerSend(String message, Type senderType, Type argType, Object sender, Object args)
+07-18 09:44:26.874  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Microsoft.Maui.Controls.IMessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:26.875  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:26.875  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String accept, String cancel, FlowDirection flowDirection)
+07-18 09:44:26.875  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String cancel)
+07-18 09:44:26.875  9797  9797 W monodroid-assembly:    at MauiApp1.MainPage.ListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
+07-18 09:44:26.875  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.OnSelectedItemChanged(BindableObject bindable, Object oldValue, Object newValue)
+07-18 09:44:26.876  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueActual(BindableProperty property, BindablePropertyContext context, Object value, Boolean currentlyApplying, SetValueFlags attributes, Boolean silent)
+07-18 09:44:26.876  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes, SetValuePrivateFlags privateAttributes)
+07-18 09:44:26.876  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes)
+07-18 09:44:26.876  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 groupIndex, Int32 inGroupIndex, Cell cell)
+07-18 09:44:26.876  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 index, Cell cell)
+07-18 09:44:26.877  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.ListViewAdapter.HandleItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:26.877  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.CellAdapter.OnItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:26.877  9797  9797 W monodroid-assembly:    at Android.Widget.AdapterView.IOnItemClickListenerInvoker.n_OnItemClick_Landroid_widget_AdapterView_Landroid_view_View_IJ(IntPtr jnienv, IntPtr native__this, IntPtr native_parent, IntPtr native_view, Int32 position, Int64 id)
+07-18 09:44:26.877  9797  9797 W monodroid-assembly:    at Android.Runtime.DynamicMethodNameCounter.5(IntPtr , IntPtr , IntPtr , IntPtr , Int32 , Int64 )
+07-18 09:44:26.959   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3300000 0x3f3630000]
+07-18 09:44:26.960   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3630000 0x3f3960000]
+07-18 09:44:26.963   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3960000 0x3f3c90000]
+07-18 09:44:28.102  9797  9816 D EGL_emulation: app_time_stats: avg=112.44ms min=10.95ms max=985.82ms count=10
+07-18 09:44:28.123  9797  9816 D OpenGLRenderer: endAllActiveAnimators on 0x71fdad6f7b40 (RippleDrawable) with handle 0x71fcbde96020
+07-18 09:44:28.124   546   800 W InputManager-JNI: Input channel object 'dd21c7f Info (client)' was disposed without first being removed with the input manager!
+07-18 09:44:28.167  1295  1295 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+07-18 09:44:28.167  1295  1295 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+07-18 09:44:28.168  1295  1295 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+07-18 09:44:28.189  9797  9816 D EGL_emulation: app_time_stats: avg=24.73ms min=13.77ms max=490.19ms count=58
+07-18 09:44:28.972  9797  9797 I monodroid-assembly: typemap: unable to find mapping to a managed type from Java type 'com/android/internal/policy/PhoneWindow'
+07-18 09:44:28.973  9797  9797 W monodroid-assembly: typemap: called from
+07-18 09:44:28.974  9797  9797 W monodroid-assembly: at Java.Interop.TypeManager.GetJavaToManagedType(String class_name)
+07-18 09:44:28.974  9797  9797 W monodroid-assembly:    at Java.Interop.TypeManager.CreateInstance(IntPtr handle, JniHandleOwnership transfer, Type targetType)
+07-18 09:44:28.974  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject(IntPtr handle, JniHandleOwnership transfer, Type type)
+07-18 09:44:28.974  9797  9797 W monodroid-assembly:    at Java.Lang.Object._GetObject[Window](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:28.974  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject[Window](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:28.975  9797  9797 W monodroid-assembly:    at Android.App.Dialog.get_Window()
+07-18 09:44:28.975  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.FlexibleAlertDialog.get_Window()
+07-18 09:44:28.975  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.OnAlertRequested(IView sender, AlertArguments arguments)
+07-18 09:44:28.975  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.InternalInvoke(RuntimeMethodInfo , Object , IntPtr* , Exception& )
+07-18 09:44:28.976  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.InterpretedInvoke(Object obj, IntPtr* args)
+07-18 09:44:28.976  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+07-18 09:44:28.976  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+07-18 09:44:28.976  9797  9797 W monodroid-assembly:    at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+07-18 09:44:28.976  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Subscription.InvokeCallback(Object sender, Object args)
+07-18 09:44:28.976  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.InnerSend(String message, Type senderType, Type argType, Object sender, Object args)
+07-18 09:44:28.976  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Microsoft.Maui.Controls.IMessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:28.977  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:28.977  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String accept, String cancel, FlowDirection flowDirection)
+07-18 09:44:28.978  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String cancel)
+07-18 09:44:28.978  9797  9797 W monodroid-assembly:    at MauiApp1.MainPage.ListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
+07-18 09:44:28.979  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.OnSelectedItemChanged(BindableObject bindable, Object oldValue, Object newValue)
+07-18 09:44:28.979  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueActual(BindableProperty property, BindablePropertyContext context, Object value, Boolean currentlyApplying, SetValueFlags attributes, Boolean silent)
+07-18 09:44:28.979  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes, SetValuePrivateFlags privateAttributes)
+07-18 09:44:28.980  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes)
+07-18 09:44:28.981  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 groupIndex, Int32 inGroupIndex, Cell cell)
+07-18 09:44:28.981  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 index, Cell cell)
+07-18 09:44:28.981  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.ListViewAdapter.HandleItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:28.981  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.CellAdapter.OnItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:28.981  9797  9797 W monodroid-assembly:    at Android.Widget.AdapterView.IOnItemClickListenerInvoker.n_OnItemClick_Landroid_widget_AdapterView_Landroid_view_View_IJ(IntPtr jnienv, IntPtr native__this, IntPtr native_parent, IntPtr native_view, Int32 position, Int64 id)
+07-18 09:44:28.981  9797  9797 W monodroid-assembly:    at Android.Runtime.DynamicMethodNameCounter.5(IntPtr , IntPtr , IntPtr , IntPtr , Int32 , Int64 )
+07-18 09:44:28.988  9797  9797 I monodroid-assembly: typemap: unable to find mapping to a managed type from Java type 'com/android/internal/policy/DecorView'
+07-18 09:44:28.989  9797  9797 W monodroid-assembly: typemap: called from
+07-18 09:44:28.989  9797  9797 W monodroid-assembly: at Java.Interop.TypeManager.GetJavaToManagedType(String class_name)
+07-18 09:44:28.989  9797  9797 W monodroid-assembly:    at Java.Interop.TypeManager.CreateInstance(IntPtr handle, JniHandleOwnership transfer, Type targetType)
+07-18 09:44:28.990  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject(IntPtr handle, JniHandleOwnership transfer, Type type)
+07-18 09:44:28.990  9797  9797 W monodroid-assembly:    at Java.Lang.Object._GetObject[View](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:28.990  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject[View](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:28.990  9797  9797 W monodroid-assembly:    at Android.Views.WindowInvoker.get_DecorView()
+07-18 09:44:28.990  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.OnAlertRequested(IView sender, AlertArguments arguments)
+07-18 09:44:28.991  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.InternalInvoke(RuntimeMethodInfo , Object , IntPtr* , Exception& )
+07-18 09:44:28.991  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.InterpretedInvoke(Object obj, IntPtr* args)
+07-18 09:44:28.991  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+07-18 09:44:28.991  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+07-18 09:44:28.991  9797  9797 W monodroid-assembly:    at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+07-18 09:44:28.991  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Subscription.InvokeCallback(Object sender, Object args)
+07-18 09:44:28.992  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.InnerSend(String message, Type senderType, Type argType, Object sender, Object args)
+07-18 09:44:28.992  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Microsoft.Maui.Controls.IMessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:28.992  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:28.992  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String accept, String cancel, FlowDirection flowDirection)
+07-18 09:44:28.992  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String cancel)
+07-18 09:44:28.992  9797  9797 W monodroid-assembly:    at MauiApp1.MainPage.ListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
+07-18 09:44:28.992  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.OnSelectedItemChanged(BindableObject bindable, Object oldValue, Object newValue)
+07-18 09:44:28.993  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueActual(BindableProperty property, BindablePropertyContext context, Object value, Boolean currentlyApplying, SetValueFlags attributes, Boolean silent)
+07-18 09:44:28.993  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes, SetValuePrivateFlags privateAttributes)
+07-18 09:44:28.993  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes)
+07-18 09:44:28.993  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 groupIndex, Int32 inGroupIndex, Cell cell)
+07-18 09:44:28.993  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 index, Cell cell)
+07-18 09:44:28.993  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.ListViewAdapter.HandleItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:28.994  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.CellAdapter.OnItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:28.994  9797  9797 W monodroid-assembly:    at Android.Widget.AdapterView.IOnItemClickListenerInvoker.n_OnItemClick_Landroid_widget_AdapterView_Landroid_view_View_IJ(IntPtr jnienv, IntPtr native__this, IntPtr native_parent, IntPtr native_view, Int32 position, Int64 id)
+07-18 09:44:28.994  9797  9797 W monodroid-assembly:    at Android.Runtime.DynamicMethodNameCounter.5(IntPtr , IntPtr , IntPtr , IntPtr , Int32 , Int64 )
+07-18 09:44:29.085   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3300000 0x3f3630000]
+07-18 09:44:29.088   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3630000 0x3f3960000]
+07-18 09:44:29.089   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3960000 0x3f3c90000]
+07-18 09:44:29.201  9797  9816 D EGL_emulation: app_time_stats: avg=27.46ms min=1.98ms max=342.29ms count=35
+07-18 09:44:29.855   546   800 W InputManager-JNI: Input channel object '2d719b2 Info (client)' was disposed without first being removed with the input manager!
+07-18 09:44:29.861  9797  9797 W InputEventReceiver: Attempted to finish an input event but the input event receiver has already been disposed.
+07-18 09:44:29.882  1295  1295 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+07-18 09:44:29.882  1295  1295 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+07-18 09:44:29.883  1295  1295 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+07-18 09:44:30.511   546   582 D KernelCpuUidUserSysTimeReader: Removing uids 10150-10150
+07-18 09:44:30.512   546   582 D KernelCpuUidUserSysTimeReader: Removing uids 10145-10145
+07-18 09:44:30.513   546   582 D KernelCpuUidUserSysTimeReader: Removing uids 10147-10147
+07-18 09:44:30.649  9797  9816 D EGL_emulation: app_time_stats: avg=23.21ms min=1.65ms max=749.88ms count=39
+07-18 09:44:31.203  9797  9797 I monodroid-assembly: typemap: unable to find mapping to a managed type from Java type 'com/android/internal/policy/PhoneWindow'
+07-18 09:44:31.204  9797  9797 W monodroid-assembly: typemap: called from
+07-18 09:44:31.204  9797  9797 W monodroid-assembly: at Java.Interop.TypeManager.GetJavaToManagedType(String class_name)
+07-18 09:44:31.204  9797  9797 W monodroid-assembly:    at Java.Interop.TypeManager.CreateInstance(IntPtr handle, JniHandleOwnership transfer, Type targetType)
+07-18 09:44:31.205  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject(IntPtr handle, JniHandleOwnership transfer, Type type)
+07-18 09:44:31.205  9797  9797 W monodroid-assembly:    at Java.Lang.Object._GetObject[Window](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:31.205  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject[Window](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:31.205  9797  9797 W monodroid-assembly:    at Android.App.Dialog.get_Window()
+07-18 09:44:31.205  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.FlexibleAlertDialog.get_Window()
+07-18 09:44:31.206  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.OnAlertRequested(IView sender, AlertArguments arguments)
+07-18 09:44:31.206  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.InternalInvoke(RuntimeMethodInfo , Object , IntPtr* , Exception& )
+07-18 09:44:31.206  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.InterpretedInvoke(Object obj, IntPtr* args)
+07-18 09:44:31.207  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+07-18 09:44:31.207  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+07-18 09:44:31.207  9797  9797 W monodroid-assembly:    at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+07-18 09:44:31.208  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Subscription.InvokeCallback(Object sender, Object args)
+07-18 09:44:31.208  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.InnerSend(String message, Type senderType, Type argType, Object sender, Object args)
+07-18 09:44:31.209  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Microsoft.Maui.Controls.IMessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:31.209  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:31.209  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String accept, String cancel, FlowDirection flowDirection)
+07-18 09:44:31.209  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String cancel)
+07-18 09:44:31.209  9797  9797 W monodroid-assembly:    at MauiApp1.MainPage.ListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
+07-18 09:44:31.209  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.OnSelectedItemChanged(BindableObject bindable, Object oldValue, Object newValue)
+07-18 09:44:31.210  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueActual(BindableProperty property, BindablePropertyContext context, Object value, Boolean currentlyApplying, SetValueFlags attributes, Boolean silent)
+07-18 09:44:31.210  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes, SetValuePrivateFlags privateAttributes)
+07-18 09:44:31.210  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes)
+07-18 09:44:31.211  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 groupIndex, Int32 inGroupIndex, Cell cell)
+07-18 09:44:31.211  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 index, Cell cell)
+07-18 09:44:31.211  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.ListViewAdapter.HandleItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:31.211  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.CellAdapter.OnItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:31.212  9797  9797 W monodroid-assembly:    at Android.Widget.AdapterView.IOnItemClickListenerInvoker.n_OnItemClick_Landroid_widget_AdapterView_Landroid_view_View_IJ(IntPtr jnienv, IntPtr native__this, IntPtr native_parent, IntPtr native_view, Int32 position, Int64 id)
+07-18 09:44:31.212  9797  9797 W monodroid-assembly:    at Android.Runtime.DynamicMethodNameCounter.5(IntPtr , IntPtr , IntPtr , IntPtr , Int32 , Int64 )
+07-18 09:44:31.220  9797  9797 I monodroid-assembly: typemap: unable to find mapping to a managed type from Java type 'com/android/internal/policy/DecorView'
+07-18 09:44:31.221  9797  9797 W monodroid-assembly: typemap: called from
+07-18 09:44:31.221  9797  9797 W monodroid-assembly: at Java.Interop.TypeManager.GetJavaToManagedType(String class_name)
+07-18 09:44:31.221  9797  9797 W monodroid-assembly:    at Java.Interop.TypeManager.CreateInstance(IntPtr handle, JniHandleOwnership transfer, Type targetType)
+07-18 09:44:31.221  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject(IntPtr handle, JniHandleOwnership transfer, Type type)
+07-18 09:44:31.222  9797  9797 W monodroid-assembly:    at Java.Lang.Object._GetObject[View](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:31.222  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject[View](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:31.222  9797  9797 W monodroid-assembly:    at Android.Views.WindowInvoker.get_DecorView()
+07-18 09:44:31.223  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.OnAlertRequested(IView sender, AlertArguments arguments)
+07-18 09:44:31.223  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.InternalInvoke(RuntimeMethodInfo , Object , IntPtr* , Exception& )
+07-18 09:44:31.223  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.InterpretedInvoke(Object obj, IntPtr* args)
+07-18 09:44:31.223  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+07-18 09:44:31.223  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+07-18 09:44:31.223  9797  9797 W monodroid-assembly:    at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+07-18 09:44:31.224  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Subscription.InvokeCallback(Object sender, Object args)
+07-18 09:44:31.224  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.InnerSend(String message, Type senderType, Type argType, Object sender, Object args)
+07-18 09:44:31.224  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Microsoft.Maui.Controls.IMessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:31.224  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:31.225  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String accept, String cancel, FlowDirection flowDirection)
+07-18 09:44:31.225  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String cancel)
+07-18 09:44:31.225  9797  9797 W monodroid-assembly:    at MauiApp1.MainPage.ListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
+07-18 09:44:31.225  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.OnSelectedItemChanged(BindableObject bindable, Object oldValue, Object newValue)
+07-18 09:44:31.226  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueActual(BindableProperty property, BindablePropertyContext context, Object value, Boolean currentlyApplying, SetValueFlags attributes, Boolean silent)
+07-18 09:44:31.226  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes, SetValuePrivateFlags privateAttributes)
+07-18 09:44:31.227  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes)
+07-18 09:44:31.227  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 groupIndex, Int32 inGroupIndex, Cell cell)
+07-18 09:44:31.227  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 index, Cell cell)
+07-18 09:44:31.227  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.ListViewAdapter.HandleItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:31.228  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.CellAdapter.OnItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:31.228  9797  9797 W monodroid-assembly:    at Android.Widget.AdapterView.IOnItemClickListenerInvoker.n_OnItemClick_Landroid_widget_AdapterView_Landroid_view_View_IJ(IntPtr jnienv, IntPtr native__this, IntPtr native_parent, IntPtr native_view, Int32 position, Int64 id)
+07-18 09:44:31.228  9797  9797 W monodroid-assembly:    at Android.Runtime.DynamicMethodNameCounter.5(IntPtr , IntPtr , IntPtr , IntPtr , Int32 , Int64 )
+07-18 09:44:31.320   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3300000 0x3f3630000]
+07-18 09:44:31.323   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3630000 0x3f3960000]
+07-18 09:44:31.324   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3960000 0x3f3c90000]
+07-18 09:44:31.650  9797  9816 D EGL_emulation: app_time_stats: avg=17.05ms min=1.70ms max=233.68ms count=46
+07-18 09:44:32.301  9797  9816 D OpenGLRenderer: endAllActiveAnimators on 0x71fdad71cb80 (RippleDrawable) with handle 0x71fcbde990e0
+07-18 09:44:32.302   546   800 W InputManager-JNI: Input channel object '8719374 Info (client)' was disposed without first being removed with the input manager!
+07-18 09:44:32.333  1295  1295 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+07-18 09:44:32.334  1295  1295 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+07-18 09:44:32.334  1295  1295 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+07-18 09:44:32.882  9797  9816 D EGL_emulation: app_time_stats: avg=47.32ms min=14.60ms max=532.84ms count=26
+07-18 09:44:33.402  9797  9797 I monodroid-assembly: typemap: unable to find mapping to a managed type from Java type 'com/android/internal/policy/PhoneWindow'
+07-18 09:44:33.404  9797  9797 W monodroid-assembly: typemap: called from
+07-18 09:44:33.404  9797  9797 W monodroid-assembly: at Java.Interop.TypeManager.GetJavaToManagedType(String class_name)
+07-18 09:44:33.404  9797  9797 W monodroid-assembly:    at Java.Interop.TypeManager.CreateInstance(IntPtr handle, JniHandleOwnership transfer, Type targetType)
+07-18 09:44:33.404  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject(IntPtr handle, JniHandleOwnership transfer, Type type)
+07-18 09:44:33.405  9797  9797 W monodroid-assembly:    at Java.Lang.Object._GetObject[Window](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:33.405  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject[Window](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:33.405  9797  9797 W monodroid-assembly:    at Android.App.Dialog.get_Window()
+07-18 09:44:33.406  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.FlexibleAlertDialog.get_Window()
+07-18 09:44:33.406  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.OnAlertRequested(IView sender, AlertArguments arguments)
+07-18 09:44:33.406  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.InternalInvoke(RuntimeMethodInfo , Object , IntPtr* , Exception& )
+07-18 09:44:33.406  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.InterpretedInvoke(Object obj, IntPtr* args)
+07-18 09:44:33.407  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+07-18 09:44:33.407  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+07-18 09:44:33.408  9797  9797 W monodroid-assembly:    at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+07-18 09:44:33.408  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Subscription.InvokeCallback(Object sender, Object args)
+07-18 09:44:33.408  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.InnerSend(String message, Type senderType, Type argType, Object sender, Object args)
+07-18 09:44:33.408  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Microsoft.Maui.Controls.IMessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:33.408  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:33.409  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String accept, String cancel, FlowDirection flowDirection)
+07-18 09:44:33.409  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String cancel)
+07-18 09:44:33.409  9797  9797 W monodroid-assembly:    at MauiApp1.MainPage.ListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
+07-18 09:44:33.409  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.OnSelectedItemChanged(BindableObject bindable, Object oldValue, Object newValue)
+07-18 09:44:33.410  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueActual(BindableProperty property, BindablePropertyContext context, Object value, Boolean currentlyApplying, SetValueFlags attributes, Boolean silent)
+07-18 09:44:33.410  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes, SetValuePrivateFlags privateAttributes)
+07-18 09:44:33.410  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes)
+07-18 09:44:33.411  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 groupIndex, Int32 inGroupIndex, Cell cell)
+07-18 09:44:33.411  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 index, Cell cell)
+07-18 09:44:33.411  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.ListViewAdapter.HandleItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:33.412  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.CellAdapter.OnItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:33.412  9797  9797 W monodroid-assembly:    at Android.Widget.AdapterView.IOnItemClickListenerInvoker.n_OnItemClick_Landroid_widget_AdapterView_Landroid_view_View_IJ(IntPtr jnienv, IntPtr native__this, IntPtr native_parent, IntPtr native_view, Int32 position, Int64 id)
+07-18 09:44:33.412  9797  9797 W monodroid-assembly:    at Android.Runtime.DynamicMethodNameCounter.5(IntPtr , IntPtr , IntPtr , IntPtr , Int32 , Int64 )
+07-18 09:44:33.419  9797  9797 I monodroid-assembly: typemap: unable to find mapping to a managed type from Java type 'com/android/internal/policy/DecorView'
+07-18 09:44:33.421  9797  9797 W monodroid-assembly: typemap: called from
+07-18 09:44:33.421  9797  9797 W monodroid-assembly: at Java.Interop.TypeManager.GetJavaToManagedType(String class_name)
+07-18 09:44:33.421  9797  9797 W monodroid-assembly:    at Java.Interop.TypeManager.CreateInstance(IntPtr handle, JniHandleOwnership transfer, Type targetType)
+07-18 09:44:33.422  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject(IntPtr handle, JniHandleOwnership transfer, Type type)
+07-18 09:44:33.422  9797  9797 W monodroid-assembly:    at Java.Lang.Object._GetObject[View](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:33.422  9797  9797 W monodroid-assembly:    at Java.Lang.Object.GetObject[View](IntPtr handle, JniHandleOwnership transfer)
+07-18 09:44:33.422  9797  9797 W monodroid-assembly:    at Android.Views.WindowInvoker.get_DecorView()
+07-18 09:44:33.423  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Platform.AlertManager.AlertRequestHelper.OnAlertRequested(IView sender, AlertArguments arguments)
+07-18 09:44:33.423  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.InternalInvoke(RuntimeMethodInfo , Object , IntPtr* , Exception& )
+07-18 09:44:33.423  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.InterpretedInvoke(Object obj, IntPtr* args)
+07-18 09:44:33.424  9797  9797 W monodroid-assembly:    at System.Reflection.MethodInvoker.Invoke(Object obj, IntPtr* args, BindingFlags invokeAttr)
+07-18 09:44:33.424  9797  9797 W monodroid-assembly:    at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+07-18 09:44:33.424  9797  9797 W monodroid-assembly:    at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+07-18 09:44:33.425  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Subscription.InvokeCallback(Object sender, Object args)
+07-18 09:44:33.425  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.InnerSend(String message, Type senderType, Type argType, Object sender, Object args)
+07-18 09:44:33.425  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Microsoft.Maui.Controls.IMessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:33.426  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.MessagingCenter.Send[Page,AlertArguments](Page sender, String message, AlertArguments args)
+07-18 09:44:33.426  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String accept, String cancel, FlowDirection flowDirection)
+07-18 09:44:33.426  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Page.DisplayAlert(String title, String message, String cancel)
+07-18 09:44:33.427  9797  9797 W monodroid-assembly:    at MauiApp1.MainPage.ListView_ItemSelected(Object sender, SelectedItemChangedEventArgs e)
+07-18 09:44:33.427  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.OnSelectedItemChanged(BindableObject bindable, Object oldValue, Object newValue)
+07-18 09:44:33.427  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueActual(BindableProperty property, BindablePropertyContext context, Object value, Boolean currentlyApplying, SetValueFlags attributes, Boolean silent)
+07-18 09:44:33.428  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes, SetValuePrivateFlags privateAttributes)
+07-18 09:44:33.428  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.BindableObject.SetValueCore(BindableProperty property, Object value, SetValueFlags attributes)
+07-18 09:44:33.428  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 groupIndex, Int32 inGroupIndex, Cell cell)
+07-18 09:44:33.428  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.ListView.NotifyRowTapped(Int32 index, Cell cell)
+07-18 09:44:33.428  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.ListViewAdapter.HandleItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:33.428  9797  9797 W monodroid-assembly:    at Microsoft.Maui.Controls.Handlers.Compatibility.CellAdapter.OnItemClick(AdapterView parent, View view, Int32 position, Int64 id)
+07-18 09:44:33.428  9797  9797 W monodroid-assembly:    at Android.Widget.AdapterView.IOnItemClickListenerInvoker.n_OnItemClick_Landroid_widget_AdapterView_Landroid_view_View_IJ(IntPtr jnienv, IntPtr native__this, IntPtr native_parent, IntPtr native_view, Int32 position, Int64 id)
+07-18 09:44:33.428  9797  9797 W monodroid-assembly:    at Android.Runtime.DynamicMethodNameCounter.5(IntPtr , IntPtr , IntPtr , IntPtr , Int32 , Int64 )
+07-18 09:44:33.508   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3300000 0x3f3630000]
+07-18 09:44:33.510   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3630000 0x3f3960000]
+07-18 09:44:33.512   359   359 D goldfish-address-space: claimShared: Ask to claim region [0x3f3960000 0x3f3c90000]
+07-18 09:44:33.884  9797  9816 D EGL_emulation: app_time_stats: avg=20.30ms min=11.14ms max=199.09ms count=49
+07-18 09:44:34.986  9797  9816 D EGL_emulation: app_time_stats: avg=162.35ms min=11.75ms max=1337.03ms count=9
+07-18 09:44:35.006  9797  9816 D OpenGLRenderer: endAllActiveAnimators on 0x71fdad71bea0 (RippleDrawable) with handle 0x71fcbde9ad30
+07-18 09:44:35.007   546   800 W InputManager-JNI: Input channel object '1e4374b Info (client)' was disposed without first being removed with the input manager!
+07-18 09:44:35.035  1295  1295 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+07-18 09:44:35.035  1295  1295 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+07-18 09:44:35.036  1295  1295 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+07-18 09:44:35.049  9797  9816 D EGL_emulation: app_time_stats: avg=52.84ms min=14.52ms max=816.55ms count=22
+07-18 09:44:52.031   546   582 D KernelCpuUidUserSysTimeReader: Removing uids 10149-10149
+07-18 09:44:52.033   546   582 D KernelCpuUidUserSysTimeReader: Removing uids 99000-99000
+--------- beginning of kernel
+07-18 09:44:52.158     0     0 I logd    : logdr: UID=2000 GID=2000 PID=9853 n tail=0 logMask=99 pid=0 start=0ns deadline=0ns

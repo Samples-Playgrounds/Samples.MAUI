@@ -1,0 +1,454 @@
+==============================================================================================================
+Microsoft .NET
+dotnet --info
+.NET SDK:
+ Version:   8.0.100-preview.4.23260.5
+ Commit:    2268e7b15c
+
+Runtime Environment:
+ OS Name:     Mac OS X
+ OS Version:  13.4
+ OS Platform: Darwin
+ RID:         osx.13-x64
+ Base Path:   /usr/local/share/dotnet/sdk/8.0.100-preview.4.23260.5/
+
+.NET workloads installed:
+ [wasm-tools]
+   Installation Source: SDK 8.0.100-preview.4
+   Manifest Version:    8.0.0-preview.4.23259.5/8.0.100-preview.4
+   Manifest Path:       /usr/local/share/dotnet/sdk-manifests/8.0.100-preview.4/microsoft.net.workload.mono.toolchain.current/WorkloadManifest.json
+   Install Type:        FileBased
+ [maui-windows]
+   Installation Source: SDK 8.0.100-preview.4
+   Manifest Version:    8.0.0-preview.4.8333/8.0.100-preview.4
+   Manifest Path:       /usr/local/share/dotnet/sdk-manifests/8.0.100-preview.4/microsoft.net.sdk.maui/WorkloadManifest.json
+   Install Type:        FileBased
+ [macos]
+   Installation Source: SDK 8.0.100-preview.4
+   Manifest Version:    13.3.8377-net8-p4/8.0.100-preview.4
+   Manifest Path:       /usr/local/share/dotnet/sdk-manifests/8.0.100-preview.4/microsoft.net.sdk.macos/WorkloadManifest.json
+   Install Type:        FileBased
+ [maui-maccatalyst]
+   Installation Source: SDK 8.0.100-preview.4
+   Manifest Version:    8.0.0-preview.4.8333/8.0.100-preview.4
+   Manifest Path:       /usr/local/share/dotnet/sdk-manifests/8.0.100-preview.4/microsoft.net.sdk.maui/WorkloadManifest.json
+   Install Type:        FileBased
+ [maui-ios]
+   Installation Source: SDK 8.0.100-preview.4
+   Manifest Version:    8.0.0-preview.4.8333/8.0.100-preview.4
+   Manifest Path:       /usr/local/share/dotnet/sdk-manifests/8.0.100-preview.4/microsoft.net.sdk.maui/WorkloadManifest.json
+   Install Type:        FileBased
+ [maui-android]
+   Installation Source: SDK 8.0.100-preview.4
+   Manifest Version:    8.0.0-preview.4.8333/8.0.100-preview.4
+   Manifest Path:       /usr/local/share/dotnet/sdk-manifests/8.0.100-preview.4/microsoft.net.sdk.maui/WorkloadManifest.json
+   Install Type:        FileBased
+ [ios]
+   Installation Source: SDK 8.0.100-preview.4
+   Manifest Version:    16.4.8377-net8-p4/8.0.100-preview.4
+   Manifest Path:       /usr/local/share/dotnet/sdk-manifests/8.0.100-preview.4/microsoft.net.sdk.ios/WorkloadManifest.json
+   Install Type:        FileBased
+ [maui-mobile]
+   Installation Source: SDK 8.0.100-preview.4
+   Manifest Version:    8.0.0-preview.4.8333/8.0.100-preview.4
+   Manifest Path:       /usr/local/share/dotnet/sdk-manifests/8.0.100-preview.4/microsoft.net.sdk.maui/WorkloadManifest.json
+   Install Type:        FileBased
+ [maccatalyst]
+   Installation Source: SDK 8.0.100-preview.4
+   Manifest Version:    16.4.8377-net8-p4/8.0.100-preview.4
+   Manifest Path:       /usr/local/share/dotnet/sdk-manifests/8.0.100-preview.4/microsoft.net.sdk.maccatalyst/WorkloadManifest.json
+   Install Type:        FileBased
+ [maui]
+   Installation Source: SDK 8.0.100-preview.4
+   Manifest Version:    8.0.0-preview.4.8333/8.0.100-preview.4
+   Manifest Path:       /usr/local/share/dotnet/sdk-manifests/8.0.100-preview.4/microsoft.net.sdk.maui/WorkloadManifest.json
+   Install Type:        FileBased
+ [tvos]
+   Installation Source: SDK 8.0.100-preview.4
+   Manifest Version:    16.4.8377-net8-p4/8.0.100-preview.4
+   Manifest Path:       /usr/local/share/dotnet/sdk-manifests/8.0.100-preview.4/microsoft.net.sdk.tvos/WorkloadManifest.json
+   Install Type:        FileBased
+ [android]
+   Installation Source: SDK 8.0.100-preview.4
+   Manifest Version:    34.0.0-preview.4.273/8.0.100-preview.4
+   Manifest Path:       /usr/local/share/dotnet/sdk-manifests/8.0.100-preview.4/microsoft.net.sdk.android/WorkloadManifest.json
+   Install Type:        FileBased
+
+Host:
+  Version:      8.0.0-preview.4.23259.5
+  Architecture: x64
+  Commit:       84a3d0e37e
+
+.NET SDKs installed:
+  6.0.116 [/usr/local/share/dotnet/sdk]
+  6.0.311 [/usr/local/share/dotnet/sdk]
+  6.0.408 [/usr/local/share/dotnet/sdk]
+  6.0.410 [/usr/local/share/dotnet/sdk]
+  7.0.105 [/usr/local/share/dotnet/sdk]
+  7.0.203 [/usr/local/share/dotnet/sdk]
+  7.0.302 [/usr/local/share/dotnet/sdk]
+  7.0.304 [/usr/local/share/dotnet/sdk]
+  8.0.100-preview.4.23260.5 [/usr/local/share/dotnet/sdk]
+
+.NET runtimes installed:
+  Microsoft.AspNetCore.App 6.0.16 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 6.0.18 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 7.0.5 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 7.0.7 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 8.0.0-preview.4.23260.4 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 6.0.16 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+  Microsoft.NETCore.App 6.0.18 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+  Microsoft.NETCore.App 7.0.5 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+  Microsoft.NETCore.App 7.0.7 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+  Microsoft.NETCore.App 8.0.0-preview.4.23259.5 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+
+Other architectures found:
+  None
+
+Environment variables:
+  Not set
+
+global.json file:
+  Not found
+
+Learn more:
+  https://aka.ms/dotnet/info
+
+Download .NET:
+  https://aka.ms/dotnet/download
+dotnet --list-runtimes
+Microsoft.AspNetCore.App 6.0.16 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 6.0.18 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 7.0.5 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 7.0.7 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.AspNetCore.App 8.0.0-preview.4.23260.4 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+Microsoft.NETCore.App 6.0.16 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 6.0.18 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 7.0.5 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 7.0.7 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.NETCore.App 8.0.0-preview.4.23259.5 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+dotnet --list-sdks
+6.0.116 [/usr/local/share/dotnet/sdk]
+6.0.311 [/usr/local/share/dotnet/sdk]
+6.0.408 [/usr/local/share/dotnet/sdk]
+6.0.410 [/usr/local/share/dotnet/sdk]
+7.0.105 [/usr/local/share/dotnet/sdk]
+7.0.203 [/usr/local/share/dotnet/sdk]
+7.0.302 [/usr/local/share/dotnet/sdk]
+7.0.304 [/usr/local/share/dotnet/sdk]
+8.0.100-preview.4.23260.5 [/usr/local/share/dotnet/sdk]
+--------------------------------------------------------------------------------------------------------------
+dotnet workload list
+
+Installed Workload Id      Manifest Version                               Installation Source  
+-----------------------------------------------------------------------------------------------
+wasm-tools                 8.0.0-preview.4.23259.5/8.0.100-preview.4      SDK 8.0.100-preview.4
+maui-windows               8.0.0-preview.4.8333/8.0.100-preview.4         SDK 8.0.100-preview.4
+macos                      13.3.8377-net8-p4/8.0.100-preview.4            SDK 8.0.100-preview.4
+maui-maccatalyst           8.0.0-preview.4.8333/8.0.100-preview.4         SDK 8.0.100-preview.4
+maui-ios                   8.0.0-preview.4.8333/8.0.100-preview.4         SDK 8.0.100-preview.4
+maui-android               8.0.0-preview.4.8333/8.0.100-preview.4         SDK 8.0.100-preview.4
+ios                        16.4.8377-net8-p4/8.0.100-preview.4            SDK 8.0.100-preview.4
+maui-mobile                8.0.0-preview.4.8333/8.0.100-preview.4         SDK 8.0.100-preview.4
+maccatalyst                16.4.8377-net8-p4/8.0.100-preview.4            SDK 8.0.100-preview.4
+maui                       8.0.0-preview.4.8333/8.0.100-preview.4         SDK 8.0.100-preview.4
+tvos                       16.4.8377-net8-p4/8.0.100-preview.4            SDK 8.0.100-preview.4
+android                    34.0.0-preview.4.273/8.0.100-preview.4         SDK 8.0.100-preview.4
+
+Use `dotnet workload search` to find additional workloads to install.
+
+--------------------------------------------------------------------------------------------------------------
+dotnet tool list --global
+Package Id                                   Version                             Commands                  
+-----------------------------------------------------------------------------------------------------------
+altcover.visualizer                          8.6.61                              altcover.visualizer       
+apache.avro.tools                            1.11.2                              avrogen                   
+api-tools                                    1.3.5                               api-tools                 
+apkdiff                                      0.0.16                              apkdiff                   
+assembly-differ                              0.14.0                              assembly-differ           
+assembly-rewriter                            0.13.0                              assembly-rewriter         
+benchmarkdotnet.tool                         0.12.1                              dotnet-benchmark          
+boots                                        1.1.0.712-preview2                  boots                     
+cake.tool                                    2.3.0                               dotnet-cake               
+clangsharppinvokegenerator                   16.0.0                              ClangSharpPInvokeGenerator
+coveralls.net                                4.0.1                               csmacnz.Coveralls         
+coverlet.console                             6.0.0                               coverlet                  
+csharprepl                                   0.6.3                               csharprepl                
+dependency-analyzer                          0.7.1                               dependency-analyzer       
+dependensee                                  2.2.0                               DependenSee               
+docfx                                        2.67.5                              docfx                     
+dotnet-affected                              3.1.1                               dotnet-affected           
+dotnet-cleanup                               0.6.1                               cleanup                   
+dotnet-config2json                           0.3.0                               dotnet-config2json        
+dotnet-counters                              7.0.430602                          dotnet-counters           
+dotnet-coverage                              17.7.3                              dotnet-coverage           
+dotnet-deb                                   0.1.220                             dotnet-deb                
+dotnet-delice                                1.8.0                               dotnet-delice             
+dotnet-dependency-analyzer                   1.1.3                               dotnet-dependency-analyzer
+dotnet-depends                               0.7.0                               dotnet-depends            
+dotnet-dev-certs                             3.0.0-preview-18579-0056            dotnet-dev-certs          
+dotnet-dsrouter                              7.0.430602                          dotnet-dsrouter           
+dotnet-dump                                  7.0.430602                          dotnet-dump               
+dotnet-ef                                    8.0.0-preview.5.23280.1             dotnet-ef                 
+dotnet-execute                               0.15.0-preview-20230614-132940      dotnet-exec               
+dotnet-file                                  1.4.1                               dotnet-file               
+dotnet-gcdump                                7.0.430602                          dotnet-gcdump             
+dotnet-gcm                                   2.0.886                             dotnet-gcm                
+dotnet-gcmon                                 0.5.0                               dotnet-gcmon              
+dotnet-grpc                                  2.55.0                              dotnet-grpc               
+dotnet-grpc-cli                              0.6.0                               dotnet-grpc-cli           
+dotnet-httpie                                0.7.2                               dotnet-http               
+dotnet-ignore                                1.0.6                               dotnet-ignore             
+dotnet-ildasm                                0.12.2                              dotnet-ildasm             
+dotnet-ilverify                              8.0.0-preview.5.23280.8             ilverify                  
+dotnet-json                                  1.1.4                               dotnet-json               
+dotnet-monitor                               8.0.0-preview.5.23307.11            dotnet-monitor            
+dotnet-nosln                                 0.7.0                               dotnet-nosln              
+dotnet-orm                                   0.30.0                              dotnet-orm                
+dotnet-ossindex                              0.7.0                               dotnet-ossindex           
+dotnet-outdated-tool                         4.5.2                               dotnet-outdated           
+dotnet-project-licenses                      3.0.0-alpha.9                       dotnet-project-licenses   
+dotnet-property                              2.0.0.177                           dotnet-property           
+dotnet-references                            1.1.0                               dotnet-references         
+dotnet-releaser                              0.6.3                               dotnet-releaser           
+dotnet-repl                                  0.1.204                             dotnet-repl               
+dotnet-retire                                5.0.0                               dotnet-retire             
+dotnet-roundhouse                            1.3.1                               rh                        
+dotnet-rpm                                   0.1.220                             dotnet-rpm                
+dotnet-script                                1.4.0                               dotnet-script             
+dotnet-search                                1.0.0                               dotnet-search             
+dotnet-serve                                 1.10.172                            dotnet-serve              
+dotnet-sos                                   7.0.430602                          dotnet-sos                
+dotnet-sshdeploy                             0.4.0                               dotnet-sshdeploy          
+dotnet-stryker                               3.9.2                               dotnet-stryker            
+dotnet-suggest                               1.1.415701                          dotnet-suggest            
+dotnet-svcutil                               2.1.0                               dotnet-svcutil            
+dotnet-t4                                    2.3.1                               t4                        
+dotnet-tarball                               0.1.220                             dotnet-tarball            
+dotnet-trace                                 7.0.430602                          dotnet-trace              
+dotnet-updatr                                2.0.1                               update                    
+dotnet-user-secrets                          3.0.0-preview-18579-0056            dotnet-user-secrets       
+dotnet-version-cli                           2.4.1                               dotnet-version            
+dotnet-vs                                    1.2.0                               vs                        
+dotnet-watch                                 3.0.0-preview-18579-0056            dotnet-watch              
+dotnet-xdt                                   2.2.1                               dotnet-xdt                
+dotnet-xscgen                                2.0.810                             xscgen                    
+dotnet-zip                                   0.1.220                             dotnet-zip                
+git-credential-manager                       2.1.2                               git-credential-manager    
+ilspycmd                                     8.0.0.7345                          ilspycmd                  
+jetbrains.dotcover.globaltool                2023.2.0-eap07                      dotnet-dotcover           
+jetbrains.dottrace.globaltools               2023.2.0-eap07                      dottrace                  
+messagepack.generator                        2.5.124                             mpc                       
+microsoft.crank.agent                        0.2.0-alpha.23269.1                 crank-agent               
+microsoft.cst.attacksurfaceanalyzer.cli      2.3.299                             asa                       
+microsoft.cst.devskim.cli                    1.0.11                              devskim                   
+microsoft.cst.ossgadget.findsquats.cli       0.1.410                             oss-find-squats           
+microsoft.dotnet-httprepl                    7.1.0-preview.23255.2               httprepl                  
+microsoft.dotnet-interactive                 1.0.431302                          dotnet-interactive        
+microsoft.dotnet-openapi                     8.0.0-preview.5.23302.2             dotnet-openapi            
+microsoft.playwright.cli                     1.2.3                               playwright                
+minicover                                    3.6.1                               minicover                 
+mlnet                                        16.2.0                              mlnet                     
+nanoclr                                      1.0.267                             nanoclr                   
+nswag.consolecore                            13.19.0                             nswag                     
+nugetdefense.tool                            3.2.0-prerelease4                   nugetdefense              
+nukeeper                                     0.35.0                              nukeeper                  
+nunit.consolerunner.netcore                  3.16.3                              dotnet-nunit              
+nupkg-validator                              0.5.0                               nupkg-validator           
+nusight                                      1.2.8                               nusight                   
+protobuf-net.protogen                        3.2.12                              protogen                  
+rapicgen                                     1.7.17                              rapicgen                  
+redth.net.maui.check                         2.0.0                               maui-check                
+release-notes                                0.5.2                               release-notes             
+security-scan                                5.6.7                               security-scan             
+snitch                                       1.12.0                              snitch                    
+sourcelink                                   3.1.1                               sourcelink                
+swashbuckle.aspnetcore.cli                   6.5.0                               swagger                   
+try-convert                                  0.9.232202                          try-convert               
+uno.check                                    1.13.0-dev.23                       uno-check                 
+uno.packagediff                              1.1.0-dev.25                        generatepkgdiff           
+upgrade-assistant                            0.5.30                              upgrade-assistant         
+versionize                                   1.18.0                              versionize                
+web.ping                                     0.0.4                               Web.Ping                  
+wildernesslabs.meadow.cli                    1.0.4                               meadow                    
+wyam.tool                                    2.2.9                               wyam                      
+xamarin.androidbinderator.tool               0.5.6                               xamarin-android-binderator
+xamarin.androidx.migration.tool              1.0.10                              androidx-migrator         
+xamlstyler.console                           3.2206.4                            xstyler                   
+xunit-cli                                    0.1.16                              xunit                     
+yardarm.commandline                          0.3.5                               yardarm                   
+--------------------------------------------------------------------------------------------------------------
+dotnet new --list
+Warning: use of 'dotnet new --list' is deprecated. Use 'dotnet new list' instead.
+For more information, run: 
+   dotnet new list -h
+
+These templates matched your input: 
+
+Template Name       Short Name                                              Language    Tags                                                                                      
+------------------  ------------------------------------------------------  ----------  ------------------------------------------------------------------------------------------
+.NET MAUI App       maui                                                    [C#]        MAUI/Android/iOS/macOS/Mac Catalyst/Windows/Tizen                                         
+.NET MAUI Blazo...  maui-blazor                                             [C#]        MAUI/Android/iOS/macOS/Mac Catalyst/Windows/Tizen/Blazor/Blazor Hybrid                    
+.NET MAUI Class...  mauilib                                                 [C#]        MAUI/Android/iOS/macOS/Mac Catalyst/Windows/Tizen                                         
+.NET MAUI Comet...  comet                                                   [C#]        Comet/MAUI/Android/iOS/macOS/Mac Catalyst/WinUI                                           
+.NET MAUI Conte...  maui-page-csharp                                        [C#]        MAUI/Android/iOS/macOS/Mac Catalyst/WinUI/Tizen/Xaml/Code                                 
+.NET MAUI Conte...  maui-page-xaml                                          [C#]        MAUI/Android/iOS/macOS/Mac Catalyst/WinUI/Tizen/Xaml/Code                                 
+.NET MAUI Conte...  maui-view-csharp                                        [C#]        MAUI/Android/iOS/macOS/Mac Catalyst/WinUI/Tizen/Xaml/Code                                 
+.NET MAUI Conte...  maui-view-xaml                                          [C#]        MAUI/Android/iOS/macOS/Mac Catalyst/WinUI/Tizen/Xaml/Code                                 
+.NET MAUI Resou...  maui-dict-xaml                                          [C#]        MAUI/Android/iOS/macOS/Mac Catalyst/WinUI/Xaml/Code                                       
+Android Activit...  android-activity                                        [C#]        Android/Mobile                                                                            
+Android Applica...  android                                                 [C#]        Android/Mobile                                                                            
+Android Class L...  androidlib                                              [C#]        Android/Mobile                                                                            
+Android Java Li...  android-bindinglib                                      [C#]        Android/Mobile                                                                            
+Android Layout ...  android-layout                                          [C#]        Android/Mobile                                                                            
+Android Wear Ap...  androidwear                                             [C#]        Android/Mobile                                                                            
+API Controller      apicontroller                                           [C#]        Web/ASP.NET                                                                               
+ASP.NET Core API    api                                                     [C#]        Web/API                                                                                   
+ASP.NET Core Empty  web                                                     [C#],F#     Web/Empty                                                                                 
+ASP.NET Core gR...  grpc                                                    [C#]        Web/gRPC                                                                                  
+ASP.NET Core We...  webapi                                                  [C#],F#     Web/WebAPI                                                                                
+ASP.NET Core We...  webapp,razor                                            [C#]        Web/MVC/Razor Pages                                                                       
+ASP.NET Core We...  mvc                                                     [C#],F#     Web/MVC                                                                                   
+ASP.NET Core wi...  angular                                                 [C#]        Web/MVC/SPA                                                                               
+ASP.NET Core wi...  react                                                   [C#]        Web/MVC/SPA                                                                               
+Avalonia .NET App   avalonia.app                                            [C#],F#     Desktop/Xaml/Avalonia/Windows/Linux/macOS                                                 
+Avalonia .NET M...  avalonia.mvvm                                           [C#],F#     Desktop/Xaml/Avalonia/Windows/Linux/macOS                                                 
+Avalonia Cross ...  avalonia.xplat                                          [C#],F#     Desktop/Xaml/Avalonia/Web/Mobile                                                          
+Avalonia Resour...  avalonia.resource                                                   Desktop/Xaml/Avalonia/Windows/Linux/macOS                                                 
+Avalonia Styles     avalonia.styles                                                     Desktop/Xaml/Avalonia/Windows/Linux/macOS                                                 
+Avalonia Templa...  avalonia.templatedcontrol                               [C#],F#     Desktop/Xaml/Avalonia/Windows/Linux/macOS                                                 
+Avalonia UserCo...  avalonia.usercontrol                                    [C#],F#     Desktop/Xaml/Avalonia/Windows/Linux/macOS                                                 
+Avalonia Window     avalonia.window                                         [C#],F#     Desktop/Xaml/Avalonia/Windows/Linux/macOS                                                 
+Blazor and .NET...  blazor-maui-shared                                      [C#]        MAUI/Blazor                                                                               
+Blazor Server App   blazorserver                                            [C#]        Web/Blazor                                                                                
+Blazor Server A...  blazorserver-empty                                      [C#]        Web/Blazor/Empty                                                                          
+Blazor WebAssem...  blazorwasm                                              [C#]        Web/Blazor/WebAssembly/PWA                                                                
+Blazor WebAssem...  blazorwasm-empty                                        [C#]        Web/Blazor/WebAssembly/PWA/Empty                                                          
+C/C++/CPP/VCXPR...  gccbuild                                                [C#]        Common/Console                                                                            
+Class Library       classlib                                                [C#],F#,VB  Common/Library                                                                            
+Clean Architect...  ca-sln                                                  [C#]        Web/SPA/ASP.NET/Clean Architecture                                                        
+Clean Architect...  mz-clean-architecture-sln                               [C#]        Clean Architecure/Solution                                                                
+cloudscribe web...  cloudscribe                                             [C#]        Web                                                                                       
+Console App         console                                                 [C#],F#,VB  Common/Console                                                                            
+Cross-Platform ...  unolib                                                  [C#]        Cross-platform/Uno Platform/Library/Android/iOS/Windows/macOS/Linux/WebAssembly           
+Cross-Platform ...  unoapp-uitest                                           [C#]        Cross-platform/Uno Platform/UITest/Android/iOS/macOS/WebAssembly                          
+Cross-Runtime L...  unolib-crossruntime                                     [C#]        Multi-platform/Uno Platform/Android/iOS/macOS/Mac Catalyst/Windows/Linux/WebAssembly/WinUI
+Custom template...  hw-structure                                            [C#]        Custom Templates/Xamarin/HolisticWare/Cross Platform/xplat                                
+Custom template...  hw-structure-android-maven-bindings                     [C#]        Custom Templates/HolisticWare/Xamarin/Cross Platform/Android/Maven/Bindings/xplat         
+dotnet gitignor...  gitignore,.gitignore                                                Config                                                                                    
+Dotnet local to...  tool-manifest                                                       Config                                                                                    
+EditorConfig file   editorconfig,.editorconfig                                          Config                                                                                    
+Empty .NET Core...  coreiot                                                 [C#]        IoT/Console                                                                               
+global.json file    globaljson,global.json                                              Config                                                                                    
+Gtk Application     gtkapp                                                  [C#]        Gtk/GUI App                                                                               
+Gtk Dialog          gtkdialog                                               [C#]        Gtk/UI                                                                                    
+Gtk Widget          gtkwidget                                               [C#]        Gtk/UI                                                                                    
+Gtk Window          gtkwindow                                               [C#]        Gtk/UI                                                                                    
+iOS Action Exte...  ios-action-extension                                    [C#]        MAUI/iOS                                                                                  
+iOS Application     ios                                                     [C#],F#,VB  iOS/Mobile                                                                                
+iOS Audio Unit ...  ios-audio-unit-extension                                [C#]        MAUI/iOS                                                                                  
+iOS Binding Lib...  iosbinding                                              [C#]        iOS/Mobile                                                                                
+iOS Broadcast U...  ios-broadcast-ui-extension                              [C#]        MAUI/iOS                                                                                  
+iOS Broadcast U...  ios-broadcast-upload-extension                          [C#]        MAUI/iOS                                                                                  
+iOS Call Blocke...  ios-call-blocker-extension                              [C#]        MAUI/iOS                                                                                  
+iOS Call Direct...  ios-call-directory-extension                            [C#]        MAUI/iOS                                                                                  
+iOS Class Library   ioslib                                                  [C#],VB     iOS/Mobile                                                                                
+iOS Controller      ios-controller                                          [C#]        iOS/Mobile                                                                                
+iOS Custom Keyb...  ios-custom-keyboard-extension                           [C#]        MAUI/iOS                                                                                  
+iOS Document Pi...  ios-document-picker-extension                           [C#]        MAUI/iOS                                                                                  
+iOS Document Pi...  ios-document-picker-file-provider-extension             [C#]        MAUI/iOS                                                                                  
+iOS iMessage Ex...  ios-imessage-extension                                  [C#]        MAUI/iOS                                                                                  
+iOS Intents Ext...  ios-intents-extension                                   [C#]        MAUI/iOS                                                                                  
+iOS Intents UI ...  ios-intents-ui-extension                                [C#]        MAUI/iOS                                                                                  
+iOS Notificatio...  ios-notification-content-extension                      [C#]        MAUI/iOS                                                                                  
+iOS Notificatio...  ios-notification-service-extension                      [C#]        MAUI/iOS                                                                                  
+iOS Share Exten...  ios-photo-editing-extension                             [C#]        MAUI/iOS                                                                                  
+iOS Share Exten...  ios-share-extension                                     [C#]        MAUI/iOS                                                                                  
+iOS Shared Link...  ios-shared-links-extension                              [C#]        MAUI/iOS                                                                                  
+iOS Spotlight I...  ios-spotlight-index-extension                           [C#]        MAUI/iOS                                                                                  
+iOS Storyboard      ios-storyboard                                          [C#]        iOS/Mobile                                                                                
+iOS Tabbed Appl...  ios-tabbed                                              [C#]        iOS/Mobile                                                                                
+iOS Today Exten...  ios-today-extension                                     [C#]        MAUI/iOS                                                                                  
+iOS View            ios-view                                                [C#]        iOS/Mobile                                                                                
+iOS View Contro...  ios-viewcontroller                                      [C#]        iOS/Mobile                                                                                
+Item template       item-template                                           [C#]        Common/Templates/Item                                                                     
+Lean Architectu...  mz-lean-architecture-class-xunit-lib                    [C#]        Lean Architecure/Class Library/Tests                                                      
+Lean Architectu...  mz-lean-architecture-sln                                [C#]        Lean Architecure/Solution                                                                 
+Lean Architectu...  mz-lean-architecture-xunit                              [C#]        Lean Architecure/Class Library/Test Class Library                                         
+Mac Catalyst Ap...  maccatalyst                                             [C#],VB     macOS/Mac Catalyst                                                                        
+Mac Catalyst Bi...  maccatalystbinding                                      [C#]        macOS/Mac Catalyst                                                                        
+Mac Catalyst Cl...  maccatalystlib                                          [C#],VB     macOS/Mac Catalyst                                                                        
+Mac Catalyst Co...  maccatalyst-controller                                  [C#]        macOS/Mac Catalyst                                                                        
+Mac Catalyst St...  maccatalyst-storyboard                                  [C#]        macOS/Mac Catalyst                                                                        
+Mac Catalyst View   maccatalyst-view                                        [C#]        macOS/Mac Catalyst                                                                        
+Mac Catalyst Vi...  maccatalyst-viewcontroller                              [C#]        macOS/Mac Catalyst                                                                        
+macOS Application   macos                                                   [C#],VB     macOS                                                                                     
+macOS Binding L...  macosbinding                                            [C#]        macOS                                                                                     
+macOS Class Lib...  macoslib                                                [C#],VB     macOS                                                                                     
+macOS Controller    macos-controller                                        [C#]        macOS                                                                                     
+macOS Storyboard    macos-storyboard                                        [C#]        macOS                                                                                     
+macOS View          macos-view                                              [C#]        macOS                                                                                     
+macOS View Cont...  macos-viewcontroller                                    [C#]        macOS                                                                                     
+MSBuild Directo...  buildprops                                                          MSBuild/props                                                                             
+MSBuild Directo...  buildtargets                                                        MSBuild/props                                                                             
+MSTest Playwrig...  mstest-playwright                                       [C#]        Test/MSTest/Playwright                                                                    
+MSTest Test Pro...  mstest                                                  [C#],F#,VB  Test/MSTest                                                                               
+Multi-Platform ...  unoapp-uwp-net6                                         [C#]        Multi-platform/Uno Platform/Android/iOS/Windows/macOS/Linux/WebAssembly                   
+Multi-Platform ...  unoapp-uwp                                              [C#]        Multi-platform/Uno Platform/Android/iOS/Windows/macOS/Linux/Tizen/WebAssembly             
+MVC Controller      mvccontroller                                           [C#]        Web/ASP.NET                                                                               
+MVC ViewImports     viewimports                                             [C#]        Web/ASP.NET                                                                               
+MVC ViewStart       viewstart                                               [C#]        Web/ASP.NET                                                                               
+NuGet Config        nugetconfig,nuget.config                                            Config                                                                                    
+NUnit 3 Test Item   nunit-test                                              [C#],F#,VB  Test/NUnit                                                                                
+NUnit 3 Test Pr...  nunit                                                   [C#],F#,VB  Test/NUnit                                                                                
+NUnit Playwrigh...  nunit-playwright                                        [C#]        Test/NUnit/Playwright                                                                     
+Onion Architect...  onion-maui                                              [C#]        MAUI/Android/iOS/Mac Catalyst/Windows/Tizen                                               
+Onion Architect...  onion-blazor-server                                     [C#]        Blazor/Web                                                                                
+Onion Architect...  onion-blazor-webassembly                                [C#]        Blazor/Web                                                                                
+Onion Architect...  onion-app                                               [C#]        MAUI/Android/iOS/Mac Catalyst/Windows/Tizen/Blazor/Web                                    
+Prism .NET MAUI...  prism-maui                                              [C#]        MAUI/Android/iOS/macOS/Mac Catalyst/Windows/Tizen                                         
+Prism Blank App...  uno-blank                                               [C#]        Prism/Xamarin/Uno Platform/WebAssembly/iOS/Android/WinUI/UWP                              
+Prism Blank App...  wpf-core-blank                                          [C#]        Desktop                                                                                   
+Prism Blank App...  xf-blank                                                [C#]        Prism/Xamarin/Xamarin.Forms                                                               
+Prism Forms Ite...  prismitem                                               [C#]        Prism/Xamarin Forms                                                                       
+Prism Forms Mob...  prismformsempty                                         [C#]        Xamarin/Prism                                                                             
+Prism Forms Mob...  prismforms                                              [C#]        Xamarin/Prism                                                                             
+Prism Forms Module  prismmodule                                             [C#]        Xamarin/Prism                                                                             
+Prism Full App ...  wpf-core-full                                           [C#]        Desktop                                                                                   
+Prism Module (WPF)  wpf-module-core                                         [C#]        Desktop                                                                                   
+Prism Module (X...  xf-module                                               [C#]        Prism/Xamarin/Xamarin.Forms                                                               
+Project template    project-template                                        [C#]        Common/Templates/Project                                                                  
+Protocol Buffer...  proto                                                               Web/gRPC                                                                                  
+Razor Class Lib...  razorclasslib                                           [C#]        Web/Razor/Library                                                                         
+Razor Component     razorcomponent                                          [C#]        Web/ASP.NET                                                                               
+Razor Page          page                                                    [C#]        Web/ASP.NET                                                                               
+Razor View          view                                                    [C#]        Web/ASP.NET                                                                               
+Shared Project      shinyshared                                             [C#]        Cross Platform                                                                            
+Shiny ASP.NET A...  shinyaspnet                                             [C#]        Shiny                                                                                     
+Shiny BLE Hoste...  shinyblehostedcharacteristic,shinygpsdelegate,shinyjob  [C#]        MAUI/Code                                                                                 
+Shiny Cross Pla...  shinycrosslib                                           [C#]        iOS                                                                                       
+Shiny iOS Exten...  shinyiosextensions                                      [C#]        iOS                                                                                       
+Shiny MAUI Appl...  shinymaui                                               [C#]        MAUI/Shiny/Prism/ReactiveUI                                                               
+Solution File       sln,solution                                                        Solution                                                                                  
+Template packag...  packaging-template                                      [C#]        Common/Templates/Packaging                                                                
+TimeWarp Archit...  timewarp-architecture                                   [C#]        TimeWarp/Web/Blazor/Hosted                                                                
+TimeWarp Featur...  timewarp-feature-action                                 [C#]        TimeWarp/Web/Blazor/Hosted/Feature/Action                                                 
+TimeWarp Featur...  timewarp-feature-Crud                                   [C#]        TimeWarp/Web/Blazor/Hosted/Feature/CRUD                                                   
+TimeWarp Featur...  timewarp-feature-endpoint                               [C#]        TimeWarp/Web/Blazor/Hosted/Feature/Endpoint                                               
+TimeWarp Featur...  timewarp-feature-state                                  [C#]        TimeWarp/Web/Blazor/Hosted/Feature/State                                                  
+tvOS Application    tvos                                                    [C#],VB     tvOS/Mobile                                                                               
+tvOS Binding Li...  tvosbinding                                             [C#]        tvOS/Mobile                                                                               
+tvOS Class Library  tvoslib                                                 [C#],VB     tvOS/Mobile                                                                               
+tvOS Controller     tvos-controller                                         [C#]        tvOS/Mobile                                                                               
+tvOS Storyboard     tvos-storyboard                                         [C#]        tvOS/Mobile                                                                               
+tvOS View           tvos-view                                               [C#]        tvOS/Mobile                                                                               
+tvOS View Contr...  tvos-viewcontroller                                     [C#]        tvOS/Mobile                                                                               
+Uno Platform App    unoapp                                                  [C#]        Multi-platform/Uno Platform/Android/iOS/macOS/Mac Catalyst/Windows/Linux/WebAssembly/WinUI
+Vulcan Custom F...  Full-Maui                                               [C#]        MAUI/Android/iOS/macOS/Mac Catalyst/Windows                                               
+Vulcan Custom P...  Vulcan-Maui                                             [C#]        MAUI/Android/iOS/macOS/Mac Catalyst/Windows                                               
+Vulcan Custom P...  MVVMItem                                                [C#]        MAUI/Android/iOS/macOS/Mac Catalyst/WinUI/Tizen/Xaml/Code                                 
+Web Config          webconfig                                                           Config                                                                                    
+Worker Service      worker                                                  [C#],F#     Common/Worker/Web                                                                         
+XUnit Device Ru...  shinymauitests                                          [C#]        MAUI/XUnit                                                                                
+xUnit Test Project  xunit                                                   [C#],F#,VB  Test/xUnit                                                                                
+
