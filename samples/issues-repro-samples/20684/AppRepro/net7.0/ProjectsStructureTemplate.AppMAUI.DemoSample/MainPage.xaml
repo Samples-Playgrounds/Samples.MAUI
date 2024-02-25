@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:local="clr-namespace:HorizontalList"
+			 x:Class="HorizontalList.MainPage"
+			 x:DataType="local:MainPage">
+
+	<Grid RowSpacing="2"
+		  ColumnSpacing="0"
+		  RowDefinitions="5*,*">
+		<CollectionView Grid.Row="1"
+						ItemsLayout="HorizontalList"
+						ItemsSource="{Binding ItemList}">
+			<CollectionView.ItemTemplate>
+				<DataTemplate x:DataType="local:Item">
+					<Label Margin="2"
+						   Text="{Binding Name}" />
+				</DataTemplate>
+			</CollectionView.ItemTemplate>
+		</CollectionView>
+	</Grid>
+</ContentPage>

@@ -1,0 +1,21 @@
+<xct:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+		   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		   xmlns:xct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+		   x:Class="Toolkit.ProgressPage"
+		   Size="640,480"
+		   Color="Transparent"
+		   CanBeDismissedByTappingOutsideOfPopup="False">
+	<Grid>
+		<ActivityIndicator Margin="0,0,0,72"
+						   IsRunning="True"
+						   Color="MidnightBlue"
+						   VerticalOptions="Center"
+						   HorizontalOptions="Center" />
+		<Label Margin="0,72,0,0"
+			   Text="Loading"
+			   FontSize="36"
+			   TextColor="MidnightBlue"
+			   VerticalOptions="Center"
+			   HorizontalOptions="Center" />
+	</Grid>
+</xct:Popup>

@@ -1,0 +1,24 @@
+<Project>
+  <PropertyGroup>
+      <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <!-- 
+      MAUI
+  -->
+  <ItemGroup>
+      <PackageVersion Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+      <PackageVersion Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+  </ItemGroup>
+
+  <!-- 
+      MAUI Hybrid Blazor
+  -->
+  <ItemGroup>
+      <PackageVersion Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="8.0.6" />
+  </ItemGroup>
+
+</Project>

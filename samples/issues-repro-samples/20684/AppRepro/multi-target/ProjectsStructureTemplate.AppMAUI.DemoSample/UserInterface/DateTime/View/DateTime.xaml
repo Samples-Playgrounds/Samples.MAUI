@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppMAUI.UserInterface.DateTime.View.Page"
+    Title="PagePerson"
+    xmlns:viewmodel="AppMAUI.UserInterface.Person.ViewModel.Page"
+    xmlns:system="clr-namespace:System;assembly=netstandard"
+    >
+    <!--
+        https://learn.microsoft.com/en-us/dotnet/maui/xaml/fundamentals/mvvm
+
+        DataBinding BindingContext Option 1
+
+    <ContentPage.BindingContext>
+        <local:ClockViewModel />
+    </ContentPage.BindingContext>
+    -->
+    <VerticalStackLayout
+        BindingContext="{x:Static system:DateTime.Now}"
+        >
+        <Label Text="{Binding Year, StringFormat='The year is {0}'}" />
+        <Label Text="{Binding StringFormat='The month is {0:MMMM}'}" />
+        <Label Text="{Binding Day, StringFormat='The day is {0}'}" />
+        <Label Text="{Binding StringFormat='The time is {0:T}'}" />
+    </VerticalStackLayout>
+</ContentPage>
