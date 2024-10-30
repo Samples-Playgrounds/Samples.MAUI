@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Microsoft.Maui.Controls;assembly=Microsoft.Maui.Controls"
+             x:Class="CleanApp.Pages.BasePage"
+             Title="BasePage">
+    <NavigationPage.TitleView>
+        <StackLayout x:Name="TitleLayout"
+                     Orientation="Horizontal"
+                     VerticalOptions="Fill"
+                     HorizontalOptions="Fill"
+                     Spacing="0"
+                     Padding="0">
+            <Image x:Name="TitleImage"
+                   Source="title_logo"
+                   Aspect="AspectFit"
+                   HeightRequest="50"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start"></Image>
+        </StackLayout>
+    </NavigationPage.TitleView>
+</ContentPage>

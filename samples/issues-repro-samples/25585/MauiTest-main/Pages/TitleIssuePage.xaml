@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:BasePage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cleanApp="clr-namespace:CleanApp"
+             xmlns:pages="clr-namespace:CleanApp.Pages"
+             x:Class="CleanApp.Pages.TitleIssuePage">
+
+    <ScrollView>
+        <Grid Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+            <Label 
+                Grid.Row="0"
+                Text="Welcome to the Main Page"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Start"
+                   FontSize="25"/>
+            <Button x:Name="ResetBothButton"
+                    Text="Reset Both Pages"
+                    Grid.Row="1"
+                    HorizontalOptions="Center"
+                    HeightRequest="50"
+                    Clicked="OnResetBothButtonClicked"></Button>
+            <Button x:Name="ResetDetailButton"
+                    Text="Reset Detail Page"
+                    Grid.Row="2"
+                    HorizontalOptions="Center"
+                    HeightRequest="50"
+                    Clicked="OnResetDetailButtonClicked"></Button>
+            <Button x:Name="ResetFlyoutButton"
+                    Text="Reset Flyout Page"
+                    Grid.Row="3"
+                    HorizontalOptions="Center"
+                    HeightRequest="50"
+                    Clicked="OnResetFlyoutButtonClicked"></Button>
+        </Grid>
+    </ScrollView>
+
+</pages:BasePage>
