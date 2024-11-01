@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CleanApp.Pages.GridTapPage"
+             Title="GridTapPage">
+    <Grid x:Name="ContactDetailLayout"
+                  RowDefinitions="2*,*,*,2*"
+                  ColumnDefinitions="*,32,Auto,*"
+                  RowSpacing="10"
+                  ColumnSpacing="5"
+                         Padding="10">
+        <Image x:Name="MailImage"
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Aspect="AspectFit"
+                                    HeightRequest="32"
+                                    AutomationProperties.IsInAccessibleTree="False" />
+        <Label x:Name="ContacteMail"
+                           Grid.Row="1"
+                           Grid.Column="2"
+                           VerticalTextAlignment="Center"
+                           TextColor="Blue"
+                           FontSize="16" />
+        <Image x:Name="PhoneImage"
+                                    Grid.Row="2"
+                                    Grid.Column="1"
+                                    Aspect="AspectFit"
+                                    HeightRequest="32"
+                                    AutomationProperties.IsInAccessibleTree="False" />
+        <Label x:Name="ContactPhone"
+                           Grid.Row="2"
+                           Grid.Column="2"
+                           VerticalTextAlignment="Center"
+                           TextColor="Blue"
+                           FontSize="16" />
+        <Grid.GestureRecognizers>
+        <TapGestureRecognizer x:Name ="MailLayout"
+                     Grid.Row="1"
+                     Grid.Column="1"
+                     Grid.ColumnSpan="2"
+                     Tapped="MailLayout_OnTapped"/>
+        <TapGestureRecognizer x:Name ="PhoneLayout"
+                     Grid.Row="2"
+                     Grid.Column="1"
+                     Grid.ColumnSpan="2"
+                     Tapped="PhoneLayout_OnTapped"/>
+        </Grid.GestureRecognizers>
+    </Grid>
+</ContentPage>
