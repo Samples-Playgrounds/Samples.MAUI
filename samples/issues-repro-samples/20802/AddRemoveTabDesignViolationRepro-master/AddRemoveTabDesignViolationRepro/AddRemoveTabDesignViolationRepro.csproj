@@ -69,5 +69,6 @@
         <PackageReference Include="Xamarin.AndroidX.RecyclerView" Version="1.3.1" /> <!-- Crashes with Java.Lang.IllegalStateException: Design assumption violated -->
         <!--<PackageReference Include="Xamarin.AndroidX.RecyclerView" Version="1.3.0.3" />--> <!-- Everything is fine -->
         <PackageReference Include="Xamarin.AndroidX.Collection.Ktx" Version="1.2.0.9" />
+        <PackageReference Include="Xamarin.AndroidX.ViewPager2" Version="1.1.0-beta02" />
     </ItemGroup>
 </Project>
