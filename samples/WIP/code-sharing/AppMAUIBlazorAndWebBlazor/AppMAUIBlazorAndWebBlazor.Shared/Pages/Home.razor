@@ -6,9 +6,12 @@
 
 <h1>Hello, world!</h1>
 
+Welcome to your new Fluent Blazor app.
+
 Welcome to your new app running on <em>@factor</em> using <em>@platform</em>.
 
-@code {
+@code 
+{
     private string factor => FormFactor.GetFormFactor();
     private string platform => FormFactor.GetPlatform();
 }

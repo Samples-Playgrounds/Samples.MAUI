@@ -1,3 +1,4 @@
+using Microsoft.FluentUI.AspNetCore.Components;
 using AppMAUIBlazorAndWebBlazor.Web.Components;
 using AppMAUIBlazorAndWebBlazor.Shared.Services;
 using AppMAUIBlazorAndWebBlazor.Web.Services;
@@ -10,6 +11,15 @@ builder.Services.AddRazorComponents()
 
 // Add device-specific services used by the AppMAUIBlazorAndWebBlazor.Shared project
 builder.Services.AddSingleton<IFormFactor, FormFactor>();
+builder.Services.AddScoped
+                        (
+                            sp => new HttpClient
+                                                        {
+                                                            // WASM BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
+                                                            BaseAddress = new Uri("http://localhost:5029")
+                                                        }
+                        );
+builder.Services.AddFluentUIComponents();
 
 var app = builder.Build();
 
