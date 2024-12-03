@@ -68,4 +68,30 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" />
 	</ItemGroup>
 
+	<!--
+	<PropertyGroup Condition="'$(TargetFramework)'=='net8.0-android' And '$(Configuration)'=='Release'">
+		<AndroidEnableProfiler>true</AndroidEnableProfiler>
+		<RuntimeIdentifier>android-arm64</RuntimeIdentifier>
+	</PropertyGroup>
+	<ItemGroup Condition="'$(TargetFramework)'=='net8.0-android' And '$(Configuration)'=='Release'">
+		<AndroidEnvironment Include="Platforms/Android/environment.txt" />
+	</ItemGroup>
+	-->
+	
+	<PropertyGroup>
+		<RuntimeIdentifier Condition="'$(TargetFramework)' == 'net8.0-android'">android-arm64</RuntimeIdentifier>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(AndroidEnableProfiler)'=='true'">
+		<!--
+		<IsEmulator Condition="'$(IsEmulator)' == ''">true</IsEmulator>
+		-->
+		<AndroidLinkResources>true</AndroidLinkResources>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(AndroidEnableProfiler)'=='true'">
+		<AndroidEnvironment Condition="'$(IsEmulator)' == 'true'" Include="Platforms\Android\environment.emulator.txt" />
+		<AndroidEnvironment Condition="'$(IsEmulator)' != 'true'" Include="Platforms\Android\environment.device.txt" />
+	</ItemGroup>
+	
 </Project>
