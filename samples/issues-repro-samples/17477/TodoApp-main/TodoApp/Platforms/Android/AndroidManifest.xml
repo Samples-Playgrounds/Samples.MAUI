@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.walker.sarsey.todoapp">
+	<application android:allowBackup="false"
+				 android:supportsRtl="true"
+				 android:icon="@mipmap/appicon"
+				 android:label="Notas Diarias"
+				 android:windowSoftInputMode="adjustPan"
+				 android:appCategory="productivity"></application>
+	<uses-sdk android:minSdkVersion="24"/>
+</manifest>

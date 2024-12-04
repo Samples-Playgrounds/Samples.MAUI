@@ -1,0 +1,63 @@
+﻿@page "/notewrite"
+@inject NavigationManager NavManager
+
+
+<MudTextField T="string" Variant="Variant.Text" @bind-Text=@texto Lines="10" id="idtextArea" />
+
+<MudButtonGroup Color="Color.Primary" Variant="Variant.Filled">
+    <MudButton OnClick="OnCloseClicked"><i class="oi oi-x"></i></MudButton>
+    <MudButton OnClick="OnClockClicked"> <i class="oi oi-clock"></i></MudButton>
+    <MudButton OnClick="OnCheckClicked"> <i class="oi oi-check"></i></MudButton>
+</MudButtonGroup>
+
+@code {
+
+    private string texto;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var dailyNote = App._notesRepo.dailyNote;
+
+        texto = dailyNote.Text;
+    }
+
+    private async void OnCheckClicked()
+    {
+
+        if (App._notesRepo.dailyNote.Id == 0 && !string.IsNullOrEmpty(texto?.Trim()))
+        {
+            await App._notesRepo.AddNewEntryAsync(texto.Trim(), App._notesRepo.dailyNote.Time);
+        }
+        else
+        {
+            if (texto.Trim() != App._notesRepo.dailyNote.Text)
+            {
+                App._notesRepo.dailyNote.Text = texto.Trim();
+                await App._notesRepo.UpdateNoteAsync(App._notesRepo.dailyNote);
+            }
+        }
+        NavManager.NavigateTo("/");
+    }
+
+    private async void OnClockClicked()
+    {
+        texto = await MyJsInterop.setTextToCurrentPos("idtextArea", DateTime.Now.ToString("HH:mm"));
+    }
+
+    private void OnCloseClicked()
+    {
+        NavManager.NavigateTo("/");
+    }
+    private void FetchData()
+    {
+        var dailyNote = App._notesRepo.dailyNote;
+
+        texto = dailyNote.Text;
+        StateHasChanged();
+    }
+    private Task MethodThatBringText(string value)
+    {
+        texto = value;
+        return Task.CompletedTask;
+    }
+}

@@ -1,0 +1,35 @@
+﻿@page "/todo_new"
+
+<h3>Novo TODO</h3>
+
+<div class="card add">
+    <div class="cb-container">
+        <button id="add-btn" @onclick="Salvar"> 
+            <span class="oi oi-plus" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <div class="txt-container">
+        <input type="text" class="txt-input" placeholder="Create a new todo..." spellcheck="false" autocomplete="off" @bind-value="novoTitulo" />
+    </div>
+
+</div>
+
+<div>
+    <span> @statusMessage </span>
+</div>
+
+@code {
+    private string statusMessage;
+    private string novoTitulo;
+
+    void Salvar()
+    {
+        statusMessage = "";
+
+        App.TodoRepo.AddNewTodo(novoTitulo, "");
+        statusMessage = App.TodoRepo.StatusMessage;
+        novoTitulo = "";
+
+    }
+}

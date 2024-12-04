@@ -1,0 +1,33 @@
+﻿﻿
+<MudDatePicker @ref="_picker" 
+    DateChanged="() => ItemClicked(_picker.Date)" 
+    PickerVariant="PickerVariant.Static" 
+    DisableToolbar="true" 
+    Color="Color.Secondary" />
+
+
+
+@code {
+    [Parameter] public Action<DateTime?> ItemClicked { get; set; }
+
+    MudDatePicker _picker = default!;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _picker = new();
+    }
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            _picker.GoToDate(App._notesRepo.dailyNote.Time);
+        }
+    }
+   
+
+    private async Task Today()
+    {
+        await _picker.GoToDate(DateTime.Today);
+    }
+
+}

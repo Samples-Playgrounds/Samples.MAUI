@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TodoApp.Views.LoginPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:TodoApp.Views"
+    Title="LoginPage"
+    BackgroundColor="LightBlue">
+    <views:KeyboardView Padding="0,60,0,0" VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Image
+            Grid.Row="0"
+            HeightRequest="80"
+            HorizontalOptions="CenterAndExpand"
+            Source="ic_test"
+            WidthRequest="80" />
+
+        <Label
+            x:Name="welcomeText"
+            Grid.Row="1"
+            Margin="0,20,0,0"
+            FontAttributes="Bold"
+            FontSize="25"
+            HorizontalOptions="CenterAndExpand"
+            Text="Login"
+            TextColor="CornflowerBlue"
+            VerticalOptions="Center" />
+
+
+        <Entry
+            x:Name="email"
+            Grid.Row="2"
+            Margin="20,0"
+            Keyboard="Email"
+            Placeholder="Email"
+            ReturnCommand="{Binding OnLoginCommand}"
+            ReturnType="Done" />
+
+        <Entry
+            x:Name="password"
+            Grid.Row="3"
+            Margin="20,0"
+            HeightRequest="50"
+            IsPassword="true"
+            Placeholder="Password"
+            ReturnCommand="{Binding OnLoginCommand}"
+            ReturnType="Done" />
+
+
+        <Button
+            Grid.Row="4"
+            BackgroundColor="CornflowerBlue"
+            CornerRadius="0"
+            HeightRequest="60"
+            Text="Login"
+            TextColor="White"
+            VerticalOptions="EndAndExpand" />
+    </views:KeyboardView>
+</ContentPage>
