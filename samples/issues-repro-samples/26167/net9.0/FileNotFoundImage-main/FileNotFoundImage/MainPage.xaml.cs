@@ -11,20 +11,28 @@ public partial class MainPage : ContentPage
 
     private async void OnCounterClicked(object sender, EventArgs e)
     {
-
-        var stream = await FileSystem.OpenAppPackageFileAsync("dotnet_bot.png");
+        var s1 = await FileSystem.OpenAppPackageFileAsync("dotnet_bot.png");
         
-        using var memoryStream = new MemoryStream();
-        await stream.CopyToAsync(memoryStream);
+        using var ms1 = new MemoryStream();
+        await s1.CopyToAsync(ms1);
+        
+        
+        var byteImg1 = ms1.ToArray();
+        
+        var s2 = await FileSystem.OpenAppPackageFileAsync("dotnet_bot_raw.png");
+        
+        using var ms2 = new MemoryStream();
+        await s2.CopyToAsync(ms1);
+        
+        var byteImg2 = ms1.ToArray();
 
-        var byteImg = memoryStream.ToArray();
-        // count++;
-        //
-        // if (count == 1)
-        //     CounterBtn.Text = $"Clicked {count} time";
-        // else
-        //     CounterBtn.Text = $"Clicked {count} times";
-        //
-        // SemanticScreenReader.Announce(CounterBtn.Text);
+		count++;
+
+		if (count == 1)
+			CounterBtn.Text = $"Clicked {count} time";
+		else
+			CounterBtn.Text = $"Clicked {count} times";
+
+		SemanticScreenReader.Announce(CounterBtn.Text);
     }
 }
