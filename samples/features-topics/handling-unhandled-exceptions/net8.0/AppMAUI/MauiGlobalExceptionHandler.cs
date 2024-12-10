@@ -8,6 +8,11 @@
 // https://github.com/dotnet/maui/discussions/653
 // https://peterno.wordpress.com/2015/04/15/unhandled-exception-handling-in-ios-and-android-with-xamarin/
 // https://github.com/xamarin/xamarin-macios/issues/15252
+// https://github.com/dotnet/android/issues/6211
+// https://github.com/dotnet/maui/discussions/653
+// https://github.com/Xandroid4Net/MyExamples/tree/master/UnhandledExceptionExample
+
+
 public static class MauiGlobalExceptionHandler
 {
 #if WINDOWS
@@ -80,7 +85,6 @@ public static class MauiGlobalExceptionHandler
 #endif
 
 #if ANDROID
-
         // For Android:
         // All exceptions will flow through Android.Runtime.AndroidEnvironment.UnhandledExceptionRaiser,
         // and NOT through AppDomain.CurrentDomain.UnhandledException
@@ -92,6 +96,14 @@ public static class MauiGlobalExceptionHandler
                 UnhandledException?.Invoke(sender, new UnhandledExceptionEventArgs(args.Exception, true));
             };
         }
+
+        Java.Lang.Thread.DefaultUncaughtExceptionHandler 
+        = new CustomUncaughtExceptionHandler
+                            (
+                                e => 
+                                UnhandledException?.Invoke(null, new UnhandledExceptionEventArgs(e, true))
+                            );
+
 #endif
 
 #if WINDOWS
@@ -136,4 +148,16 @@ public static class MauiGlobalExceptionHandler
         }
 #endif
     }
+
+#if ANDROID
+    public class CustomUncaughtExceptionHandler(Action<Java.Lang.Throwable> callback)
+        : Java.Lang.Object, Java.Lang.Thread.IUncaughtExceptionHandler
+    {
+        public void UncaughtException(Java.Lang.Thread t, Java.Lang.Throwable e)
+        {
+            callback(e);
+        }
+    }        
+#endif
+
 }
