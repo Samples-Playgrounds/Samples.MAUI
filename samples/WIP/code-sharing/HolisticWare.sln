@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppWebBlazorWASM.FluentUI", "AppWebBlazorWASM.FluentUI\AppWebBlazorWASM.FluentUI.csproj", "{48A0A04B-5D44-4C96-820E-8D0357F45340}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppWebBlazorWASM", "AppWebBlazorWASM\AppWebBlazorWASM.csproj", "{0115E62B-D0AE-457A-9986-AB1E033299E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppWebBlazorWASM.Fluent", "AppWebBlazorWASM.Fluent\AppWebBlazorWASM.Fluent.csproj", "{557AC0CE-FA1D-44F8-B2C3-6615237A3909}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppMAUIBlazorAndWebBlazor", "AppMAUIBlazorAndWebBlazor", "{390BBB22-F8BF-4B34-AA89-09311E15A6BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUIBlazorAndWebBlazor", "AppMAUIBlazorAndWebBlazor\AppMAUIBlazorAndWebBlazor\AppMAUIBlazorAndWebBlazor.csproj", "{9AA88FD4-403D-4006-908C-89AB91891F82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUIBlazorAndWebBlazor.Web", "AppMAUIBlazorAndWebBlazor\AppMAUIBlazorAndWebBlazor.Web\AppMAUIBlazorAndWebBlazor.Web.csproj", "{17C39E16-196B-40E0-BBBA-C4D5D72BA596}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUIBlazorAndWebBlazor.Shared", "AppMAUIBlazorAndWebBlazor\AppMAUIBlazorAndWebBlazor.Shared\AppMAUIBlazorAndWebBlazor.Shared.csproj", "{06472C35-9600-4B73-8BB5-8EC0BE75D84C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48A0A04B-5D44-4C96-820E-8D0357F45340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A0A04B-5D44-4C96-820E-8D0357F45340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A0A04B-5D44-4C96-820E-8D0357F45340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A0A04B-5D44-4C96-820E-8D0357F45340}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0115E62B-D0AE-457A-9986-AB1E033299E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0115E62B-D0AE-457A-9986-AB1E033299E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0115E62B-D0AE-457A-9986-AB1E033299E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0115E62B-D0AE-457A-9986-AB1E033299E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{557AC0CE-FA1D-44F8-B2C3-6615237A3909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{557AC0CE-FA1D-44F8-B2C3-6615237A3909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{557AC0CE-FA1D-44F8-B2C3-6615237A3909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{557AC0CE-FA1D-44F8-B2C3-6615237A3909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AA88FD4-403D-4006-908C-89AB91891F82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AA88FD4-403D-4006-908C-89AB91891F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AA88FD4-403D-4006-908C-89AB91891F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AA88FD4-403D-4006-908C-89AB91891F82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17C39E16-196B-40E0-BBBA-C4D5D72BA596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17C39E16-196B-40E0-BBBA-C4D5D72BA596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17C39E16-196B-40E0-BBBA-C4D5D72BA596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17C39E16-196B-40E0-BBBA-C4D5D72BA596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06472C35-9600-4B73-8BB5-8EC0BE75D84C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06472C35-9600-4B73-8BB5-8EC0BE75D84C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06472C35-9600-4B73-8BB5-8EC0BE75D84C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06472C35-9600-4B73-8BB5-8EC0BE75D84C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9AA88FD4-403D-4006-908C-89AB91891F82} = {390BBB22-F8BF-4B34-AA89-09311E15A6BE}
+		{17C39E16-196B-40E0-BBBA-C4D5D72BA596} = {390BBB22-F8BF-4B34-AA89-09311E15A6BE}
+		{06472C35-9600-4B73-8BB5-8EC0BE75D84C} = {390BBB22-F8BF-4B34-AA89-09311E15A6BE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,38 @@
+﻿@inherits LayoutComponentBase
+
+<MudThemeProvider IsDarkMode="true" Theme="MyCustomTheme" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout >
+    @* <NavMenu></NavMenu> *@
+
+    <MudMainContent Class="page">
+        @Body
+    </MudMainContent>
+</MudLayout>
+
+@code {
+    [Inject]
+    IJSRuntime jsRuntime { get; set; }
+
+    protected override void OnInitialized()
+    {
+        if (!MyJsInterop.IsReady)
+        {
+            MyJsInterop.jsRuntime = jsRuntime;
+            // MyJsInterop.IsReady = true;
+        }
+
+        base.OnInitialized();
+    }
+
+    MudTheme MyCustomTheme = new MudTheme()
+        {
+            PaletteDark = new PaletteDark()
+            {
+                Primary = Colors.Blue.Default
+            },
+    };
+
+}

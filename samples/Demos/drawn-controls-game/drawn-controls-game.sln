@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.001.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orbit.Engine", "Orbit.Engine\Orbit.Engine.csproj", "{B6475E0D-A59D-4299-8CB3-4E635442FCB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMAUI.SportsCognitiveLearning", "AppMAUI.SportsCognitiveLearning\AppMAUI.SportsCognitiveLearning.csproj", "{2216FF0F-E049-4D7F-93A1-10D51C1464BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6475E0D-A59D-4299-8CB3-4E635442FCB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6475E0D-A59D-4299-8CB3-4E635442FCB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6475E0D-A59D-4299-8CB3-4E635442FCB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6475E0D-A59D-4299-8CB3-4E635442FCB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2216FF0F-E049-4D7F-93A1-10D51C1464BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2216FF0F-E049-4D7F-93A1-10D51C1464BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2216FF0F-E049-4D7F-93A1-10D51C1464BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2216FF0F-E049-4D7F-93A1-10D51C1464BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A81E2DC-538D-4487-8888-65FCB6F0D3B2}
+	EndGlobalSection
+EndGlobal

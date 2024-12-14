@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:maps="http://schemas.microsoft.com/dotnet/2021/maui/maps"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="map_bug_tester.MainPage"
+    xmlns:local="clr-namespace:map_bug_tester"
+    x:DataType="local:MainPage"
+    BackgroundColor="#333333"
+>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            MaximumWidthRequest="400"
+        >
+
+            <maps:Map x:Name="xMap" MapType="Satellite" MapClicked="OnMapClicked" HeightRequest="350" />
+
+            <Button Text="Add Polygon A" Command="{Binding AddA}" />
+
+            <Button Text="Add Polygon B" Command="{Binding AddB}" />
+
+            <Button Text="Add Polygon C" Command="{Binding AddC}" />
+            
+            <Button Text="Add Polygon D" Command="{Binding AddD}" />
+
+            <Button Text="Add All Polygons" Command="{Binding AddAll}" />
+
+            <Button Text="Clear All Polygons" Command="{Binding ClearPolygons}" />
+
+            <!--<Button Text="Draw" Command="{Binding DrawFarmCommand}" />
+
+            <Button Text="Clear" Command="{Binding ClearPolygons}" />-->
+
+            <!--<Button Text="Add" Command="{Binding AddPolygon}" />
+
+            <Button Text="Clear" Command="{Binding ClearPolygons}" />
+
+            <Button Text="Clear then Add" Command="{Binding ClearThenAddPolygon}" />
+
+            <Button Text="Start Timer" Command="{Binding CommandStartTimer}" />
+
+            <Button Text="Stop Timer" Command="{Binding CommandStopTimer}" />-->
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

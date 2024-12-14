@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:ShoppingList.Model"
+             xmlns:viewmodel="clr-namespace:ShoppingList.ViewModels"
+             xmlns:control="clr-namespace:ShoppingList.Controls"
+             x:DataType="viewmodel:SettingsViewModel"
+             x:Class="ShoppingList.View.SettingsView"
+             BackgroundColor="{DynamicResource Secondary}"
+             Shell.PresentationMode="Animated"
+             >
+
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding GoBackToMainCommand}"/>
+    </Shell.BackButtonBehavior>
+
+    <Grid RowDefinitions="*,Auto"
+          ColumnDefinitions="*,*,*">
+        <VerticalStackLayout Margin="0,35,0,25"
+                     Spacing="10"
+                     Grid.ColumnSpan="3">
+
+            <Border BackgroundColor="{DynamicResource Primary}" Margin="0,25,0,0">
+                <Label Text="List Sorting Settings" 
+                       TextColor="{DynamicResource Accent}"
+                       Margin="5,15,15,15"
+                       Padding="10"/>
+            </Border>
+            
+            <HorizontalStackLayout
+                Margin="25,0,0,0"
+                Grid.ColumnSpan="3">
+                <Label Text="Start at back of store?"
+                    TextColor="{DynamicResource Accent}"/>
+                <CheckBox IsChecked="{Binding StartAtBackOfStore}"
+                          Color="{DynamicResource Accent}"
+                          HorizontalOptions="Center"
+                          Grid.Column="2"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Margin="25,0,0,0"
+                Grid.ColumnSpan="3">
+                <Label Text="Get Frozen Aisle Food Last?"
+                       TextColor="{DynamicResource Accent}"/>
+                <CheckBox IsChecked="{Binding FrozenFoodLast}" 
+                          Color="{DynamicResource Accent}"
+                          Grid.Column="2"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Margin="25,0,0,0">
+                <Label Text="Default Kroger Location:"
+                       TextColor="{DynamicResource Accent}"
+                       Margin="0,0,25,0"/>
+                <Label Text="{Binding KrogerStoreName}"
+                       TextColor="{DynamicResource Accent}"
+                       BackgroundColor="{DynamicResource Primary}"
+                       >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding OpenLocationFinderDialogCommand}"/>
+                    </Label.GestureRecognizers>
+                </Label>
+
+
+            </HorizontalStackLayout>
+        
+            <Border BackgroundColor="{DynamicResource Primary}" Margin="0,25,0,0">
+                <Label Text="Other Settings" 
+                       TextColor="{DynamicResource Accent}"
+                       Margin="5,15,15,15"
+                       Padding="10"/>
+            </Border>
+
+            <Label  Margin="25,0,0,0"
+                    TextColor="{DynamicResource Accent}"
+                    Text="Light Themes:"
+                    >
+            </Label>
+
+            <HorizontalStackLayout Padding="25"
+                                   Margin="25,0,0,0">
+                <control:CircularButton ButtonColor="{StaticResource NauticalPrimary}"
+                                        WidthRequest="30"
+                                        HeightRequest="30"
+                                        IsVisible="True"
+                                        BackgroundColor="Transparent"
+                                        Margin="25,0,0,25"
+                                        x:Name="Nautical">
+
+                    <control:CircularButton.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ThemeButtonPressed"
+                                              CommandParameter="Nautical"/>
+                    </control:CircularButton.GestureRecognizers>
+                    
+                </control:CircularButton>
+                <control:CircularButton ButtonColor="{StaticResource NeonPrimary}"
+                                        WidthRequest="30"
+                                        HeightRequest="30"
+                                        IsVisible="True"
+                                        Margin="25,0,0,25"
+                                        BackgroundColor="Transparent"
+                                        x:Name="Neon">
+
+                    <control:CircularButton.GestureRecognizers>
+                        <TapGestureRecognizer 
+                                              Tapped="ThemeButtonPressed"
+                                              CommandParameter="Neon"/>
+                    </control:CircularButton.GestureRecognizers>
+                    
+                </control:CircularButton>
+                <control:CircularButton ButtonColor="{StaticResource StrikingPrimary}"
+                                        WidthRequest="30"
+                                        HeightRequest="30"
+                                        IsVisible="True"
+                                        Margin="25,0,0,25"
+                                        BackgroundColor="Transparent"
+                                        x:Name="Striking">
+
+                    <control:CircularButton.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ThemeButtonPressed"
+                                              CommandParameter="Striking"/>
+                    </control:CircularButton.GestureRecognizers>
+                    
+                </control:CircularButton>
+                <control:CircularButton ButtonColor="{StaticResource MutedPrimary}"
+                                        WidthRequest="30"
+                                        HeightRequest="30"
+                                        IsVisible="True"
+                                        Margin="25,0,0,25"
+                                        BackgroundColor="Transparent"
+                                        x:Name="Muted">
+
+                    <control:CircularButton.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ThemeButtonPressed"
+                                              CommandParameter="Muted"/>
+                    </control:CircularButton.GestureRecognizers>
+                    
+                </control:CircularButton>
+                <control:CircularButton ButtonColor="{StaticResource PrettyPrimary}"
+                                        WidthRequest="30"
+                                        HeightRequest="30"
+                                        IsVisible="True"
+                                        Margin="25,0,0,25"
+                                        BackgroundColor="Transparent"
+                                        x:Name="Pretty">
+
+                    <control:CircularButton.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ThemeButtonPressed"
+                                              CommandParameter="Pretty"/>
+                    </control:CircularButton.GestureRecognizers>
+                    
+                </control:CircularButton>
+                
+            </HorizontalStackLayout>
+
+            <Label  Margin="25,0,0,0"
+                    Text="Dark Themes:"
+                    TextColor="{DynamicResource Accent}"
+                    >
+            </Label>
+
+            <HorizontalStackLayout Padding="25"
+                                   Margin="25,0,0,0">
+                <control:CircularButton ButtonColor="{StaticResource RoyaltyPrimary}"
+                                        WidthRequest="30"
+                                        HeightRequest="30"
+                                        IsVisible="True"
+                                        BackgroundColor="Transparent"
+                                        Margin="25,0,0,25"
+                                        x:Name="Royalty">
+
+                    <control:CircularButton.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ThemeButtonPressed"
+                                              CommandParameter="Royalty"/>
+                    </control:CircularButton.GestureRecognizers>
+                    
+                </control:CircularButton>
+                <control:CircularButton ButtonColor="{StaticResource DeepRedPrimary}"
+                                        WidthRequest="30"
+                                        HeightRequest="30"
+                                        IsVisible="True"
+                                        Margin="25,0,0,25"
+                                        BackgroundColor="Transparent"
+                                        x:Name="DeepRed">
+
+                    <control:CircularButton.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ThemeButtonPressed"
+                                              CommandParameter="DeepRed"/>
+                    </control:CircularButton.GestureRecognizers>
+                    
+                </control:CircularButton>
+                <control:CircularButton ButtonColor="{StaticResource DepressionPrimary}"
+                                        WidthRequest="30"
+                                        HeightRequest="30"
+                                        IsVisible="True"
+                                        Margin="25,0,0,25"
+                                        BackgroundColor="Transparent"
+                                        x:Name="Depression">
+
+                    <control:CircularButton.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ThemeButtonPressed"
+                                              CommandParameter="Depression"/>
+                    </control:CircularButton.GestureRecognizers>
+                    
+                </control:CircularButton>
+                
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+
+
+
+    </Grid>
+
+</ContentPage>

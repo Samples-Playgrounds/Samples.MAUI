@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppMAUI.UserInterface.Person.View.Page"
+    Title="Person"
+    xmlns:local-viewmodels="clr-namespace:AppMAUI.UserInterface.ViewModels.MAUI.Simple"
+    >
+    <ContentPage.BindingContext>
+    <!--
+        Attribute to any XAML Node that derives from `View`
+        (`ContentPage` or `ContentView`, but also `Frame`, `Grid`...)
+        BindingContext="AppMAUI.UserInterface.Person.View.Page"
+
+
+    xmlns:local="clr-namespace:AppMAUI.UserInterface.ViewModels.MAUI.Simple"
+    xmlns:local="clr-namespace:AppMAUI.UserInterface.ViewModels.MAUI.Simple,assembly=SomeAssembly"
+    -->
+        <local-viewmodels:Person />
+    </ContentPage.BindingContext>
+
+    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition Width="240" />
+            <ColumnDefinition Width="80" />
+        </Grid.ColumnDefinitions>
+
+        <Label 
+            Text="Name First"
+            Grid.Row="0" Grid.Column="0"
+            />
+        <Entry
+            Text="{Binding NameFirst}"
+            Grid.Row="0" Grid.Column="1"
+            />
+        <Label 
+            Text="Name Last"
+            Grid.Row="1" Grid.Column="0"
+            />
+        <Entry
+            Text="{Binding NameLast}"
+            Grid.Row="1" Grid.Column="1"
+            />
+        <Label 
+            Text="Date of Birth"
+            Grid.Row="1" Grid.Column="0"
+            />
+        <Entry
+            Text="{Binding DateofBirth}"
+            Grid.Row="1" Grid.Column="1"
+            />
+
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:ShoppingList.Model"
+             xmlns:viewmodel="clr-namespace:ShoppingList.ViewModels"
+             xmlns:controls="clr-namespace:ShoppingList.Controls"
+             x:DataType="viewmodel:UserListDataInputViewModel"
+             x:Class="ShoppingList.View.UserListDataInput"
+             BackgroundColor="{DynamicResource Secondary}"
+             Shell.PresentationMode="Animated"
+             >
+
+    <Grid ColumnDefinitions="*,*"
+          ColumnSpacing="5"
+          RowDefinitions="*,Auto">
+
+        <StackLayout Margin="20,35,20,20"
+                     Grid.ColumnSpan="2">
+
+
+            <Entry Text="{Binding UlName}" 
+                   TextColor="{DynamicResource Accent}"
+                   MaxLength="40"
+                   Style="{DynamicResource CommonEntryStyle}"
+                   ReturnCommand="{Binding UserListCompletedCommand}"
+                   Placeholder="List Name"
+                   PlaceholderColor="{DynamicResource Accent}"/>
+
+            <!--<Entry Text="{Binding UlTargetStore}"
+                   TextColor="{DynamicResource Accent}"
+                   MaxLength="20"
+                   Style="{DynamicResource CommonEntryStyle}"
+                   Placeholder="The Store you want to use this list for?"
+                   ReturnCommand="{Binding UserListCompletedCommand}"/>-->
+
+
+            <HorizontalStackLayout
+                Grid.ColumnSpan="2">
+
+                <Label Text="Type of List: "
+                      TextColor="{DynamicResource Accent}"
+                       Margin="0,5,5,0"/>
+                
+                <Picker ItemsSource="{Binding TypeList}"
+                        SelectedIndexChanged="Picker_SelectedIndexChanged"
+                        TextColor="{DynamicResource Accent}"
+                        FontSize="15"
+                        SelectedIndex="1"
+                        x:Name="TypeOfListPicker"
+                        />
+
+            </HorizontalStackLayout>
+
+
+            <HorizontalStackLayout>
+                <Label Text="Pre-populate list with Items from last time?"
+                          TextColor="{DynamicResource Accent}"
+                       Padding="10"/>
+                
+                <CheckBox IsChecked="{Binding PrepopulateList, Mode=TwoWay}"
+                          Color="{DynamicResource Accent}"
+                          CheckedChanged="CheckBox_CheckedChanged"/>
+                
+            </HorizontalStackLayout>
+            
+        </StackLayout>
+
+            <controls:CircularButton  
+			            Grid.Row="0"
+			            Grid.Column="0"
+                        x:Name="Cancel"
+                        Margin="25,25,25,25"
+                        WidthRequest="75"
+                        HeightRequest="75"
+                        ButtonColor="{DynamicResource Tertiary}"
+                        BackgroundColor="Transparent"
+                        Image="x.png"
+                        VerticalOptions="End"
+                        HorizontalOptions="Start"
+			            >
+                <controls:CircularButton.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="CancelButtonPressed"/>
+                </controls:CircularButton.GestureRecognizers>
+            </controls:CircularButton>
+
+        
+            <controls:CircularButton  
+			            Grid.Row="0"
+			            Grid.Column="2"
+                        x:Name="NewItemButton"
+                        Margin="25,25,25,25"
+                        WidthRequest="75"
+                        HeightRequest="75"
+                        ButtonColor="{DynamicResource Tertiary}"
+                        BackgroundColor="Transparent"
+                        Image="check.png"
+                        VerticalOptions="End"
+                        HorizontalOptions="End"
+			            >
+                <controls:CircularButton.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="NewItemButtonPressed"/>
+                </controls:CircularButton.GestureRecognizers>
+            </controls:CircularButton>
+    </Grid>
+
+
+</ContentPage>

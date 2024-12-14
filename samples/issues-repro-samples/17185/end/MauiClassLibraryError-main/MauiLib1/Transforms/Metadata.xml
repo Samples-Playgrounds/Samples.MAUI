@@ -1,0 +1,17 @@
+<metadata>
+
+    <attr
+        path="/api/package[@name='com.example.lib']"
+        name="managedName"
+        >
+        Com.Example.Libs
+    </attr>
+    <attr
+        path="/api/package[@name='com.example.lib']/class[@name='Reader']/field[@name='reader']"
+        name="managedName"
+        >   
+        ReaderField
+    </attr>
+
+
+</metadata>

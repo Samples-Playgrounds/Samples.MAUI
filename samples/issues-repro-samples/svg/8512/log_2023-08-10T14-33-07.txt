@@ -1,0 +1,90 @@
+--------- beginning of main
+08-10 14:32:47.393  7825  7825 D monodroid: typemap: Java type 'android/view/MotionEvent' corresponds to managed type 'Android.Views.MotionEvent, Mono.Android'
+08-10 14:32:47.394  7825  7825 D Mono    : Running class .cctor for Android.Views.MotionEvent from '/data/data/com.companyname.pathgeometryrenderbugmauiapp/files/.__override__/Mono.Android.dll'
+08-10 14:32:47.395  7825  7825 D Mono    : Running class .cctor for Android.Views.InputEvent from '/data/data/com.companyname.pathgeometryrenderbugmauiapp/files/.__override__/Mono.Android.dll'
+08-10 14:32:47.398  7825  7825 D Mono    : Running class .cctor for System.Collections.Generic.List`1<Microsoft.Maui.IWindowOverlayElement> from '/data/data/com.companyname.pathgeometryrenderbugmauiapp/files/.__override__/System.Private.CoreLib.dll'
+08-10 14:32:49.276   707   841 D EGL_emulation: app_time_stats: avg=19981.44ms min=19981.44ms max=19981.44ms count=1
+08-10 14:32:49.374   380   380 I android.hardware.vibrator-service.example: Vibrator perform
+08-10 14:32:49.376   380  7861 I android.hardware.vibrator-service.example: Starting perform on another thread
+08-10 14:32:49.382   707   841 D EGL_emulation: app_time_stats: avg=922.48ms min=12.98ms max=27224.27ms count=30
+08-10 14:32:49.384   387   518 D AudioFlinger: mixer(0x7b3a07301a70) throttle end: throttle time(32)
+08-10 14:32:49.479   380  7861 I android.hardware.vibrator-service.example: Notifying perform complete
+08-10 14:32:49.479   380   380 I android.hardware.vibrator-service.example: Vibrator off
+08-10 14:32:49.481   983  7932 D TaplEvents: Main / onOverviewToggle
+--------- beginning of system
+08-10 14:32:49.484   546   564 D AutofillManagerService: Close system dialogs
+08-10 14:32:49.489   707   707 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{440cea4 I.E...... ......ID 0,0-1080,2340} canPanelBeCollapsed(): false
+08-10 14:32:49.507   546  1650 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10153; state: DISABLED
+08-10 14:32:49.508   546  1650 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10153; state: DISABLED
+08-10 14:32:49.515   546   568 D CompatibilityChangeReporter: Compat change id reported: 158002302; UID 10153; state: ENABLED
+08-10 14:32:49.519   546   564 D AutofillManagerService: Close system dialogs
+08-10 14:32:49.529   707   707 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{440cea4 I.E...... ......ID 0,0-1080,2340} canPanelBeCollapsed(): false
+08-10 14:32:49.534  1545  1545 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=145, right=0, bottom=132}
+08-10 14:32:49.535  1545  1545 I A       : onApplyWindowInsets: Adjusting for display cutouts. Safe insets: left=0, top=136, right=0, bottom=0
+08-10 14:32:49.535  1545  1545 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=145, right=0, bottom=132}
+08-10 14:32:49.539   359   408 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f09a4000]
+08-10 14:32:49.544   546  1180 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+08-10 14:32:49.544   546  1180 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+08-10 14:32:49.544   546   546 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@dbc7da5
+08-10 14:32:49.549   359   408 D goldfish-address-space: claimShared: Ask to claim region [0x3f1cec000 0x3f2690000]
+08-10 14:32:49.551   359   408 D goldfish-address-space: claimShared: Ask to claim region [0x3f2690000 0x3f3034000]
+08-10 14:32:49.560   359   408 D goldfish-address-space: claimShared: Ask to claim region [0x3f5e4f000 0x3f67f3000]
+08-10 14:32:49.561   983   983 I LatencyTracker: ACTION_TOGGLE_RECENTS latency=78
+08-10 14:32:49.565   359   408 D goldfish-address-space: claimShared: Ask to claim region [0x3f6cce000 0x3f7672000]
+08-10 14:32:49.566   359   408 D goldfish-address-space: claimShared: Ask to claim region [0x3f49a4000 0x3f5348000]
+08-10 14:32:49.575  1545  1992 I OpenGLRenderer: Davey! duration=470272ms; Flags=1, FrameTimelineVsyncId=150443, IntendedVsync=876254205076015, Vsync=876254205076015, InputEventId=0, HandleInputStart=876254206223383, AnimationStart=876254206223751, PerformTraversalsStart=876254206223975, DrawStart=876254245024926, FrameDeadline=876254238409347, FrameInterval=876254206221136, FrameStartTime=16666666, SyncQueued=876254253351286, SyncStart=876254253904804, IssueDrawCommandsStart=876254254978968, SwapBuffers=876254255591928, FrameCompleted=876724478371686, DequeueBufferDuration=4174, QueueBufferDuration=2979554, GpuCompleted=876724478371686, SwapBuffersCompleted=876254268673841, DisplayPresentTime=0, 
+08-10 14:32:49.872   359   408 D goldfish-address-space: claimShared: Ask to claim region [0x3f3934000 0x3f3f60000]
+08-10 14:32:49.885   983   983 I AiAiSuggestUi: Clearing suggestions.
+08-10 14:32:49.886   983   983 I AiAiSuggestUi: Requesting to show indicators
+08-10 14:32:49.887   546   546 W ActivityManager: Unable to start service Intent { act=android.service.contentsuggestions.ContentSuggestionsService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService } U=0: not found
+08-10 14:32:49.887   983   983 I AiAiSuggestUi: Fetching contents, isPrimaryTask = true
+08-10 14:32:49.887   546   546 W RemoteContentSuggestionsService: could not bind to Intent { act=android.service.contentsuggestions.ContentSuggestionsService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService } using flags 67112961
+08-10 14:32:49.888   546   546 W ContentSuggestionsPerUserService: remote content suggestions service died
+08-10 14:32:49.889   546   546 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@64dbc5d
+08-10 14:32:49.890   546   546 W ActivityManager: Unable to start service Intent { act=android.service.contentsuggestions.ContentSuggestionsService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService } U=0: not found
+08-10 14:32:49.891   546   546 W RemoteContentSuggestionsService: could not bind to Intent { act=android.service.contentsuggestions.ContentSuggestionsService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService } using flags 67112961
+08-10 14:32:49.892   546   546 W ContentSuggestionsPerUserService: remote content suggestions service died
+08-10 14:32:49.892   546   546 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@9e84aa3
+08-10 14:32:49.918   546   574 I LatencyTracker: ACTION_START_RECENTS_ANIMATION latency=80
+08-10 14:32:50.368   983   983 D TaplEvents: Main / Touch event: MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, x[0]=608.9502, y[0]=1678.9471, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=META_NUM_LOCK_ON, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=876725286, downTime=876725286, deviceId=9, source=0x5002, displayId=0, eventId=187523843 }
+08-10 14:32:50.590   983  1481 D EGL_emulation: app_time_stats: avg=19.97ms min=1.45ms max=502.39ms count=32
+08-10 14:32:50.684   983   983 D TaplEvents: Main / Touch event: MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, x[0]=792.9602, y[0]=175.95703, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, classification=NONE, metaState=META_NUM_LOCK_ON, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=876725602, downTime=876725286, deviceId=9, source=0x5002, displayId=0, eventId=535868233 }
+08-10 14:32:51.001   546  2911 W ActivityManager: Unable to start service Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } U=0: not found
+08-10 14:32:51.001   546  2911 W RemoteSmartspaceService: could not bind to Intent { act=android.service.smartspace.SmartspaceService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService } using flags 67112961
+08-10 14:32:51.002   546   546 W ActivityManager: Unbind failed: could not find connection for android.app.LoadedApk$ServiceDispatcher$InnerConnection@cb404b8
+08-10 14:32:51.009   546   575 I ActivityManager: PendingStartActivityUids startActivity to updateOomAdj delay:1499ms, uid:10131
+08-10 14:32:51.010   983   983 I AiAiSuggestUi: Clearing suggestions.
+08-10 14:32:51.011   983   983 I AiAiSuggestUi: Clearing suggestions.
+08-10 14:32:51.013  1422  1422 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+08-10 14:32:51.013  1422  1422 I GsaVoiceInteractionSrv: disregardVoiceMatch: false
+08-10 14:32:51.013  1422  1422 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+08-10 14:32:51.049  1295  1295 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3420 
+08-10 14:32:51.055  1295  1295 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():2002 
+08-10 14:32:51.055  1295  1295 I DeviceUnlockedTag: DeviceUnlockedTag.notifyDeviceLockStatusChanged():31 Notify device unlocked.
+08-10 14:32:51.061  7825  7825 D Mono    : Running class .cctor for System.Array/EmptyArray`1<Microsoft.Maui.LifecycleEvents.AndroidLifecycle/OnApplicationTrimMemory> from '/data/data/com.companyname.pathgeometryrenderbugmauiapp/files/.__override__/System.Private.CoreLib.dll'
+08-10 14:32:51.062  7825  7825 D Mono    : Running class .cctor for System.SZGenericArrayEnumerator`1<Microsoft.Maui.LifecycleEvents.AndroidLifecycle/OnApplicationTrimMemory> from '/data/data/com.companyname.pathgeometryrenderbugmauiapp/files/.__override__/System.Private.CoreLib.dll'
+08-10 14:32:51.071  7825  7825 D monodroid: typemap: Java type 'android/os/Bundle' corresponds to managed type 'Android.OS.Bundle, Mono.Android'
+08-10 14:32:51.072  7825  7825 D Mono    : Running class .cctor for Android.OS.Bundle from '/data/data/com.companyname.pathgeometryrenderbugmauiapp/files/.__override__/Mono.Android.dll'
+08-10 14:32:51.072  7825  7825 D Mono    : Running class .cctor for Android.OS.BaseBundle from '/data/data/com.companyname.pathgeometryrenderbugmauiapp/files/.__override__/Mono.Android.dll'
+08-10 14:32:51.077  7825  7825 D Mono    : Running class .cctor for System.Array/EmptyArray`1<Microsoft.Maui.LifecycleEvents.AndroidLifecycle/OnSaveInstanceState> from '/data/data/com.companyname.pathgeometryrenderbugmauiapp/files/.__override__/System.Private.CoreLib.dll'
+08-10 14:32:51.088  7825  7825 D Mono    : Running class .cctor for System.SZGenericArrayEnumerator`1<Microsoft.Maui.LifecycleEvents.AndroidLifecycle/OnSaveInstanceState> from '/data/data/com.companyname.pathgeometryrenderbugmauiapp/files/.__override__/System.Private.CoreLib.dll'
+08-10 14:32:51.091   707   841 D EGL_emulation: app_time_stats: avg=180.57ms min=11.89ms max=1131.92ms count=10
+08-10 14:32:51.094   707   841 D EGL_emulation: app_time_stats: avg=54.77ms min=9.12ms max=1131.88ms count=31
+08-10 14:32:51.115   546   567 I ActivityManager: Killing 3148:com.google.android.settings.intelligence/u0a89 (adj 985): empty for 1971s
+08-10 14:32:51.118   546   567 I ActivityManager: Killing 7825:com.companyname.pathgeometryrenderbugmauiapp/u0a153 (adj 905): remove task
+08-10 14:32:51.165   546   577 I libprocessgroup: Successfully killed process cgroup uid 10089 pid 3148 in 48ms
+08-10 14:32:51.198   338   338 I Zygote  : Process 3148 exited due to signal 9 (Killed)
+--------- beginning of kernel
+08-10 14:32:51.158     0     0 I binder  : undelivered transaction 8687408, process died.
+08-10 14:32:51.201   546  2791 I WindowManager: WIN DEATH: Window{f5621a u0 com.companyname.pathgeometryrenderbugmauiapp/crc64b98ea09593e1d03e.MainActivity}
+08-10 14:32:51.202   546  2791 W InputManager-JNI: Input channel object 'f5621a com.companyname.pathgeometryrenderbugmauiapp/crc64b98ea09593e1d03e.MainActivity (client)' was disposed without first being removed with the input manager!
+08-10 14:32:51.205   338   338 I Zygote  : Process 7825 exited due to signal 9 (Killed)
+08-10 14:32:51.210   546   577 I libprocessgroup: Successfully killed process cgroup uid 10153 pid 7825 in 0ms
+08-10 14:32:51.216   546   568 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=51 attached=false
+08-10 14:32:51.216   546   568 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=51 attached=false
+08-10 14:32:51.218   546   567 W ActivityManager: setHasOverlayUi called on unknown pid: 7825
+08-10 14:32:51.219   546   574 W UsageStatsService: Unexpected activity event reported! (com.companyname.pathgeometryrenderbugmauiapp/crc64b98ea09593e1d03e.MainActivity event : 23 instanceId : 225231318)
+08-10 14:33:00.027   707   841 D EGL_emulation: app_time_stats: avg=990.95ms min=4.74ms max=8784.86ms count=9
+08-10 14:33:02.034   546  2750 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=876736953 mSleepTimeMs=0 mIdleTimeMs=853169926 mTxTimeMs[]=[0, 0, 0, 0, 0] mRxTimeMs=0}
+08-10 14:33:02.137   337 15247 I netd    : trafficSwapActiveStatsMap() <24.96ms>
+08-10 14:33:02.154   337 15247 I netd    : tetherGetStats() -> {[]} <16.17ms>

@@ -1,0 +1,91 @@
+﻿@page "/list_todo"
+@using TodoApp.Data;
+@inject NavigationManager NavManager
+
+
+<h3>Todo List</h3>
+
+<div @ontouchstart="HandleTouchEventStart" @ontouchend="HandleTouchEventEnd">
+</div>
+
+<div>
+    <span> @statusMessage </span>
+</div>
+
+<ul class="todos">
+
+    @foreach (var item in todos)
+    {
+        <li class="card">
+            <div class="cb-container">
+                @if (item.Feito)
+                {
+                    <input type="checkbox" class="cb-input" value="item.Feito" checked @onchange="eventArgs => { CheckboxClicked(item, eventArgs.Value); }" />
+                }
+                else
+                {
+                    <input type="checkbox" class="cb-input" value="item.Feito" @onchange="eventArgs => { CheckboxClicked(item, eventArgs.Value); }" />
+                }
+                <span class="check"></span>
+            </div>
+            <p class="item" @onclick="Visualizar">@item.Titulo</p>
+            <button class="clear" @onclick="eventArgs => { DeleteNote(item); }">
+                <img src="/images/icon_cross.png" alt="Clear it" />
+            </button>
+        </li>
+    }
+</ul>
+
+<div>
+    <button class="btn pmd-btn-fab pmd-floating-action btn-new-note" type="button" @onclick="NovaNota"><i class="oi oi-plus"></i> </button>
+</div>
+
+
+@code {
+    private List<NotaModel> todos;
+    private string statusMessage;
+
+    public TodoList()
+    {
+        statusMessage = "";
+
+        todos = App.TodoRepo.GetAllTodos();
+    }
+
+    void Visualizar()
+    {
+        // visualizar todo/nota
+    }
+
+    void NovaNota()
+    {
+        NavManager.NavigateTo("/todo_new");
+    }
+
+    void CheckboxClicked(NotaModel todo, object eventos)
+    {
+        statusMessage = "";
+        todo.Feito = !todo.Feito;
+        App.TodoRepo.UpdateTodo(todo);
+        statusMessage = App.TodoRepo.StatusMessage;
+
+        todos = App.TodoRepo.GetAllTodos();
+    }
+
+    void HandleTouchEventStart(TouchEventArgs e)
+    {
+        var touchPoint = e.Touches[0].ClientX;
+    }
+    void HandleTouchEventEnd(TouchEventArgs e)
+    {
+        var touchPoint = e.ChangedTouches[0].ClientX;
+    }
+
+    void DeleteNote(NotaModel todo)
+    {
+        App.TodoRepo.DeleteTodo(todo);
+        statusMessage = App.TodoRepo.StatusMessage;
+
+        todos = App.TodoRepo.GetAllTodos();
+    }
+}

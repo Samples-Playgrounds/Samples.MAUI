@@ -1,0 +1,27 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp10.MainPage"
+			 xmlns:app="clr-namespace:MauiApp10"
+             BackgroundColor="{DynamicResource SecondaryColor}">
+	<StackLayout>
+		<Grid WidthRequest="300" HeightRequest="100">
+			<Label x:Name="HelloLabel" Scale="1.2"
+                Text="Hello "
+                Grid.Row="0" Margin="20"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="20"
+                HorizontalOptions="Center" />
+		</Grid>
+
+		<Label  Grid.Row="1" HeightRequest="170" WidthRequest="600" x:Name="HitTestLabel" Text="   "/>
+		<Button Rotation="0" Scale="1" Margin="10,15,20,40"
+                    Text="Click me" x:Name="MyBtn"
+                    FontAttributes="Bold"
+                    SemanticProperties.Hint="Counts the number of times you click"
+                    Clicked="OnCounterClicked"
+                    HorizontalOptions="Center">
+		</Button>
+
+	</StackLayout>
+
+</ContentPage>

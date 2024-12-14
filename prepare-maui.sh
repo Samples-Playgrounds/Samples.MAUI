@@ -2,8 +2,10 @@
 
 # start Android emulator to gain some time
 emulator -list-avds
-$HOME/Library/Developer/Xamarin/android-sdk-macosx/emulator/emulator \
-    -avd "pixel_2_r_11_0_-_api_30" \
+
+#$HOME/Library/Developer/Xamarin/android-sdk-macosx/emulator/emulator 
+$HOME/Library/Android/sdk/emulator/emulator \
+    -avd "Pixel_XL_API_30" \
     &
 
 

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TodoApp.Views.NoteWrite"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+    xmlns:views="clr-namespace:TodoApp.Views"
+    BackgroundColor="{DynamicResource PageBackgroundColor}"
+    NavigationPage.HasBackButton="True">
+
+    <views:KeyboardView Padding="0,60,0,0" VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Editor
+            x:Name="entry"
+            Grid.Row="0"
+            AutoSize="TextChanges"
+            HorizontalOptions="Fill"
+            Placeholder="Enter something here"
+            PlaceholderColor="{DynamicResource PrimaryTextColor}"
+            VerticalOptions="Fill" />
+
+        <Button
+            x:Name="CloseButton"
+            Grid.Row="1"
+            Clicked="CloseButton_Clicked"
+            Text="Close"
+            VerticalOptions="Fill" />
+
+    </views:KeyboardView>
+    <!--<views:KeyboardView VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <Editor
+            x:Name="entry"
+            Grid.Row="0"
+            Grid.Column="0"
+            AutoSize="TextChanges"
+            HorizontalOptions="Fill"
+            Placeholder="Enter something here"
+            VerticalOptions="Fill" />
+
+        <Button
+            x:Name="CloseButton"
+            Grid.Row="1"
+            Grid.Column="0"
+            Clicked="CloseButton_Clicked"
+            Text="Close"
+            VerticalOptions="Fill" />
+
+
+    </views:KeyboardView>-->
+
+</ContentPage>

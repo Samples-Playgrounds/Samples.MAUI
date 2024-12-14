@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="413.852" height="808.197" viewBox="0 0 413.852 808.197">
+  <defs>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800');
+		.st0{fill:#223F3B;}
+		.st1{fill:#5AC87A;}
+	</style>
+	  <pattern id="pattern" x="0" y="0" width="30" height="31" viewBox="0 0 30 31" patternUnits="userSpaceOnUse" >
+		  <rect x="0" y="0" width="30" height="31" fill="#ffffff"/>
+		  <path d="M-12.627,0H-21.6a1.07,1.07,0,0,0-1.062,1.075A1.071,1.071,0,0,0-21.6,2.152h7.908v7.975A1.069,1.069,0,0,0-12.627,11.2a1.068,1.068,0,0,0,1.061-1.076V1.075A1.068,1.068,0,0,0-12.627,0" transform="translate(24.996 9.291)" fill="rgba(82,190,41,0.1)"/>
+	  </pattern>
+  </defs>
+	<rect x="0" y="0" width="413.852" height="808.197" opacity="0.999" fill="url(#pattern)"/>
+  <g transform="translate(87.526 250) scale(1.5)">
+	<g id="Text" transform="translate(77.589 0)">
+		<text y="70" font-family="Poppins" font-size="15" fill="#404D3A" text-anchor="middle">Test message with font</text>
+		<text y="90" font-size="15" fill="#404D3A" text-anchor="middle">Test message without font</text>
+	</g>
+  </g>
+</svg>

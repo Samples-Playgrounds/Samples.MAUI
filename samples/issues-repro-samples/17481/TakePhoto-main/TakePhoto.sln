@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakePhoto", "TakePhoto.csproj", "{5DD63EA1-A895-46A2-9757-6EC7B84AD2EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DD63EA1-A895-46A2-9757-6EC7B84AD2EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DD63EA1-A895-46A2-9757-6EC7B84AD2EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DD63EA1-A895-46A2-9757-6EC7B84AD2EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DD63EA1-A895-46A2-9757-6EC7B84AD2EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06C766B0-1AAB-4254-81A1-F8B36F017C29}
+	EndGlobalSection
+EndGlobal

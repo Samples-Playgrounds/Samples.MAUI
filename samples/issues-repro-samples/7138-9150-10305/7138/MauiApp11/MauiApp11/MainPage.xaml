@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp11.MainPage">
+
+    <Picker Title="Select a monkey"
+            SelectedIndex="3">
+        <Picker.Items>
+            <x:String>Baboon</x:String>
+            <x:String>Capuchin Monkey</x:String>
+            <x:String>Blue Monkey</x:String>
+            <x:String>Squirrel Monkey</x:String>
+            <x:String>Golden Lion Tamarin</x:String>
+            <x:String>Howler Monkey</x:String>
+            <x:String>Japanese Macaque</x:String>
+        </Picker.Items>
+    </Picker>
+</ContentPage>

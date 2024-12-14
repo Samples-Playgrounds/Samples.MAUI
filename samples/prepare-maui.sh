@@ -2,11 +2,11 @@
 
 # start Android emulator to gain some time
 emulator -list-avds
-$HOME/Library/Developer/Xamarin/android-sdk-macosx/emulator/emulator \
-    -avd \
-        "pixel_2_r_11_0_-_api_30" \
-        &
 
+#$HOME/Library/Developer/Xamarin/android-sdk-macosx/emulator/emulator 
+$HOME/Library/Android/sdk/emulator/emulator \
+    -avd "Pixel_XL_API_30" \
+    &
 
 
 dotnet tool uninstall   -g Redth.Net.Maui.Check
@@ -33,17 +33,17 @@ echo    $TIMESTAMP
 dotnet \
     new \
         mauilib \
-            --output ./Demos/macosx/dotnet/$TIMESTAMP/Library.MAUI
+            --output ./Demos/macosx/dotnet/$TIMESTAMP/LibraryMAUI
 
 dotnet \
     new \
         maui \
-            --output ./Demos/macosx/dotnet/$TIMESTAMP/App.MAUI
+            --output ./Demos/macosx/dotnet/$TIMESTAMP/AppMAUI
 
 dotnet \
     new \
         maui-blazor \
-            --output ./Demos/macosx/dotnet/$TIMESTAMP/App.MAUI.Blazor
+            --output ./Demos/macosx/dotnet/$TIMESTAMP/AppMAUI.HybridBlazor
 
 
 #	<PropertyGroup>
@@ -92,7 +92,7 @@ dotnet \
 
 dotnet \
     build \
-        ./Demos/macosx/dotnet/$TIMESTAMP/ApLibraryp.MAUI/Library.MAUI.csproj \
+        ./Demos/macosx/dotnet/$TIMESTAMP/Library.MAUI/Library.MAUI.csproj \
             -t:Run \
             -f:net6.0-android
 

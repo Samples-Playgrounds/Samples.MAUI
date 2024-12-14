@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PathGeometryTest.MainPage"
+             BackgroundColor="LightGray">
+
+    <VerticalStackLayout HorizontalOptions="Center">
+        <HorizontalStackLayout Spacing="5">
+            <Button Text="Load Working Path" Clicked="WorkingButton_Clicked" BackgroundColor="Green" />
+            <Button Text="Load Broken Path" Clicked="BrokenButton_Clicked" BackgroundColor="Red" />
+        </HorizontalStackLayout>
+
+        <Path x:Name="path1" VerticalOptions="Center" Aspect="Uniform" HeightRequest="400" WidthRequest="400" Fill="Black" />
+    </VerticalStackLayout>
+
+</ContentPage>

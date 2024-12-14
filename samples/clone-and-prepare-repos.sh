@@ -58,7 +58,7 @@ rm -fr ./external-samples/jsuarezruiz--dotnet-maui-samples/
 git clone \
     --recursive \
     https://github.com/jsuarezruiz/dotnet-maui-samples.git \
-    ./external-samples/jsuarezruiz--dotnet-maui-samples/ 
+    ./external-samples/jsuarezruiz--dotnet-maui-samples/
 rm -fr ./external-samples/jsuarezruiz--dotnet-maui-samples/.git/
 
 rm -fr ./external-samples/beto-rodriguez--LiveCharts2-master/
@@ -78,8 +78,11 @@ git clone \
     ./external-samples/beto-rodriguez--LiveCharts2-dev/
 rm -fr ./external-samples/beto-rodriguez--LiveCharts2-dev/.git/
 
+# https://github.com/jsuarezruiz/netmaui-chat-app-challenge
+# https://github.com/jsuarezruiz/netmaui-chat-app-challenge.git
+# https://github.com/jsuarezruiz/netmaui-chat-app-challenge/archive/refs/heads/main.zip
 
-
+# https://github.com/VladislavAntonyuk/MauiSamples.git
 
 
 dotnet new classlib \
@@ -95,9 +98,6 @@ dotnet sln \
     add \
     WeatherTwentyOne.DomainBusinessLogic/WeatherTwentyOne.DomainBusinessLogic.csproj \
     --solution-folder DomainBusinessLogic \
-
-
-
 
 
 

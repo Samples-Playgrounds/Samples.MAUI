@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppMAUI.UserInterface.Clock.View.Page"
+    xmlns:local-viewmodels="clr-namespace:AppMAUI.UserInterface.ViewModels.MAUI.Simple"
+    Title="Clock"
+    >
+    <!--
+        Attribute to any XAML Node that derives from `View`
+        (`ContentPage` or `ContentView`, but also `Frame`, `Grid`...)
+        BindingContext="AppMAUI.UserInterface.Clock.View.Page"
+
+
+    xmlns:local="clr-namespace:AppMAUI.UserInterface.ViewModels.MAUI.Simple"
+    xmlns:local="clr-namespace:AppMAUI.UserInterface.ViewModels.MAUI.Simple,assembly=SomeAssembly"
+    -->
+    <ContentPage.BindingContext>
+        <local-viewmodels:Clock />
+    </ContentPage.BindingContext>
+
+    <Label 
+        Text="{Binding DateTime, StringFormat='{0:T}'}"
+        FontSize="18"
+        HorizontalOptions="Center"
+        VerticalOptions="Center" 
+        />        
+</ContentPage>

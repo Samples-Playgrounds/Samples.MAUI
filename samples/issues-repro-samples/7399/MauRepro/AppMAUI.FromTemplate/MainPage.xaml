@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppMAUI.FromTemplate.MainPage"
+    >
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
+            >
+
+            <!--
+                Rendered YES
+                Source="https://docs.microsoft.com/dotnet/maui"
+
+                Rendered YES on iOS 1 page PDF
+                Source="https://orimi.com/pdf-test.pdf"
+                Source="https://w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+
+                Rendered NO
+                Source="https://www.guycribb.com//userfiles/documents/INsight.pdf"
+
+                Rendered NO does not exist
+                Source="https://docs.google.com/gview?embedded=true&url=https%3A%2F%2Fwww.guycribb.com%2F%2Fuserfiles%2Fdocuments%2FINsight.pdf"
+            -->
+            <Entry
+                x:Name="entry_url"
+                Text="https://docs.google.com/gview?embedded=true&amp;url=https://www.guycribb.com/userfiles/documents/INsight.pdf"
+                HorizontalOptions="Center"
+                />
+            <Button
+                x:Name="button_web_view"
+                Text="WebView"
+                SemanticProperties.Hint="Load WebView with PDF from URL"
+                Clicked="OnClicked_button_web_view"
+                HorizontalOptions="Center"
+                />
+            <Button
+                x:Name="button_web_view_pdf"
+                Text="WebView PDF"
+                SemanticProperties.Hint="Load WebViewPDF with PDF from URL"
+                Clicked="OnClicked_button_web_view_pdf"
+                HorizontalOptions="Center"
+                />
+            <Button
+                x:Name="button_web_view_Custom"
+                Text="WebView Custom"
+                SemanticProperties.Hint="Load WebViewCustom with PDF from URL"
+                Clicked="OnClicked_button_web_view_custom"
+                HorizontalOptions="Center"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
