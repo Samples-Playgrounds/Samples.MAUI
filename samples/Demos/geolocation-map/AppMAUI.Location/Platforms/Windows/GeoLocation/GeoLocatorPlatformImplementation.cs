@@ -1,9 +1,9 @@
-namespace HolisticWare.MAUI.GeoLocation;
+namespace HolisticWare.MAUI.Location;
 
 public partial class
-                                        GeoLocatorPlatformImplementation
+                                        GeolocatorPlatformImplementation
                                         :
-                                        HolisticWare.MAUI.GeoLocation.IGeoLocator
+                                        HolisticWare.MAUI.Location.IGeolocator
 {
     public
         Task
