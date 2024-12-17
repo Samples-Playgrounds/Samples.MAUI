@@ -82,6 +82,20 @@ Android:
 12-13 22:08:34.675 I/DOTNET  (22704): Oh, that's nice...
 ```
 
+'AppMAUI.exe' (CoreCLR: clrhost): Loaded 'D:\Samples\MAUI\samples\issues-repro-samples\26310\net8.0\AppMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX\Microsoft.Extensions.Logging.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'AppMAUI.exe' (CoreCLR: clrhost): Loaded 'D:\Samples\MAUI\samples\issues-repro-samples\26310\net8.0\AppMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX\Microsoft.Extensions.Options.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+Stream appsettings.1.json opened
+'AppMAUI.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.11\System.Text.Json.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'AppMAUI.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.11\System.Text.Encoding.Extensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+1
+True
+Oh, that's nice...
+Stream appsettings.2.json opened
+1
+True
+Oh, that's nice...
+
+
 ## `net9.0`
 
 MacCatalyst:
@@ -144,3 +158,11 @@ iOS:
 2024-12-13 22:13:31.692886+0100 AppMAUI[83367:21211161] [General] Failed to send CA Event for app launch measure(65,7s)or ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
 ```
 
+'AppMAUI.exe' (CoreCLR: clrhost): Loaded 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App\9.0.0\System.Text.Encoding.Extensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+1
+True
+Oh, that's nice...
+Stream appsettings.2.json opened
+1
+True
+Oh, that's nice...
