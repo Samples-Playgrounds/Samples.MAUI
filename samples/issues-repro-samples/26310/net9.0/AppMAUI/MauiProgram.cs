@@ -25,30 +25,30 @@ public static class MauiProgram
 		using var stream1 = assembly.GetManifestResourceStream("AppMAUI.appsettings.1.json");
 		if (stream1 is not null)
 		{
-			Console.WriteLine("Stream appsettings.1.json opened");
+			System.Diagnostics.Trace.WriteLine("Stream appsettings.1.json opened");
 		}
 		var config1 = new Microsoft.Extensions.Configuration.ConfigurationBuilder()
 																				.AddJsonStream(stream1)
 																				.Build();
 		builder.Configuration.AddConfiguration(config1);
 
-        Console.WriteLine($"{builder.Configuration["Settings:KeyOne"]}");
-        Console.WriteLine($"{builder.Configuration["Settings:KeyTwo"]}");
-        Console.WriteLine($"{builder.Configuration["Settings:KeyThree:Message"]}");
+        System.Diagnostics.Trace.WriteLine($"{builder.Configuration["Settings:KeyOne"]}");
+        System.Diagnostics.Trace.WriteLine($"{builder.Configuration["Settings:KeyTwo"]}");
+        System.Diagnostics.Trace.WriteLine($"{builder.Configuration["Settings:KeyThree:Message"]}");
 
         using var stream2 = assembly.GetManifestResourceStream("AppMAUI.appsettings.2.json");
 		if (stream2 is not null)
 		{
-			Console.WriteLine("Stream appsettings.2.json opened");
+			System.Diagnostics.Trace.WriteLine("Stream appsettings.2.json opened");
 		}
 		var config2 = new Microsoft.Extensions.Configuration.ConfigurationBuilder()
 																				.AddJsonStream(stream2)
 																				.Build();
 		builder.Configuration.AddConfiguration(config2);
 
-        Console.WriteLine($"{builder.Configuration["Settings:KeyOne"]}");
-        Console.WriteLine($"{builder.Configuration["Settings:KeyTwo"]}");
-        Console.WriteLine($"{builder.Configuration["Settings:KeyThree:Message"]}");
+        System.Diagnostics.Trace.WriteLine($"{builder.Configuration["Settings:KeyOne"]}");
+        System.Diagnostics.Trace.WriteLine($"{builder.Configuration["Settings:KeyTwo"]}");
+        System.Diagnostics.Trace.WriteLine($"{builder.Configuration["Settings:KeyThree:Message"]}");
         
         
 		return builder.Build();
