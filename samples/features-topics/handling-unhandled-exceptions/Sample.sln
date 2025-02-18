@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net8.0", "net8.0", "{2A63FCA3-E2E6-4908-83CA-1EC2F43124B4}"
+	ProjectSection(SolutionItems) = preProject
+		net8.0\global.json = net8.0\global.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net9.0", "net9.0", "{773DD221-00DE-48B0-883B-376F30483862}"
+	ProjectSection(SolutionItems) = preProject
+		net9.0\global.json = net9.0\global.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUI", "net8.0\AppMAUI\AppMAUI.csproj", "{86AAD980-FF65-4D70-AC08-90ED7AA0DB74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUI", "net9.0\AppMAUI\AppMAUI.csproj", "{95D904FB-3322-4868-AA1C-1F711A9C8C73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "library-source", "library-source", "{F1F3E327-46BE-4D31-9DBC-1A75800B8D3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.MAUI.Images", "HolisticWare.MAUI.Images\HolisticWare.MAUI.Images.csproj", "{E067FAD3-80DA-4F19-9019-EE0345392DD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.HolisticWare.MAUI.Images", "Test.HolisticWare.MAUI.Images\Test.HolisticWare.MAUI.Images.csproj", "{15C465BF-F2BC-4D0C-B397-82E9B1771E18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{BE2C2389-8B21-4FE7-AD88-275A0525B941}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{86AAD980-FF65-4D70-AC08-90ED7AA0DB74} = {2A63FCA3-E2E6-4908-83CA-1EC2F43124B4}
+		{95D904FB-3322-4868-AA1C-1F711A9C8C73} = {773DD221-00DE-48B0-883B-376F30483862}
+		{E067FAD3-80DA-4F19-9019-EE0345392DD0} = {F1F3E327-46BE-4D31-9DBC-1A75800B8D3E}
+		{2A63FCA3-E2E6-4908-83CA-1EC2F43124B4} = {BE2C2389-8B21-4FE7-AD88-275A0525B941}
+		{773DD221-00DE-48B0-883B-376F30483862} = {BE2C2389-8B21-4FE7-AD88-275A0525B941}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86AAD980-FF65-4D70-AC08-90ED7AA0DB74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86AAD980-FF65-4D70-AC08-90ED7AA0DB74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86AAD980-FF65-4D70-AC08-90ED7AA0DB74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86AAD980-FF65-4D70-AC08-90ED7AA0DB74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95D904FB-3322-4868-AA1C-1F711A9C8C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95D904FB-3322-4868-AA1C-1F711A9C8C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95D904FB-3322-4868-AA1C-1F711A9C8C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95D904FB-3322-4868-AA1C-1F711A9C8C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E067FAD3-80DA-4F19-9019-EE0345392DD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E067FAD3-80DA-4F19-9019-EE0345392DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E067FAD3-80DA-4F19-9019-EE0345392DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E067FAD3-80DA-4F19-9019-EE0345392DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15C465BF-F2BC-4D0C-B397-82E9B1771E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15C465BF-F2BC-4D0C-B397-82E9B1771E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15C465BF-F2BC-4D0C-B397-82E9B1771E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15C465BF-F2BC-4D0C-B397-82E9B1771E18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

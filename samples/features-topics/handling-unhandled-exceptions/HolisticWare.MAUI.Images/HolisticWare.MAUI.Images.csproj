@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0;net8.0;net9.0</TargetFrameworks>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>0.0.0.1</Version>
+        <Title>a</Title>
+        <Description>a</Description>
+        <Copyright>a</Copyright>
+        <PackageProjectUrl>a</PackageProjectUrl>
+        <PackageLicenseUrl>a</PackageLicenseUrl>
+        <RepositoryUrl>a</RepositoryUrl>
+        <RepositoryType>a</RepositoryType>
+        <PackageTags>a</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Build" Version="17.12.6" />
+      <PackageReference Include="Microsoft.Build.Tasks.Core" Version="17.12.6" />
+      <!--
+      <PackageReference Include="Microsoft.CodeAnalysis" Version="4.12.0" />
+      -->
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="build\" />
+    </ItemGroup>
+
+</Project>
