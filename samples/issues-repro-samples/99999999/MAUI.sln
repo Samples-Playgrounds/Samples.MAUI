@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net9.0", "net9.0", "{9B4BE00F-0983-4C87-A5E9-F7103274ADF9}"
+	ProjectSection(SolutionItems) = preProject
+		net9.0\global.json = net9.0\global.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net8.0", "net8.0", "{24D3F73F-0D5F-4174-80F8-9967A4FA2995}"
+	ProjectSection(SolutionItems) = preProject
+		net8.0\global.json = net8.0\global.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUI.net80", "net8.0\AppMAUI.net80\AppMAUI.net80.csproj", "{80C37816-0E2A-44A6-A864-6578D8D76C04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUI.net90", "net9.0\AppMAUI.net90\AppMAUI.net90.csproj", "{EFD4AFB5-7929-42E6-8CA1-4C496AB6802F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80C37816-0E2A-44A6-A864-6578D8D76C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80C37816-0E2A-44A6-A864-6578D8D76C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80C37816-0E2A-44A6-A864-6578D8D76C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80C37816-0E2A-44A6-A864-6578D8D76C04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFD4AFB5-7929-42E6-8CA1-4C496AB6802F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFD4AFB5-7929-42E6-8CA1-4C496AB6802F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFD4AFB5-7929-42E6-8CA1-4C496AB6802F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFD4AFB5-7929-42E6-8CA1-4C496AB6802F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {372B0235-3082-4D0D-8F1E-B2416578FC83}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80C37816-0E2A-44A6-A864-6578D8D76C04} = {24D3F73F-0D5F-4174-80F8-9967A4FA2995}
+		{EFD4AFB5-7929-42E6-8CA1-4C496AB6802F} = {9B4BE00F-0983-4C87-A5E9-F7103274ADF9}
+	EndGlobalSection
+EndGlobal
