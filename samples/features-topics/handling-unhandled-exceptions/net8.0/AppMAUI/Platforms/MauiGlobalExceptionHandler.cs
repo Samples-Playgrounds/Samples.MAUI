@@ -13,7 +13,8 @@
 // https://github.com/Xandroid4Net/MyExamples/tree/master/UnhandledExceptionExample
 
 
-public static class MauiGlobalExceptionHandler
+public static partial class 
+                                        MauiGlobalExceptionHandler
 {
 #if WINDOWS
     private static Exception _lastFirstChanceException;
@@ -22,7 +23,10 @@ public static class MauiGlobalExceptionHandler
     // We'll route all unhandled exceptions through this one event.
     public static event UnhandledExceptionEventHandler UnhandledException;
 
-    static MauiGlobalExceptionHandler()
+    static
+                                        MauiGlobalExceptionHandler
+                                        (
+                                        )
     {
         /*
         to not catch exceptions when debugging, as this makes it easier to debug. It is somewhat of a hack, but for 
@@ -98,11 +102,15 @@ public static class MauiGlobalExceptionHandler
         }
 
         Java.Lang.Thread.DefaultUncaughtExceptionHandler 
-        = new CustomUncaughtExceptionHandler
-                            (
-                                e => 
-                                UnhandledException?.Invoke(null, new UnhandledExceptionEventArgs(e, true))
-                            );
+                                = new CustomUncaughtExceptionHandler
+                                                    (
+                                                        e => 
+                                                        UnhandledException?.Invoke
+                                                                                (
+                                                                                    null,
+                                                                                    new UnhandledExceptionEventArgs(e, true)
+                                                                                )
+                                                    );
 
 #endif
 
