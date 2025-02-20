@@ -4,7 +4,7 @@ using Android.Runtime;
 namespace AppMAUI;
 
 [Application]
-public class MainApplication : MauiApplication
+public partial class MainApplication : MauiApplication
 {
 	public MainApplication(IntPtr handle, JniHandleOwnership ownership)
 		: base(handle, ownership)

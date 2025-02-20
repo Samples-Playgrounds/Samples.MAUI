@@ -68,4 +68,17 @@
 	  <ProjectReference Include="..\..\HolisticWare.MAUI.Images\HolisticWare.MAUI.Images.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Platforms\Android\MainActivity.Lifecycle.cs">
+	    <ExcludeFromCurrentConfiguration>false</ExcludeFromCurrentConfiguration>
+	  </Compile>
+	  <Compile Update="Platforms\Android\MainApplication.Lifecycle.cs">
+	    <ExcludeFromCurrentConfiguration>false</ExcludeFromCurrentConfiguration>
+	  </Compile>
+	  <Compile Update="App.xaml.Lifecycle.cs">
+	    <DependentUpon>App.xaml</DependentUpon>
+	    <SubType>Code</SubType>
+	  </Compile>
+	</ItemGroup>
+
 </Project>
