@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net9.0", "net9.0", "{9B4BE00F-0983-4C87-A5E9-F7103274ADF9}"
+	ProjectSection(SolutionItems) = preProject
+		maui\net9.0\global.json = maui\net9.0\global.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net8.0", "net8.0", "{24D3F73F-0D5F-4174-80F8-9967A4FA2995}"
+	ProjectSection(SolutionItems) = preProject
+		maui\net8.0\global.json = maui\net8.0\global.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "maui", "maui", "{CBCF964A-87F2-4C32-8771-A31085CE8FD8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "maui-blazor-hybrid", "maui-blazor-hybrid", "{ECA938AA-9CBC-4613-AA6A-78A4926446D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net8.0", "net8.0", "{3EC83474-F182-42A0-A591-9439D2D8056D}"
+	ProjectSection(SolutionItems) = preProject
+		maui-blazor-hybrid\net8.0\global.json = maui-blazor-hybrid\net8.0\global.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net9.0", "net9.0", "{3C7A60B3-7428-43F5-82B5-7A8EF4034D37}"
+	ProjectSection(SolutionItems) = preProject
+		maui-blazor-hybrid\net9.0\global.json = maui-blazor-hybrid\net9.0\global.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUI.net80", "maui\net8.0\AppMAUI.net80\AppMAUI.net80.csproj", "{618582F0-5E2C-4EC6-9AEC-0C65EF72CBB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUI.net90", "maui\net9.0\AppMAUI.net90\AppMAUI.net90.csproj", "{1A0961E9-32CA-4CA0-8445-C9D8C417289E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUI.BlazorHybrid.net80", "maui-blazor-hybrid\net8.0\AppMAUI.BlazorHybrid.net80\AppMAUI.BlazorHybrid.net80.csproj", "{B1854005-9712-443D-B41B-867EBC7915B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUI.BlazorHybrid.net90", "maui-blazor-hybrid\net9.0\AppMAUI.BlazorHybrid.net90\AppMAUI.BlazorHybrid.net90.csproj", "{EF22CA0A-D24F-48CD-95FF-E29C73A5F7B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{618582F0-5E2C-4EC6-9AEC-0C65EF72CBB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{618582F0-5E2C-4EC6-9AEC-0C65EF72CBB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{618582F0-5E2C-4EC6-9AEC-0C65EF72CBB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{618582F0-5E2C-4EC6-9AEC-0C65EF72CBB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A0961E9-32CA-4CA0-8445-C9D8C417289E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A0961E9-32CA-4CA0-8445-C9D8C417289E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A0961E9-32CA-4CA0-8445-C9D8C417289E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A0961E9-32CA-4CA0-8445-C9D8C417289E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1854005-9712-443D-B41B-867EBC7915B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1854005-9712-443D-B41B-867EBC7915B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1854005-9712-443D-B41B-867EBC7915B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1854005-9712-443D-B41B-867EBC7915B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF22CA0A-D24F-48CD-95FF-E29C73A5F7B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF22CA0A-D24F-48CD-95FF-E29C73A5F7B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF22CA0A-D24F-48CD-95FF-E29C73A5F7B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF22CA0A-D24F-48CD-95FF-E29C73A5F7B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {372B0235-3082-4D0D-8F1E-B2416578FC83}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{24D3F73F-0D5F-4174-80F8-9967A4FA2995} = {CBCF964A-87F2-4C32-8771-A31085CE8FD8}
+		{9B4BE00F-0983-4C87-A5E9-F7103274ADF9} = {CBCF964A-87F2-4C32-8771-A31085CE8FD8}
+		{3EC83474-F182-42A0-A591-9439D2D8056D} = {ECA938AA-9CBC-4613-AA6A-78A4926446D5}
+		{3C7A60B3-7428-43F5-82B5-7A8EF4034D37} = {ECA938AA-9CBC-4613-AA6A-78A4926446D5}
+		{618582F0-5E2C-4EC6-9AEC-0C65EF72CBB1} = {24D3F73F-0D5F-4174-80F8-9967A4FA2995}
+		{1A0961E9-32CA-4CA0-8445-C9D8C417289E} = {9B4BE00F-0983-4C87-A5E9-F7103274ADF9}
+		{B1854005-9712-443D-B41B-867EBC7915B2} = {3EC83474-F182-42A0-A591-9439D2D8056D}
+		{EF22CA0A-D24F-48CD-95FF-E29C73A5F7B7} = {3C7A60B3-7428-43F5-82B5-7A8EF4034D37}
+	EndGlobalSection
+EndGlobal
