@@ -1,8 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+	<!--
 	<UsingTask
 			TaskName="HolisticWare.MAUI.Images.MSBuild.Tasks.FileList"
 			AssemblyFile="..\..\HolisticWare.MAUI.Images\bin\Debug\netstandard2.0\HolisticWare.MAUI.Images.dll"
 	/>
+	-->
 	
 	<PropertyGroup>
 		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
@@ -42,6 +44,10 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<DefineConstants>HOLISTICWARE_TRACE;HOLISTICWARE_NOTIMPLEMENTED</DefineConstants>
+	</PropertyGroup>
+	
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
@@ -64,19 +70,19 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.1" />
+		<PackageReference Include="ZString" Version="2.6.0" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <ProjectReference Include="..\..\HolisticWare.MAUI.Images\HolisticWare.MAUI.Images.csproj" />
 	</ItemGroup>
 
+	<!--
+    Run only once (not for each target framework)
+    BeforeTargets="DispatchToInnerBuilds"
 	<Target Name="ListImages" BeforeTargets="BeforeBuild">
-		<!--
-		Run only once (not for each target framework)
-		BeforeTargets="DispatchToInnerBuilds"
-		-->
 		<HolisticWare.MAUI.Images.MSBuild.Tasks.FileList />
 	</Target>
-
+	-->
 
 </Project>
