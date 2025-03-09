@@ -1,0 +1,32 @@
+﻿<maui:MauiWinUIApplication
+    x:Class="TabbarHandlerIssue.WinUI.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:maui="using:Microsoft.Maui"
+    xmlns:local="using:TabbarHandlerIssue.WinUI"
+    xmlns:fn="clr-namespace:TabbarHandlerIssue.CoreUI">
+    <Application.Resources>
+        <Color x:Key="AppColor">#ee2d25</Color>
+        <Color x:Key="DarkTextColor">#FFFFFF</Color>
+        <ui:InverseBoolConverter x:Key="InverseBool" />
+        <Style x:Key="FormLabelStyle"
+               TargetType="Label">
+            <Setter Property="TextColor" Value="#707070" />
+            <Setter Property="FontSize" Value="6" />
+            <Setter Property="FontFamily" Value="SFProDisplayRegular" />
+        </Style>
+        <Style x:Key="FormSubLabelStyle"
+               BasedOn="{StaticResource FormLabelStyle}"
+               TargetType="Label">
+            <Setter Property="FontAttributes" Value="Italic" />
+
+        </Style>
+        <Style x:Key="FormEntryStyle"
+               TargetType="Entry">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="FontSize" Value="8" />
+            <Setter Property="FontFamily" Value="SFProDisplayRegular" />
+        </Style>
+    </Application.Resources>
+</maui:MauiWinUIApplication>
+

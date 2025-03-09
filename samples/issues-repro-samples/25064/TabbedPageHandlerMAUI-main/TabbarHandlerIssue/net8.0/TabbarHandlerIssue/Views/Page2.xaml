@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<fn:BaseContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabbarHandlerIssue.Views.Page2"
+             xmlns:fn="clr-namespace:Foundation"
+             Title="Page2">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI! This is Page2"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</fn:BaseContentPage>

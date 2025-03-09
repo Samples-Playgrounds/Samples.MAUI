@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<local:BasePage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:local="clr-namespace:Foundation"
+                       xmlns:compatibility="clr-namespace:Microsoft.Maui.Controls.Compatibility;assembly=Microsoft.Maui.Controls"
+                       x:Class="Foundation.BaseContentPage">
+    <ContentPage.Content>
+        <compatibility:RelativeLayout x:Name="RootView">
+        </compatibility:RelativeLayout>
+    </ContentPage.Content>
+</local:BasePage>
+
