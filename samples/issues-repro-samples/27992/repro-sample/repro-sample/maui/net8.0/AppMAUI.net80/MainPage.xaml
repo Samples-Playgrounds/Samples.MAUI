@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMAUI.net80.MainPage"
+             xmlns:local="clr-namespace:AppMAUI.net80"
+             >
+    <CollectionView ItemsSource="{Binding Countries}">
+        <CollectionView.ItemsLayout>
+            <GridItemsLayout Orientation="Vertical"
+                             VerticalItemSpacing="8"
+                             HorizontalItemSpacing="8"
+                             Span="3" />
+        </CollectionView.ItemsLayout>        
+        <CollectionView.ItemTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+
+</ContentPage>
