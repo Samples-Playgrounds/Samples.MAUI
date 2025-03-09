@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="testmedia.PageOne"
+             Title="PageOne">
+    <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+        <Label Text="Page 1" FontSize="Large"></Label>
+            <toolkit:MediaElement
+              x:Name="media"
+              HeightRequest="500"
+              ShouldAutoPlay="True"
+              Source="https://static.videezy.com/system/resources/previews/000/000/168/original/Record.mp4"
+              ShouldShowPlaybackControls="True" />
+        <Button
+                Text="navigate to 2"
+                FontSize="Large"
+                Clicked="OnBtnClicked"
+                HorizontalOptions="Fill" />
+    </VerticalStackLayout>
+</ContentPage>
