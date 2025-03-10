@@ -1,0 +1,389 @@
+Scheduler state at timestamp 638476620011337256:
+------------------------------------------------
+Unscheduled requests:
+  0: [-1] Unscheduled (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+Scheduler state at timestamp 638476620011818847:
+------------------------------------------------
+Node 1 Active (0 executing) (1 assigned requests, 1 configurations)
+  0: [1] RUNNING Executing (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620014772222:
+------------------------------------------------
+Node 1 Active (1 executing) (2 assigned requests, 2 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !1: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_IsProjectRestoreSupported)
+
+  1: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_IsProjectRestoreSupported)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620014928473:
+------------------------------------------------
+Node 1 Active (0 executing) (1 assigned requests, 2 configurations)
+  0: [1] RUNNING Executing (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620015208317:
+------------------------------------------------
+Node 1 Active (2 executing) (2 assigned requests, 2 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !2: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathWalk)
+
+  2: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathWalk)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620015313395:
+------------------------------------------------
+Node 1 Active (3 executing) (3 assigned requests, 3 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !2: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathWalk)
+
+  2: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathWalk)
+    !3: [1] RUNNING Executing (4)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathItemsPerFramework)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+  3: [1] RUNNING Executing (4)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathItemsPerFramework)
+    >2: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathWalk)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620017398995:
+------------------------------------------------
+Node 1 Active (2 executing) (2 assigned requests, 3 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !2: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathWalk)
+
+  2: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathWalk)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620017432084:
+------------------------------------------------
+Node 1 Active (4 executing) (3 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !2: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathWalk)
+
+  2: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathWalk)
+    !4: [1] RUNNING Executing (5)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathItemsPerFramework)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+  4: [1] RUNNING Executing (5)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathItemsPerFramework)
+    >2: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathWalk)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620017824903:
+------------------------------------------------
+Node 1 Active (2 executing) (2 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !2: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathWalk)
+
+  2: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathWalk)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620017864098:
+------------------------------------------------
+Node 1 Active (0 executing) (1 assigned requests, 4 configurations)
+  0: [1] RUNNING Executing (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620017906784:
+------------------------------------------------
+Node 1 Active (5 executing) (2 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !5: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreGraphProjectEntry)
+
+  5: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreGraphProjectEntry)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620017930980:
+------------------------------------------------
+Node 1 Active (6 executing) (3 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !5: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreGraphProjectEntry)
+
+  5: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreGraphProjectEntry)
+    !6: [1] RUNNING Executing (4)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GetRestoreSettingsPerFramework)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+  6: [1] RUNNING Executing (4)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GetRestoreSettingsPerFramework)
+    >5: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreGraphProjectEntry)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620017947211:
+------------------------------------------------
+Node 1 Active (5 executing) (2 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !5: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreGraphProjectEntry)
+
+  5: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreGraphProjectEntry)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620017976654:
+------------------------------------------------
+Node 1 Active (7 executing) (3 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !5: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreGraphProjectEntry)
+
+  5: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreGraphProjectEntry)
+    !7: [1] RUNNING Executing (5)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GetRestoreSettingsPerFramework)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+  7: [1] RUNNING Executing (5)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GetRestoreSettingsPerFramework)
+    >5: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreGraphProjectEntry)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620017993492:
+------------------------------------------------
+Node 1 Active (5 executing) (2 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !5: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreGraphProjectEntry)
+
+  5: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreGraphProjectEntry)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620018341084:
+------------------------------------------------
+Node 1 Active (0 executing) (1 assigned requests, 4 configurations)
+  0: [1] RUNNING Executing (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620018362914:
+------------------------------------------------
+Node 1 Active (8 executing) (2 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !8: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+
+  8: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620018387966:
+------------------------------------------------
+Node 1 Active (9 executing) (3 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !8: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+
+  8: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+    !9: [1] RUNNING Executing (4)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (GetAllRuntimeIdentifiers)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+  9: [1] RUNNING Executing (4)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (GetAllRuntimeIdentifiers)
+    >8: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620018408461:
+------------------------------------------------
+Node 1 Active (8 executing) (2 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !8: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+
+  8: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620018427880:
+------------------------------------------------
+Node 1 Active (10 executing) (3 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !8: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+
+  8: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+    !10: [1] RUNNING Executing (5)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (GetAllRuntimeIdentifiers)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+  10: [1] RUNNING Executing (5)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (GetAllRuntimeIdentifiers)
+    >8: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620018442889:
+------------------------------------------------
+Node 1 Active (8 executing) (2 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !8: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+
+  8: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620018471141:
+------------------------------------------------
+Node 1 Active (11 executing) (3 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !8: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+
+  8: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+    !11: [1] RUNNING Executing (4)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraphPerFramework)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+  11: [1] RUNNING Executing (4)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraphPerFramework)
+    >8: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620019593423:
+------------------------------------------------
+Node 1 Active (8 executing) (2 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !8: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+
+  8: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620019614004:
+------------------------------------------------
+Node 1 Active (12 executing) (3 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !8: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+
+  8: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+    !12: [1] RUNNING Executing (5)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraphPerFramework)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+  12: [1] RUNNING Executing (5)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraphPerFramework)
+    >8: [1] RUNNING Blocked (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620019843969:
+------------------------------------------------
+Node 1 Active (8 executing) (2 assigned requests, 4 configurations)
+  0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+    !8: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+
+  8: [1] RUNNING Executing (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+    >0: [1] RUNNING Blocked (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620019867130:
+------------------------------------------------
+Node 1 Active (0 executing) (1 assigned requests, 4 configurations)
+  0: [1] RUNNING Executing (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+
+No unscheduled requests.
+
+Configurations used during this build
+-------------------------------------
+Config 2 Node 1 TV: Current File C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj
+MSBuildRestoreSessionId = "987014b6-e8f8-43d9-b8ed-867b73a62be8"
+
+Config 3 Node 1 TV: Current File C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj
+MSBuildRestoreSessionId = "987014b6-e8f8-43d9-b8ed-867b73a62be8"
+ExcludeRestorePackageImports = "true"
+
+Config 4 Node 1 TV: Current File C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj
+MSBuildRestoreSessionId = "987014b6-e8f8-43d9-b8ed-867b73a62be8"
+ExcludeRestorePackageImports = "true"
+TargetFramework = "net8.0-android"
+
+Config 5 Node 1 TV: Current File C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj
+MSBuildRestoreSessionId = "987014b6-e8f8-43d9-b8ed-867b73a62be8"
+ExcludeRestorePackageImports = "true"
+TargetFramework = "net8.0-windows10.0.19041.0"
+
+Requests used during the build:
+-------------------------------
+Format: GlobalRequestId: [NodeId] FinalState (ConfigId) Path (Targets)
+0: [1] Completed (2)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (Restore)
+  1: [1] Completed (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_IsProjectRestoreSupported)
+  2: [1] Completed (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathWalk)
+    3: [1] Completed (4)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathItemsPerFramework)
+    4: [1] Completed (5)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreProjectPathItemsPerFramework)
+  5: [1] Completed (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateRestoreGraphProjectEntry)
+    6: [1] Completed (4)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GetRestoreSettingsPerFramework)
+    7: [1] Completed (5)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GetRestoreSettingsPerFramework)
+  8: [1] Completed (3)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraph)
+    9: [1] Completed (4)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (GetAllRuntimeIdentifiers)
+    10: [1] Completed (5)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (GetAllRuntimeIdentifiers)
+    11: [1] Completed (4)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraphPerFramework)
+    12: [1] Completed (5)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_GenerateProjectRestoreGraphPerFramework)
+Configurations used during this build
+-------------------------------------
+Requests used during the build:
+-------------------------------
+Format: GlobalRequestId: [NodeId] FinalState (ConfigId) Path (Targets)
+Scheduler state at timestamp 638476620021956362:
+------------------------------------------------
+Unscheduled requests:
+  0: [-1] Unscheduled (6)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj ()
+
+Scheduler state at timestamp 638476620021971958:
+------------------------------------------------
+Node 1 Active (0 executing) (1 assigned requests, 1 configurations)
+  0: [1] RUNNING Executing (6)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj ()
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620041488276:
+------------------------------------------------
+Node 1 Active (1 executing) (2 assigned requests, 2 configurations)
+  0: [1] RUNNING Blocked (6)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj ()
+    !1: [1] RUNNING Executing (7)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_ComputeFilesToPublishForRuntimeIdentifiers)
+
+  1: [1] RUNNING Executing (7)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_ComputeFilesToPublishForRuntimeIdentifiers)
+    >0: [1] RUNNING Blocked (6)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj ()
+
+No unscheduled requests.
+
+Scheduler state at timestamp 638476620043571374:
+------------------------------------------------
+Node 1 Active (0 executing) (1 assigned requests, 2 configurations)
+  0: [1] RUNNING Executing (6)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj ()
+
+No unscheduled requests.
+
+Configurations used during this build
+-------------------------------------
+Config 6 Node 1 TV: Current File C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj
+TargetFramework = "net8.0-android"
+
+Config 7 Node 1 TV: Current File C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj
+TargetFramework = "net8.0-android"
+RuntimeIdentifier = "android-x64"
+_ComputeFilesToPublishForRuntimeIdentifiers = "true"
+SelfContained = "true"
+AppendRuntimeIdentifierToOutputPath = "true"
+ResolveAssemblyReferencesFindRelatedSatellites = "false"
+SkipCompilerExecution = "true"
+_OuterIntermediateAssembly = "obj\Debug\net8.0-android\TestNet8.dll"
+_OuterOutputPath = "bin\Debug\net8.0-android\"
+_OuterIntermediateOutputPath = "obj\Debug\net8.0-android\"
+
+Requests used during the build:
+-------------------------------
+Format: GlobalRequestId: [NodeId] FinalState (ConfigId) Path (Targets)
+0: [1] Completed (6)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj ()
+  1: [1] Completed (7)C:\Users\Sviluppo2\Desktop\Test\TestNet8\TestNet8.csproj (_ComputeFilesToPublishForRuntimeIdentifiers)
+Configurations used during this build
+-------------------------------------
+Requests used during the build:
+-------------------------------
+Format: GlobalRequestId: [NodeId] FinalState (ConfigId) Path (Targets)
