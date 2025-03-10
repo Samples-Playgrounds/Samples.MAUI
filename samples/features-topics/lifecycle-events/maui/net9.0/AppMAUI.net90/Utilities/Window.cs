@@ -1,4 +1,4 @@
-namespace AppMAUI;
+namespace AppMAUI.net90;
 
 /// <summary>
 /// Window class used for xplat Lifecycle

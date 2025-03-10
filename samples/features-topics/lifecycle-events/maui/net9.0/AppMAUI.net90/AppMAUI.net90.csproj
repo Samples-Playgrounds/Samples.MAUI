@@ -72,5 +72,27 @@
 	<ItemGroup>
 		<PackageReference Include="ZString" Version="2.6.0" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Utilities\Window.cs">
+	    <ExcludeFromCurrentConfiguration>true</ExcludeFromCurrentConfiguration>
+	  </Compile>
+	  <Compile Update="Platforms\Android\Utilities\Lifecycle\Lifecycle.cs">
+	    <ExcludeFromCurrentConfiguration>false</ExcludeFromCurrentConfiguration>
+	  </Compile>
+	  <Compile Update="Platforms\Android\Utilities\Lifecycle\MainActivity.Lifecycle.cs">
+	    <ExcludeFromCurrentConfiguration>false</ExcludeFromCurrentConfiguration>
+	  </Compile>
+	  <Compile Update="Platforms\Android\Utilities\Lifecycle\MainApplication.Lifecycle.cs">
+	    <ExcludeFromCurrentConfiguration>false</ExcludeFromCurrentConfiguration>
+	  </Compile>
+	  <Compile Update="Utilities\ExceptionHandling\MauiGlobalExceptionHandler.cs">
+	    <ExcludeFromCurrentConfiguration>true</ExcludeFromCurrentConfiguration>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Platforms\Xplat\" />
+	</ItemGroup>
 	
 </Project>

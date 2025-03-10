@@ -1,17 +1,18 @@
 
-// https://gist.github.com/myrup/43ee8038e0fd6ef4d31cbdd67449a997
-// https://sentry.io/for/dotnet-maui/
-// https://gist.github.com/mattjohnsonpint/7b385b7a2da7059c4a16562bc5ddb3b7
-// https://stackoverflow.com/questions/5762526/how-can-i-make-something-that-catches-all-unhandled-exceptions-in-a-winforms-a
-// https://learn.microsoft.com/en-us/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/processing-unhandled-exceptions-cs
-// https://learn.microsoft.com/en-us/dotnet/api/system.appdomain.unhandledexception
-// https://github.com/dotnet/maui/discussions/653
-// https://peterno.wordpress.com/2015/04/15/unhandled-exception-handling-in-ios-and-android-with-xamarin/
-// https://github.com/xamarin/xamarin-macios/issues/15252
-// https://github.com/dotnet/android/issues/6211
-// https://github.com/dotnet/maui/discussions/653
-// https://github.com/Xandroid4Net/MyExamples/tree/master/UnhandledExceptionExample
-
+/*
+	https://gist.github.com/myrup/43ee8038e0fd6ef4d31cbdd67449a997
+	https://sentry.io/for/dotnet-maui/
+	https://gist.github.com/mattjohnsonpint/7b385b7a2da7059c4a16562bc5ddb3b7
+	https://stackoverflow.com/questions/5762526/how-can-i-make-something-that-catches-all-unhandled-exceptions-in-a-winforms-a
+	https://learn.microsoft.com/en-us/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/processing-unhandled-exceptions-cs
+	https://learn.microsoft.com/en-us/dotnet/api/system.appdomain.unhandledexception
+	https://github.com/dotnet/maui/discussions/653
+	https://peterno.wordpress.com/2015/04/15/unhandled-exception-handling-in-ios-and-android-with-xamarin/
+	https://github.com/xamarin/xamarin-macios/issues/15252
+	https://github.com/dotnet/android/issues/6211
+	https://github.com/Xandroid4Net/MyExamples/tree/master/UnhandledExceptionExample
+	https://github.com/xamarin/Xamarin.Forms/issues/5368
+*/
 
 public static partial class 
                                         MauiGlobalExceptionHandler
@@ -44,6 +45,8 @@ public static partial class
         
         if(!System.Diagnostics.Debugger.IsAttached)
         {
+            AppDomain.CurrentDomain.UnhandledException += SetUpPreferencesForExceptions;
+
             AppDomain.CurrentDomain.UnhandledException += (sender, args) => 
             {
                 UnhandledException?.Invoke(sender, args);
@@ -60,9 +63,8 @@ public static partial class
                 UnhandledException?.Invoke(sender, new UnhandledExceptionEventArgs(args.Exception, false));
             };
         }
-
+        
 #if IOS || MACCATALYST
-
         // For iOS and Mac Catalyst
         // Exceptions will flow through AppDomain.CurrentDomain.UnhandledException,
         // but UnwindNativeCode needs to be set to get it to work correctly. 
@@ -71,7 +73,7 @@ public static partial class
 
         if(!System.Diagnostics.Debugger.IsAttached)
         {
-            handeler_old = NSGetUncaughtExceptionHandler();
+            // handler_old = NSGetUncaughtExceptionHandler();
 
             ObjCRuntime.Runtime.MarshalManagedException += (_, args) =>
             {
@@ -82,9 +84,7 @@ public static partial class
             {
                 args.ExceptionMode = ObjCRuntime.MarshalObjectiveCExceptionMode.UnwindManagedCode;
             };
-        }
-        
-        static NSUncaughtExceptionHandler handler_old;
+        }       
 #endif
 
 #if ANDROID
@@ -158,7 +158,63 @@ public static partial class
         }
 #endif
     }
+    
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="ex"></param>
+    /// <href="https://github.com/dotnet/maui/discussions/653" />
+    private static 
+        void
+                                        SetUpPreferencesForExceptions
+                                        (
+                                            object sender, 
+                                            UnhandledExceptionEventArgs args
+                                        )
+    {
+        Exception ex = (Exception)args.ExceptionObject;
+        string msg = null;
+        
+        using(Cysharp.Text.Utf16ValueStringBuilder sb = Cysharp.Text.ZString.CreateStringBuilder())
+        {
+            sb.AppendLine($"{ex.Message}");
+            sb.AppendLine($"{ex.StackTrace}");
+            msg = sb.ToString();
+        }
+        
+        System.Diagnostics.Trace.WriteLine($"Crash Details: {msg}");
+        System.Diagnostics.Trace.Flush();
+        
+        Preferences.Default.Set("LastCrashTime", DateTimeOffset.Now.ToUnixTimeMilliseconds());
+        Preferences.Default.Set("LastCrashMessage", ex.Message);
+        Preferences.Default.Set("LastCrashStackTrace", ex.StackTrace);
+    }
 
+    public static
+        void
+                                        GetExceptionsFromPreferences
+                                        (
+                                        )
+    {
+        if 
+            (
+                Preferences.Default.Get("LastCrashTime", 0L) is long lastCrashTime
+                && 
+                DateTimeOffset.Now.ToUnixTimeMilliseconds() < lastCrashTime + 24 * 60 * 60 * 1000
+                && 
+                Preferences.Default.Get("LastCrashMessage", string.Empty) is string lastCrashMessage
+                &&
+                Preferences.Default.Get("LastCrashStackTrace", string.Empty) is string lastCrashStackTrace
+            )
+        {
+            System.Diagnostics.Trace.WriteLine
+                                        (
+                                            $"The app crashed on {DateTimeOffset.FromUnixTimeMilliseconds(lastCrashTime).LocalDateTime} with the following message:\n\n{lastCrashMessage}\n\n{lastCrashStackTrace}"
+                                            // Shell.Current.GotoAsync(nameof(YourAppRecoveredFromASeriousCrashPage)
+                                        );
+        }
+    }
 #if ANDROID
     public partial class
                                         JavaCustomUncaughtExceptionHandler
@@ -186,5 +242,16 @@ public static partial class
     private static Exception _lastFirstChanceException;
 #endif
 
-    
+#if IOS || MACCATALYST
+
+	// https://github.com/dotnet/macios/issues/3829
+	// https://github.com/dotnet/macios/issues/14711
+	// https://stackoverflow.com/questions/37530193/raise-exception-for-nsuncaughtexceptionhandler
+
+    // static NSUncaughtExceptionHandler handler_old;
+
+	// [DllImport(Constants.ObjectiveCLibrary, EntryPoint = "objc_msgSend")]
+	// static extern CGSize cgsize_objc_msgSend_IntPtr_float_int_foobar(IntPtr target, IntPtr selector, IntPtr font, nfloat width, UILineBreakMode mode);
+#endif 
+   
 }
