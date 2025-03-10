@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiSample.MainPage">
+
+    <VerticalStackLayout>
+        <Button Text="Collectionview in three columns" Clicked="Button_Clicked_2"/>
+        <Button Text="Collectionview - one column" Clicked="Button_Clicked_6"/>
+        <Button Text="Stack BindableLayout in three columns" Clicked="Button_Clicked_1"/>
+        <Button Text="Stack BindableLayout - one column" Clicked="Button_Clicked_5"/>
+    </VerticalStackLayout>
+
+</ContentPage>
