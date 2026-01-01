@@ -9,8 +9,7 @@ public partial class
                                         Window
                                         :
                                         Microsoft.Maui.Controls.Window,
-                                        ITrace,
-                                        ITraceNotFound
+                                        ITrace
 {
     public 
                                         Window
