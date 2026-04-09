@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "repro-sample", "repro-sample", "{B9B0E673-B7F9-4A01-AC10-4AB8F37E1746}"
+	ProjectSection(SolutionItems) = preProject
+		repro-sample\readme.md = repro-sample\readme.md
+		repro-sample\Directory.Build.props = repro-sample\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "maui", "maui", "{D6C7CC14-831E-4FF9-9E1F-5B1536D950DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net8.0", "net8.0", "{9CED7B98-C1E3-4DFD-A293-D82DE1C44424}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net9.0", "net9.0", "{1144629B-F496-4E0B-93B2-72B74D77446F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "maui-hybrid-blazor", "maui-hybrid-blazor", "{B9018F72-7EB5-4C70-AA21-C964D72BD7CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net8.0", "net8.0", "{85954039-1CF4-4D47-8297-F28269F08680}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net9.0", "net9.0", "{B8CB7CDC-F05A-4438-BED1-4BADA8F1EBC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUI.net80", "repro-sample\maui\net8.0\AppMAUI.net80\AppMAUI.net80.csproj", "{5B3552D3-8D1A-464F-AB41-60B06CBB13FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUI.net90", "repro-sample\maui\net9.0\AppMAUI.net90\AppMAUI.net90.csproj", "{498F82D0-C924-4478-9AB8-7A911C6DAADA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUI.Hybrid.Blazor.net80", "repro-sample\maui-hybrid-blazor\net8.0\AppMAUI.Hybrid.Blazor.net80\AppMAUI.Hybrid.Blazor.net80.csproj", "{E24EE629-784A-498D-B894-3BD342D81C7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUI.Hybrid.Blazor.net90", "repro-sample\maui-hybrid-blazor\net9.0\AppMAUI.Hybrid.Blazor.net90\AppMAUI.Hybrid.Blazor.net90.csproj", "{804E4101-6DB1-4FE5-8A7D-494588A45903}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B3552D3-8D1A-464F-AB41-60B06CBB13FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B3552D3-8D1A-464F-AB41-60B06CBB13FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B3552D3-8D1A-464F-AB41-60B06CBB13FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B3552D3-8D1A-464F-AB41-60B06CBB13FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{498F82D0-C924-4478-9AB8-7A911C6DAADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{498F82D0-C924-4478-9AB8-7A911C6DAADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{498F82D0-C924-4478-9AB8-7A911C6DAADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{498F82D0-C924-4478-9AB8-7A911C6DAADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E24EE629-784A-498D-B894-3BD342D81C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E24EE629-784A-498D-B894-3BD342D81C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E24EE629-784A-498D-B894-3BD342D81C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E24EE629-784A-498D-B894-3BD342D81C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{804E4101-6DB1-4FE5-8A7D-494588A45903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{804E4101-6DB1-4FE5-8A7D-494588A45903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{804E4101-6DB1-4FE5-8A7D-494588A45903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{804E4101-6DB1-4FE5-8A7D-494588A45903}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {372B0235-3082-4D0D-8F1E-B2416578FC83}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6C7CC14-831E-4FF9-9E1F-5B1536D950DD} = {B9B0E673-B7F9-4A01-AC10-4AB8F37E1746}
+		{9CED7B98-C1E3-4DFD-A293-D82DE1C44424} = {D6C7CC14-831E-4FF9-9E1F-5B1536D950DD}
+		{1144629B-F496-4E0B-93B2-72B74D77446F} = {D6C7CC14-831E-4FF9-9E1F-5B1536D950DD}
+		{B9018F72-7EB5-4C70-AA21-C964D72BD7CB} = {B9B0E673-B7F9-4A01-AC10-4AB8F37E1746}
+		{85954039-1CF4-4D47-8297-F28269F08680} = {B9018F72-7EB5-4C70-AA21-C964D72BD7CB}
+		{B8CB7CDC-F05A-4438-BED1-4BADA8F1EBC9} = {B9018F72-7EB5-4C70-AA21-C964D72BD7CB}
+		{5B3552D3-8D1A-464F-AB41-60B06CBB13FF} = {9CED7B98-C1E3-4DFD-A293-D82DE1C44424}
+		{498F82D0-C924-4478-9AB8-7A911C6DAADA} = {1144629B-F496-4E0B-93B2-72B74D77446F}
+		{E24EE629-784A-498D-B894-3BD342D81C7D} = {85954039-1CF4-4D47-8297-F28269F08680}
+		{804E4101-6DB1-4FE5-8A7D-494588A45903} = {B8CB7CDC-F05A-4438-BED1-4BADA8F1EBC9}
+	EndGlobalSection
+EndGlobal
