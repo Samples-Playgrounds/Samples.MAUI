@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUI.Recipes", "AppMAUI.Recipes\AppMAUI.Recipes.csproj", "{FAFD28E7-CE4C-1082-3345-D21F0E9E9254}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMAUIBlazor.Recipes", "AppMAUIBlazor.Recipes\AppMAUIBlazor.Recipes.csproj", "{2E8AC180-C14C-EB21-BE94-B56C0EA0A9D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAFD28E7-CE4C-1082-3345-D21F0E9E9254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAFD28E7-CE4C-1082-3345-D21F0E9E9254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAFD28E7-CE4C-1082-3345-D21F0E9E9254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAFD28E7-CE4C-1082-3345-D21F0E9E9254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E8AC180-C14C-EB21-BE94-B56C0EA0A9D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E8AC180-C14C-EB21-BE94-B56C0EA0A9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E8AC180-C14C-EB21-BE94-B56C0EA0A9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E8AC180-C14C-EB21-BE94-B56C0EA0A9D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49BE7F8B-FD05-43F5-9386-CBC1AA09622C}
+	EndGlobalSection
+EndGlobal

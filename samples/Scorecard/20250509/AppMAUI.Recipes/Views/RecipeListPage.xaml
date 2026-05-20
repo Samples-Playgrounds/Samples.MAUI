@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RecipeFinder.Views.RecipeListPage"
+             Title="Recipe Finder">
+    <Grid RowDefinitions="Auto,*">
+        <HorizontalStackLayout Grid.Row="0" Padding="10">
+            <Label Text="Filter by: " VerticalOptions="Center" />
+            <Picker x:Name="CategoryPicker"
+                    WidthRequest="150"
+                    SelectedIndexChanged="CategoryPicker_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>All</x:String>
+                </Picker.Items>
+            </Picker>
+        </HorizontalStackLayout>
+        
+        <CollectionView x:Name="RecipesCollection"
+                        Grid.Row="1"
+                        SelectionMode="Single"
+                        SelectionChanged="RecipesCollection_SelectionChanged">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10" ColumnDefinitions="Auto,*,Auto">
+                        <Image Grid.Column="0"
+                               Source="{Binding ImageUrl}"
+                               HeightRequest="80"
+                               WidthRequest="80"
+                               Aspect="AspectFill" />
+                        <VerticalStackLayout Grid.Column="1" Padding="10,0">
+                            <Label Text="{Binding Name}" 
+                                   FontSize="16"
+                                   FontAttributes="Bold" />
+                            <Label Text="{Binding Category}" 
+                                   FontSize="12"
+                                   TextColor="Gray" />
+                            <Label Text="{Binding Description}" 
+                                   FontSize="14"
+                                   LineBreakMode="TailTruncation"
+                                   MaxLines="2" />
+                        </VerticalStackLayout>
+                        <Image Grid.Column="2"
+                               Source="{Binding IsFavorite, Converter={StaticResource BoolToStarConverter}}"
+                               HeightRequest="24"
+                               WidthRequest="24"
+                               VerticalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="{Binding Id}"
+                                                      Tapped="FavoriteTapped" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>
