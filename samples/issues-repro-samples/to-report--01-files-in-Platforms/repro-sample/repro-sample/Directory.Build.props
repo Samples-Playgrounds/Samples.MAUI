@@ -1,0 +1,12 @@
+<Project>
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <!-- 
+        <MAUIProjectsRoot>/Users/Shared/Projects/d/dotnet/MAUI/m/</MAUIProjectsRoot>
+        -->
+    </PropertyGroup>
+    
+</Project>
