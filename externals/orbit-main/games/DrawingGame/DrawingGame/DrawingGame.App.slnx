@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/engine/">
+    <Project Path="../../../engine/Orbit.Engine.Tests/Orbit.Engine.Tests.csproj" />
+    <Project Path="../../../engine/Orbit.Engine/Orbit.Engine.csproj" />
+  </Folder>
+  <Project Path="../DrawingGame.Server/DrawingGame.Server.csproj" />
+  <Project Path="../DrawingGame.Shared/DrawingGame.Shared.csproj" />
+  <Project Path="DrawingGame.csproj">
+    <Deploy />
+  </Project>
+</Solution>

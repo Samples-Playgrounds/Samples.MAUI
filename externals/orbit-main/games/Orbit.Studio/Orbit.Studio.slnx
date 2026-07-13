@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../../engine/Orbit.Engine/Orbit.Engine.csproj" />
+  <Project Path="Orbit.Studio/Orbit.Studio.csproj" />
+</Solution>

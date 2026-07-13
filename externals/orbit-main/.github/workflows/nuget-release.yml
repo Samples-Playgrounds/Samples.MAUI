@@ -1,0 +1,33 @@
+name: Create a (Pre)release on NuGet
+
+on:
+  push:
+    tags:
+    - "v*.*.*"
+    - "v*.*.*-preview*"
+    - "engine*.*.*"
+    - "engine*.*.*-preview*"
+    - "input*.*.*"
+    - "input*.*.*-preview*"
+jobs:
+  release-nuget:
+  
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Verify commit exists in origin/main
+        run: |
+          git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
+          git branch --remote --contains | grep origin/main
+
+      - name: Get version information from tag
+        id: get_version
+        uses: battila7/get-version-action@v2
+
+      - name: Package releases
+        shell: pwsh
+        run: |
+          .\scripts\package-releases.ps1 -Version ${{ steps.get_version.outputs.version-without-v }} -ApiKey ${{ secrets.NUGET_API_KEY }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.NUGET_API_KEY }}

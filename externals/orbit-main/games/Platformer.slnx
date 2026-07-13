@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="../engine/Orbit.Engine.Tests/Orbit.Engine.Tests.csproj" />
+  <Project Path="../engine/Orbit.Engine/Orbit.Engine.csproj" />
+  <Project Path="../engine/Orbit.Input/Orbit.Input.csproj" />
+  <Project Path="Platformer/Platformer.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>

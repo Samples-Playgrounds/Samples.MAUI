@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="../../engine/Orbit.Engine.Tests/Orbit.Engine.Tests.csproj" />
+  <Project Path="../../engine/Orbit.Engine/Orbit.Engine.csproj" />
+  <Project Path="AirHockey.Server/AirHockey.Server.csproj" />
+  <Project Path="AirHockey.Shared.Tests/AirHockey.Shared.Tests.csproj" />
+  <Project Path="AirHockey.Shared/AirHockey.Shared.csproj" />
+  <Project Path="AirHockey/AirHockey.csproj" />
+</Solution>

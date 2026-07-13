@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../../../engine/Orbit.Engine/Orbit.Engine.csproj" />
+  <Project Path="../AirHockey.Shared/AirHockey.Shared.csproj" />
+  <Project Path="AirHockey.csproj">
+    <Deploy />
+  </Project>
+</Solution>
