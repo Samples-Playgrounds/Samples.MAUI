@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AppMAUI.SportsCognitiveLearning/AppMAUI.SportsCognitiveLearning.csproj" />
+  <Project Path="Orbit.Engine/Orbit.Engine.csproj" />
+</Solution>
